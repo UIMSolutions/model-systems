@@ -1,0 +1,61 @@
+{
+	"authors": [
+		"UI Manufaktur UG"
+	],
+	"license": "MIT",
+	"name": "model-systems",
+	"copyright": "Copyright © 2017 - 2021, UI Manufaktur UG",
+	"description": "Model for CMS applications",
+	"dependencies": {
+		"colored": "~>0.0.23",
+		"silly": "~>1.1.1",
+		"vibe-d": "~>0.9.4"
+	},
+	"configurations": [
+		{
+			"name": "offline",
+			"importPaths": [
+				"../../LIBS/uim-core",
+				"../../LIBS/uim-oop",
+				"../../LIBS/uim-models",
+				"../../LIBS/uim-jsonbase",
+				"../../LIBS/uim-entities",
+				"../../LIBS/uim-entitybase",
+				"./"
+			],
+			"sourcePaths": [
+				"../../LIBS/uim-core",
+				"../../LIBS/uim-oop",
+				"../../LIBS/uim-models",
+				"../../LIBS/uim-jsonbase",
+				"../../LIBS/uim-entities",
+				"../../LIBS/uim-entitybase",
+				"./"
+			]	
+		},
+		{
+			"name": "test-offline",
+			"versions": [
+				"test_model_systems"
+			],
+			"importPaths": [
+				"../../LIBS/uim-core",
+				"../../LIBS/uim-oop",
+				"../../LIBS/uim-models",
+				"../../LIBS/uim-jsonbase",
+				"../../LIBS/uim-entities",
+				"../../LIBS/uim-entitybase",
+				"./"
+			],
+			"sourcePaths": [
+				"../../LIBS/uim-core",
+				"../../LIBS/uim-oop",
+				"../../LIBS/uim-models",
+				"../../LIBS/uim-jsonbase",
+				"../../LIBS/uim-entities",
+				"../../LIBS/uim-entitybase",
+				"./"
+			]	
+		}
+	]
+}
