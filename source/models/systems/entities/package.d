@@ -34,33 +34,8 @@ public import models.systems.entities.user;
 } */
 
 static this() {
-  uimRegistryEntities
-    .register("SYSAccount", SYSAccount)
-    .register("systems/accounts", SYSAccount)
-    .register("SYSApp", SYSApp)
-    .register("systems/apps", SYSApp)
-    .register("SYSGroup", SYSGroup)
-    .register("systems/groups", SYSGroup)
-    .register("SYSLogin", SYSLogin)
-    .register("systems/logins", SYSLogin)
-    .register("SYSOrganization", SYSOrganization)
-    .register("systems/organizations", SYSOrganization)
-    .register("SYSPassword", SYSPassword)
-    .register("systems/passwords", SYSPassword)
-    .register("SYSPasswordRule", SYSPasswordRule)
-    .register("systems/passwordRules", SYSPasswordRule)
-    .register("SYSRequest", SYSRequest)
-    .register("systems/requests", SYSRequest)
-    .register("SYSRole", SYSRole)
-    .register("systems/roles", SYSRole)
-    .register("SYSRight", SYSRight)
-    .register("systems/rights", SYSRight)
-    .register("SYSSession", SYSSession)
-    .register("systems/sessions", SYSSession)
-    .register("SYSSite", SYSSite)
-    .register("systems/sites", SYSSite)
-    .register("SYSTenant", SYSTenant)
-    .register("systems/tenants", SYSTenant)
-    .register("SYSUser", SYSUser)
-    .register("systems/users", SYSUser);
+  uimEntityRegistry
+    .register(
+      SYSAccount, SYSApp, SYSGroup, SYSLogin, SYSOrganization, SYSPassword, SYSPasswordRule, 
+      SYSRequest, SYSRole, SYSRight, SYSSession, SYSSite, SYSTenant, SYSUser);
 }

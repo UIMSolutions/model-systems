@@ -3,14 +3,8 @@ module models.systems.entities.user;
 @safe:
 import models.systems;
 
-
-
 class DSYSUser : DOOPEntity {
-  mixin(EntityThis!("SYSUser"));
-
-  static string namespace = moduleName!DSYSUser;
-  override string entityPath() { return "system/user"; }
-  override string entityClasses() { return "sysUsers"; }
+  mixin(OOPEntityThis!("SYSUser"));
 
   override DOOPEntity clone() { return SYSUser; }
 
@@ -40,6 +34,13 @@ class DSYSUser : DOOPEntity {
 
   // entities related to user 
   mixin(SProperty!("UUID[]", "siteIds"));
+
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_users");
+  }
 
   override DOOPEntity fromJson(Json aJson) {
     super.fromJson(aJson);
@@ -91,7 +92,7 @@ class DSYSUser : DOOPEntity {
     return result;
   }
 }
-mixin(EntityCalls!("SYSUser"));
+mixin(OOPEntityCalls!("SYSUser"));
 
 version(test_model_systems) {
   unittest {

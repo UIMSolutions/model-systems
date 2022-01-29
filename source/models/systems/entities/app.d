@@ -4,16 +4,18 @@ module models.systems.entities.app;
 import models.systems;
 
 class DSYSApp : DOOPEntity {
-  mixin(EntityThis!("SYSApp"));
+  mixin(OOPEntityThis!("SYSApp"));
 
-  static string namespace = moduleName!DSYSApp;
-  override string entityPath() { return "system/app"; }
-  override string entityClass() { return "sysApp"; }
-  override string entityClasses() { return "sysApps"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_apps");
+  }
 
   override DOOPEntity clone() { return SYSApp; }
 }
-mixin(EntityCalls!("SYSApp"));
+mixin(OOPEntityCalls!("SYSApp"));
 
 version(test_model_systems) {
   unittest {

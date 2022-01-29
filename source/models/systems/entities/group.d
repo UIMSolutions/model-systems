@@ -6,16 +6,18 @@ import models.systems;
 
 
 class DSYSGroup : DOOPEntity {
-  mixin(EntityThis!("SYSGroup"));
+  mixin(OOPEntityThis!("SYSGroup"));
 
-  static string namespace = moduleName!DSYSGroup;
-  override string entityPath() { return "system/group"; }
-  override string entityClass() { return "sysGroup"; }
-  override string entityClasses() { return "sysGroups"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_groups");
+  }
 
   override DOOPEntity clone() { return SYSGroup; }
 }
-mixin(EntityCalls!("SYSGroup"));
+mixin(OOPEntityCalls!("SYSGroup"));
 
 version(test_model_systems) {
   unittest {

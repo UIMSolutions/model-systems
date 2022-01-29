@@ -4,12 +4,14 @@ module models.systems.entities.session;
 import models.systems;
 
 class DSYSSession : DOOPEntity {
-  mixin(EntityThis!("SYSSession"));
+  mixin(OOPEntityThis!("SYSSession"));
 
-  static string namespace = moduleName!DSYSSession;
-  override string entityPath() { return "system/session"; }
-  override string entityClass() { return "sysSession"; }
-  override string entityClasses() { return "sysSessions"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_sessions");
+  }
 
   override DOOPEntity clone() { return SYSSession; }
 
@@ -18,7 +20,7 @@ class DSYSSession : DOOPEntity {
     if ("entity_siteId" in reqParameters) this["siteId"] = reqParameters["entity_siteId"];
     return this; }
 }
-mixin(EntityCalls!("SYSSession"));
+mixin(OOPEntityCalls!("SYSSession"));
 
 version(test_model_systems) {
   unittest {

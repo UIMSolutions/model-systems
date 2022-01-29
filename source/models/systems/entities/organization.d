@@ -4,16 +4,18 @@ module models.systems.entities.organization;
 import models.systems;
 
 class DSYSOrganization : DOOPEntity {
-  mixin(EntityThis!("SYSOrganization"));
+  mixin(OOPEntityThis!("SYSOrganization"));
 
-  static string namespace = moduleName!DSYSOrganization;
-  override string entityPath() { return "system/organization"; }
-  override string entityClass() { return "sysOrganization"; }
-  override string entityClasses() { return "sysOrganizations"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_organizations");
+  }
 
   override DOOPEntity clone() { return SYSOrganization; }
 }
-mixin(EntityCalls!("SYSOrganization"));
+mixin(OOPEntityCalls!("SYSOrganization"));
 
 version(test_model_systems) {
   unittest {

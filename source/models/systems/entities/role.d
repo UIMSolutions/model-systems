@@ -6,19 +6,21 @@ import models.systems;
 
 
 class DSYSRole : DOOPEntity {
-  mixin(EntityThis!("SYSRole")); 
+  mixin(OOPEntityThis!("SYSRole")); 
 
-  static string namespace = moduleName!DSYSRole;
-  override string entityPath() { return "system/role"; }
-  override string entityClass() { return "sysRole"; }
-  override string entityClasses() { return "sysRoles"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_roles");
+  }
 
   override DOOPEntity clone() { return SYSRole; }
 
   mixin(SProperty!("UUID[]", "rights"));
   mixin(SProperty!("UUID[]", "roles"));
 }
-mixin(EntityCalls!("SYSRole"));
+mixin(OOPEntityCalls!("SYSRole"));
 
 version(test_model_systems) {
   unittest {

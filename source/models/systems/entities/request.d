@@ -6,16 +6,18 @@ import models.systems;
 
 
 class DSYSRequest : DOOPEntity {
-  mixin(EntityThis!("SYSRequest"));  
+  mixin(OOPEntityThis!("SYSRequest"));  
 
-  static string namespace = moduleName!DSYSRequest;
-  override string entityPath() { return "system/request"; }
-  override string entityClass() { return "sysRequest"; }
-  override string entityClasses() { return "sysRequests"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_requests");
+  }
 
   override DOOPEntity clone() { return SYSRequest; }
 }
-mixin(EntityCalls!("SYSRequest"));
+mixin(OOPEntityCalls!("SYSRequest"));
 
 version(test_model_systems) {
   unittest {

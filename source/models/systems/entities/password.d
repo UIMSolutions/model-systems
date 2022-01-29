@@ -6,12 +6,14 @@ import models.systems;
 
 
 class DSYSPassword : DOOPEntity {
-  mixin(EntityThis!("SYSPassword"));
+  mixin(OOPEntityThis!("SYSPassword"));
 
-  static string namespace = moduleName!DSYSPassword;
-  override string entityPath() { return "system/password"; }
-  override string entityClass() { return "sysPassword"; }
-  override string entityClasses() { return "sysPasswords"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_passwords");
+  }
 
   override DOOPEntity clone() { return SYSPassword; }
 
@@ -66,7 +68,7 @@ class DSYSPassword : DOOPEntity {
     return result;
   }
 }
-mixin(EntityCalls!("SYSPassword"));
+mixin(OOPEntityCalls!("SYSPassword"));
 
 version(test_model_systems) {
   unittest {

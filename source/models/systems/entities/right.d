@@ -4,16 +4,18 @@ module models.systems.entities.right;
 import models.systems;
 
 class DSYSRight : DOOPEntity {
-  mixin(EntityThis!("SYSRight"));
+  mixin(OOPEntityThis!("SYSRight"));
 
-  static string namespace = moduleName!DSYSRight;
-  override string entityPath() { return "system/right"; }
-  override string entityClass() { return "sysRight"; }
-  override string entityClasses() { return "sysRights"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_rights");
+  }
 
   override DOOPEntity clone() { return SYSRight; }
 }
-mixin(EntityCalls!("SYSRight"));
+mixin(OOPEntityCalls!("SYSRight"));
 
 version(test_model_systems) {
   unittest {

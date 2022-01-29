@@ -3,14 +3,15 @@ module models.systems.entities.site;
 @safe:
 import models.systems;
 
-
 class DSYSSite : DOOPEntity {
-  mixin(EntityThis!("SYSSite"));
+  mixin(OOPEntityThis!("SYSSite"));
 
-  static string namespace = moduleName!DSYSSite;
-  override string entityPath() { return "system/site"; }
-  override string entityClass() { return "sysSite"; }
-  override string entityClasses() { return "sysSites"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_sites");
+  }
 
   override DOOPEntity clone() { return SYSSite; }
 
@@ -19,7 +20,7 @@ class DSYSSite : DOOPEntity {
   mixin(SProperty!("UUID[]", "groups"));
   mixin(SProperty!("UUID[]", "apps"));
 }
-mixin(EntityCalls!("SYSSite"));
+mixin(OOPEntityCalls!("SYSSite"));
 
 version(test_model_systems) {
   unittest {

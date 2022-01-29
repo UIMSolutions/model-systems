@@ -5,16 +5,18 @@ import models.systems;
 
 
 class DSYSTenant : DOOPEntity {
-  mixin(EntityThis!("SYSTenant"));
+  mixin(OOPEntityThis!("SYSTenant"));
 
-  static string namespace = moduleName!DSYSTenant;
-  override string entityPath() { return "system/tenant"; }
-  override string entityClass() { return "sysTenant"; }
-  override string entityClasses() { return "sysTenants"; }
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_tenants");
+  }
 
   override DOOPEntity clone() { return SYSTenant; }
 }
-mixin(EntityCalls!("SYSTenant"));
+mixin(OOPEntityCalls!("SYSTenant"));
 
 version(test_model_systems) {
   unittest {

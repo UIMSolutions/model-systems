@@ -4,15 +4,9 @@ module models.systems.entities.account;
 import models.systems;
 
 class DSYSAccount : DOOPEntity {
-  mixin(EntityThis!("SYSAccount"));
-
-  static string namespace = moduleName!DSYSAccount;
-  override string entityPath() { return "system/account"; }
-  override string entityClass() { return "sysAccount"; }
-  override string entityClasses() { return "sysAccounts"; }
+  mixin(OOPEntityThis!("SYSAccount"));
 
   mixin(SProperty!("string", "peer"));
-
   mixin(SProperty!("bool", "active"));
 
   mixin(SProperty!("UUID", "passwordRuleId"));
@@ -42,6 +36,13 @@ class DSYSAccount : DOOPEntity {
     if (newId.isUUID)
       this.userId(UUID(newId));
     return cast(O)this; }
+
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("system_accounts");
+  }
 
   override DOOPEntity clone() { return SYSAccount; }
 
@@ -85,7 +86,7 @@ class DSYSAccount : DOOPEntity {
     return result;
   }
 }
-mixin(EntityCalls!("SYSAccount"));
+mixin(OOPEntityCalls!("SYSAccount"));
 
 version(test_model_systems) {
   unittest {

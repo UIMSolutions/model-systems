@@ -3,22 +3,16 @@ module models.systems.entities.login;
 @safe:
 import models.systems;
 
-
-
 class DSYSLogin : DOOPEntity {
-  mixin(EntityThis!("SYSLogin"));
+  mixin(OOPEntityThis!("SYSLogin"));
 
   override void initialize() {
     super.initialize;
 
     this
-      .attribute("accountName", OOPAttributeString); 
+      .attribute("accountName", OOPStringAttribute) 
+      .registerPath("system_logins");
   }
-
-  static string namespace = moduleName!DSYSLogin;
-  override string entityPath() { return "system/login"; }
-  override string entityClass() { return "sysLogin"; }
-  override string entityClasses() { return "sysLogins"; }
 
   override DOOPEntity clone() { return SYSLogin; }
 
@@ -27,7 +21,7 @@ class DSYSLogin : DOOPEntity {
     if ("entity_accountName" in reqParameters) this["accountName"] = reqParameters["entity_accountName"];
     return this; }
 }
-mixin(EntityCalls!("SYSLogin"));
+mixin(OOPEntityCalls!("SYSLogin"));
 
 version(test_model_systems) {
   unittest {
