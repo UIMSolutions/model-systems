@@ -1,18 +1,20 @@
 {
 	"authors": [
-		"UI Manufaktur UG"
+		"UI Manufaktur UG",
+		"Ozan Nurettin Süel",
+		"Sicherheitsschmiede"
 	],
-	"license": "MIT",
+	"copyright": "Copyright © 2017-2021, UI Manufaktur UG / 2022 Ozan Nurettin Süel (Sicherheitsschmiede)",
+	"license": "Apache-2.0",
 	"name": "model-systems",
-	"copyright": "Copyright © 2017 - 2021, UI Manufaktur UG",
-	"description": "Model for CMS applications",
+	"description": "Model for system entities",
 	"dependencies": {
 		"colored": "~>0.0.23",
 		"vibe-d": "~>0.9.4"
 	},
 	"configurations": [
 		{
-			"name": "offline",
+			"name": "default",
 			"importPaths": [
 				"../../LIBS/uim-core",
 				"../../LIBS/uim-oop",
@@ -33,7 +35,7 @@
 			]	
 		},
 		{
-			"name": "test-offline",
+			"name": "test",
 			"versions": [
 				"test_model_systems"
 			],
