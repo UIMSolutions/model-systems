@@ -5,8 +5,8 @@ import models.systems;
 
 
 
-class DSystemGroup : DOOPEntity {
-  mixin(OOPEntityThis!("SystemGroup"));
+class DSystemGroupEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemGroupEntity"));
 
   override void initialize() {
     super.initialize;
@@ -15,15 +15,15 @@ class DSystemGroup : DOOPEntity {
       .registerPath("system_groups");
   }
 
-  override DOOPEntity clone() { return SystemGroup; }
+  override DOOPEntity clone() { return SystemGroupEntity; }
 }
-mixin(OOPEntityCalls!("SystemGroup"));
+mixin(OOPEntityCalls!("SystemGroupEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemGroup);
+    assert(SystemGroupEntity);
   
-  auto entity = SystemGroup;
+  auto entity = SystemGroupEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

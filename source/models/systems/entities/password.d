@@ -5,8 +5,8 @@ import models.systems;
 
 
 
-class DSystemPassword : DOOPEntity {
-  mixin(OOPEntityThis!("SystemPassword"));
+class DSystemPasswordEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemPasswordEntity"));
 
   override void initialize() {
     super.initialize;
@@ -15,7 +15,7 @@ class DSystemPassword : DOOPEntity {
       .registerPath("system_passwords");
   }
 
-  override DOOPEntity clone() { return SystemPassword; }
+  override DOOPEntity clone() { return SystemPasswordEntity; }
 
   mixin(SProperty!("UUID", "accountId"));
   O accountId(this O)(string newAccountId) { 
@@ -68,13 +68,13 @@ class DSystemPassword : DOOPEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("SystemPassword"));
+mixin(OOPEntityCalls!("SystemPasswordEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemPassword);
+    assert(SystemPasswordEntity);
   
-  auto entity = SystemPassword;
+  auto entity = SystemPasswordEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

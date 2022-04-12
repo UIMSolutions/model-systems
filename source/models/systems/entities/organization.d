@@ -3,8 +3,8 @@ module models.systems.entities.organization;
 @safe:
 import models.systems;
 
-class DSystemOrganization : DOOPEntity {
-  mixin(OOPEntityThis!("SystemOrganization"));
+class DSystemOrganizationEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemOrganizationEntity"));
 
   override void initialize() {
     super.initialize;
@@ -13,15 +13,15 @@ class DSystemOrganization : DOOPEntity {
       .registerPath("system_organizations");
   }
 
-  override DOOPEntity clone() { return SystemOrganization; }
+  override DOOPEntity clone() { return SystemOrganizationEntity; }
 }
-mixin(OOPEntityCalls!("SystemOrganization"));
+mixin(OOPEntityCalls!("SystemOrganizationEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemOrganization);
+    assert(SystemOrganizationEntity);
   
-  auto entity = SystemOrganization;
+  auto entity = SystemOrganizationEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
