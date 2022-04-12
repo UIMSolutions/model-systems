@@ -24,8 +24,8 @@ public import models.systems.entities.user;
   auto login = createEntities["models.systems.security.login"](Json.emptyObject);
   writeln(login.toJson);
 
-  debug writeln("Create SYSLogin");
-  login = createEntities["SYSLogin"](Json.emptyObject);
+  debug writeln("Create SystemLogin");
+  login = createEntities["SystemLogin"](Json.emptyObject);
   writeln(login.toJson);
 
   debug writeln("Create login");
@@ -36,6 +36,6 @@ public import models.systems.entities.user;
 static this() {
   uimEntityRegistry
     .register(
-      SYSAccount, SYSApp, SYSGroup, SYSLogin, SYSOrganization, SYSPassword, SYSPasswordRule, 
-      SYSRequest, SYSRole, SYSRight, SYSSession, SYSSite, SYSTenant, SYSUser);
+      SystemAccount, SystemApp, SystemGroup, SystemLogin, SystemOrganization, SystemPassword, SystemPasswordRule, 
+      SystemRequest, SystemRole, SystemRight, SystemSession, SystemSite, SystemTenant, SystemUser);
 }

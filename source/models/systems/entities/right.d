@@ -3,8 +3,8 @@ module models.systems.entities.right;
 @safe:
 import models.systems;
 
-class DSYSRight : DOOPEntity {
-  mixin(OOPEntityThis!("SYSRight"));
+class DSystemRight : DOOPEntity {
+  mixin(OOPEntityThis!("SystemRight"));
 
   override void initialize() {
     super.initialize;
@@ -13,15 +13,15 @@ class DSYSRight : DOOPEntity {
       .registerPath("system_rights");
   }
 
-  override DOOPEntity clone() { return SYSRight; }
+  override DOOPEntity clone() { return SystemRight; }
 }
-mixin(OOPEntityCalls!("SYSRight"));
+mixin(OOPEntityCalls!("SystemRight"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSRight);
+    assert(SystemRight);
   
-  auto entity = SYSRight;
+  auto entity = SystemRight;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

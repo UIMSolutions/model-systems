@@ -4,8 +4,8 @@ module models.systems.entities.tenant;
 import models.systems;
 
 
-class DSYSTenant : DOOPEntity {
-  mixin(OOPEntityThis!("SYSTenant"));
+class DSystemTenant : DOOPEntity {
+  mixin(OOPEntityThis!("SystemTenant"));
 
   override void initialize() {
     super.initialize;
@@ -14,15 +14,15 @@ class DSYSTenant : DOOPEntity {
       .registerPath("system_tenants");
   }
 
-  override DOOPEntity clone() { return SYSTenant; }
+  override DOOPEntity clone() { return SystemTenant; }
 }
-mixin(OOPEntityCalls!("SYSTenant"));
+mixin(OOPEntityCalls!("SystemTenant"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSTenant);
+    assert(SystemTenant);
   
-  auto entity = SYSTenant;
+  auto entity = SystemTenant;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

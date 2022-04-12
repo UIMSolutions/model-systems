@@ -3,8 +3,8 @@ module models.systems.entities.session;
 @safe:
 import models.systems;
 
-class DSYSSession : DOOPEntity {
-  mixin(OOPEntityThis!("SYSSession"));
+class DSystemSession : DOOPEntity {
+  mixin(OOPEntityThis!("SystemSession"));
 
   override void initialize() {
     super.initialize;
@@ -13,20 +13,20 @@ class DSYSSession : DOOPEntity {
       .registerPath("system_sessions");
   }
 
-  override DOOPEntity clone() { return SYSSession; }
+  override DOOPEntity clone() { return SystemSession; }
 
   override DOOPEntity fromRequest(STRINGAA reqParameters) {
     super.fromRequest(reqParameters);
     if ("entity_siteId" in reqParameters) this["siteId"] = reqParameters["entity_siteId"];
     return this; }
 }
-mixin(OOPEntityCalls!("SYSSession"));
+mixin(OOPEntityCalls!("SystemSession"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSSession);
+    assert(SystemSession);
   
-  auto entity = SYSSession;
+  auto entity = SystemSession;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

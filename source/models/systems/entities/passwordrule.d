@@ -4,8 +4,8 @@ module models.systems.entities.passwordrule;
 import models.systems;
 
 
-class DSYSPasswordRule : DOOPEntity {
-  mixin(OOPEntityThis!("SYSPasswordRule"));
+class DSystemPasswordRule : DOOPEntity {
+  mixin(OOPEntityThis!("SystemPasswordRule"));
 
   override void initialize() {
     super.initialize;
@@ -14,7 +14,7 @@ class DSYSPasswordRule : DOOPEntity {
       .registerPath("system_passwordrules");
   }
 
-  override DOOPEntity clone() { return SYSPasswordRule; }
+  override DOOPEntity clone() { return SystemPasswordRule; }
 
   mixin(SProperty!("long", "validFrom"));
   O validFrom(this O)(SysTime aTime) {
@@ -46,13 +46,13 @@ class DSYSPasswordRule : DOOPEntity {
     return result;   
  }
 }
-mixin(OOPEntityCalls!("SYSPasswordRule"));
+mixin(OOPEntityCalls!("SystemPasswordRule"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSPasswordRule);
+    assert(SystemPasswordRule);
   
-  auto entity = SYSPasswordRule;
+  auto entity = SystemPasswordRule;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

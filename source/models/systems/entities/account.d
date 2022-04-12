@@ -3,8 +3,8 @@ module models.systems.entities.account;
 @safe:
 import models.systems;
 
-class DSYSAccount : DOOPEntity {
-  mixin(OOPEntityThis!("SYSAccount"));
+class DSystemAccountEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemAccountEntity"));
 
   mixin(SProperty!("string", "peer"));
   mixin(SProperty!("bool", "active"));
@@ -44,7 +44,7 @@ class DSYSAccount : DOOPEntity {
       .registerPath("system_accounts");
   }
 
-  override DOOPEntity clone() { return SYSAccount; }
+  override DOOPEntity clone() { return SystemAccount; }
 
   override DOOPEntity fromJson(Json aJson) {
     super.fromJson(aJson);
@@ -86,13 +86,13 @@ class DSYSAccount : DOOPEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("SYSAccount"));
+mixin(OOPEntityCalls!("SystemAccountEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSAccount);
+    assert(SystemAccountEntity);
   
-  auto entity = SYSAccount;
+  auto entity = SystemAccountEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

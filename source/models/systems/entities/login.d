@@ -3,8 +3,8 @@ module models.systems.entities.login;
 @safe:
 import models.systems;
 
-class DSYSLogin : DOOPEntity {
-  mixin(OOPEntityThis!("SYSLogin"));
+class DSystemLogin : DOOPEntity {
+  mixin(OOPEntityThis!("SystemLogin"));
 
   override void initialize() {
     super.initialize;
@@ -14,20 +14,20 @@ class DSYSLogin : DOOPEntity {
       .registerPath("system_logins");
   }
 
-  override DOOPEntity clone() { return SYSLogin; }
+  override DOOPEntity clone() { return SystemLogin; }
 
   override DOOPEntity fromRequest(STRINGAA reqParameters) {
     super.fromRequest(reqParameters);
     if ("entity_accountName" in reqParameters) this["accountName"] = reqParameters["entity_accountName"];
     return this; }
 }
-mixin(OOPEntityCalls!("SYSLogin"));
+mixin(OOPEntityCalls!("SystemLogin"));
 
 version(test_model_systems) {
   unittest {
-    assert(SYSLogin);
+    assert(SystemLogin);
   
-  auto entity = SYSLogin;
+  auto entity = SystemLogin;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
