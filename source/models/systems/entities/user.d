@@ -3,10 +3,10 @@ module models.systems.entities.user;
 @safe:
 import models.systems;
 
-class DSystemUser : DOOPEntity {
-  mixin(OOPEntityThis!("SystemUser"));
+class DSystemUserEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemUserEntity"));
 
-  override DOOPEntity clone() { return SystemUser; }
+  override DOOPEntity clone() { return SystemUserEntity; }
 
   mixin(SProperty!("bool", "active"));
 
@@ -92,13 +92,13 @@ class DSystemUser : DOOPEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("SystemUser"));
+mixin(OOPEntityCalls!("SystemUserEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemUser);
+    assert(SystemUserEntity);
   
-  auto entity = SystemUser;
+  auto entity = SystemUserEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

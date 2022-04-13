@@ -44,7 +44,7 @@ class DSystemAccountEntity : DOOPEntity {
       .registerPath("system_accounts");
   }
 
-  override DOOPEntity clone() { return SystemAccount; }
+  override DOOPEntity clone() { return SystemAccountEntity; }
 
   override DOOPEntity fromJson(Json aJson) {
     super.fromJson(aJson);

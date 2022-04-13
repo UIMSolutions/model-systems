@@ -36,6 +36,6 @@ public import models.systems.entities.user;
 static this() {
   uimEntityRegistry
     .register(
-      SystemAccount, SystemApp, SystemGroup, SystemLogin, SystemOrganization, SystemPassword, SystemPasswordRule, 
-      SystemRequest, SystemRole, SystemRight, SystemSession, SystemSite, SystemTenant, SystemUser);
+      SystemAccountEntity, SystemAppEntity, SystemGroupEntity, SystemLoginEntity, SystemOrganizationEntity, SystemPasswordEntity, SystemPasswordRuleEntity, 
+      SystemRequestEntity, SystemRoleEntity, SystemRightEntity, SystemSessionEntity, SystemSiteEntity, SystemTenantEntity, SystemUserEntity);
 }

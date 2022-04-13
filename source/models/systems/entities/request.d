@@ -5,8 +5,8 @@ import models.systems;
 
 
 
-class DSystemRequest : DOOPEntity {
-  mixin(OOPEntityThis!("SystemRequest"));  
+class DSystemRequestEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemRequestEntity"));  
 
   override void initialize() {
     super.initialize;
@@ -15,15 +15,15 @@ class DSystemRequest : DOOPEntity {
       .registerPath("system_requests");
   }
 
-  override DOOPEntity clone() { return SystemRequest; }
+  override DOOPEntity clone() { return SystemRequestEntity; }
 }
-mixin(OOPEntityCalls!("SystemRequest"));
+mixin(OOPEntityCalls!("SystemRequestEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemRequest);
+    assert(SystemRequestEntity);
   
-  auto entity = SystemRequest;
+  auto entity = SystemRequestEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

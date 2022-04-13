@@ -3,8 +3,8 @@ module models.systems.entities.site;
 @safe:
 import models.systems;
 
-class DSystemSite : DOOPEntity {
-  mixin(OOPEntityThis!("SystemSite"));
+class DSystemSiteEntity : DOOPEntity {
+  mixin(OOPEntityThis!("SystemSiteEntity"));
 
   override void initialize() {
     super.initialize;
@@ -13,20 +13,20 @@ class DSystemSite : DOOPEntity {
       .registerPath("system_sites");
   }
 
-  override DOOPEntity clone() { return SystemSite; }
+  override DOOPEntity clone() { return SystemSiteEntity; }
 
   mixin(SProperty!("UUID[]", "users"));
   mixin(SProperty!("UUID[]", "roles"));
   mixin(SProperty!("UUID[]", "groups"));
   mixin(SProperty!("UUID[]", "apps"));
 }
-mixin(OOPEntityCalls!("SystemSite"));
+mixin(OOPEntityCalls!("SystemSiteEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemSite);
+    assert(SystemSiteEntity);
   
-  auto entity = SystemSite;
+  auto entity = SystemSiteEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -5,8 +5,8 @@ import models.systems;
 
 
 
-class DSystemRole : DOOPEntity {
-  mixin(OOPEntityThis!("SystemRole")); 
+class DSystemRoleEntity : DOOPEntity {
+mixin(OOPEntityThis!("SystemRoleEntity")); 
 
   override void initialize() {
     super.initialize;
@@ -15,18 +15,18 @@ class DSystemRole : DOOPEntity {
       .registerPath("system_roles");
   }
 
-  override DOOPEntity clone() { return SystemRole; }
+  override DOOPEntity clone() { return SystemRoleEntity; }
 
   mixin(SProperty!("UUID[]", "rights"));
   mixin(SProperty!("UUID[]", "roles"));
 }
-mixin(OOPEntityCalls!("SystemRole"));
+mixin(OOPEntityCalls!("SystemRoleEntity"));
 
 version(test_model_systems) {
   unittest {
-    assert(SystemRole);
+    assert(SystemRoleEntity);
   
-  auto entity = SystemRole;
+  auto entity = SystemRoleEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
