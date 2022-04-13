@@ -15,10 +15,10 @@ class DSystemSiteEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemSiteEntity; }
 
-  mixin(SProperty!("UUID[]", "users"));
-  mixin(SProperty!("UUID[]", "roles"));
-  mixin(SProperty!("UUID[]", "groups"));
-  mixin(SProperty!("UUID[]", "apps"));
+  mixin(OProperty!("UUID[]", "users"));
+  mixin(OProperty!("UUID[]", "roles"));
+  mixin(OProperty!("UUID[]", "groups"));
+  mixin(OProperty!("UUID[]", "apps"));
 }
 mixin(OOPEntityCalls!("SystemSiteEntity"));
 

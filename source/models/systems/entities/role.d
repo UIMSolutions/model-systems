@@ -17,8 +17,8 @@ mixin(OOPEntityThis!("SystemRoleEntity"));
 
   override DOOPEntity clone() { return SystemRoleEntity; }
 
-  mixin(SProperty!("UUID[]", "rights"));
-  mixin(SProperty!("UUID[]", "roles"));
+  mixin(OProperty!("UUID[]", "rights"));
+  mixin(OProperty!("UUID[]", "roles"));
 }
 mixin(OOPEntityCalls!("SystemRoleEntity"));
 

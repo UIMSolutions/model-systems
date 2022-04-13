@@ -6,32 +6,32 @@ import models.systems;
 class DSystemAccountEntity : DOOPEntity {
   mixin(OOPEntityThis!("SystemAccountEntity"));
 
-  mixin(SProperty!("string", "peer"));
-  mixin(SProperty!("bool", "active"));
+  mixin(OProperty!("string", "peer"));
+  mixin(OProperty!("bool", "active"));
 
-  mixin(SProperty!("UUID", "passwordRuleId"));
+  mixin(OProperty!("UUID", "passwordRuleId"));
   O passwordRuleId(this O)(string newPasswordRuleId) { 
     if (newPasswordRuleId.isUUID)
       this.passwordRuleId(UUID(newPasswordRuleId));
     return cast(O)this; }
 
-  mixin(SProperty!("long", "validFrom"));
+  mixin(OProperty!("long", "validFrom"));
   O validFrom(this O)(SysTime aTime) {
     this.validFrom(toTimestamp(aTime));
     return cast(O)this;
   }
 
-  mixin(SProperty!("long", "validUntil"));
+  mixin(OProperty!("long", "validUntil"));
   O validUntil(this O)(SysTime aTime) {
     this.validUntil(toTimestamp(aTime));
     return cast(O)this;
   }
 
   // !Not part of Json
-  mixin(SProperty!("bool", "otp"));
-  mixin(SProperty!("string", "password"));
+  mixin(OProperty!("bool", "otp"));
+  mixin(OProperty!("string", "password"));
 
-  mixin(SProperty!("UUID", "userId"));
+  mixin(OProperty!("UUID", "userId"));
   O userId(this O)(string newId) { 
     if (newId.isUUID)
       this.userId(UUID(newId));

@@ -8,32 +8,32 @@ class DSystemUserEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemUserEntity; }
 
-  mixin(SProperty!("bool", "active"));
+  mixin(OProperty!("bool", "active"));
 
-  mixin(SProperty!("long", "validFrom"));
+  mixin(OProperty!("long", "validFrom"));
   O validFrom(this O)(SysTime aTime) {
     this.validFrom(toTimestamp(aTime));
     return cast(O)this;
   }
 
-  mixin(SProperty!("long", "validUntil"));
+  mixin(OProperty!("long", "validUntil"));
   O validUntil(this O)(SysTime aTime) {
     this.validUntil(toTimestamp(aTime));
     return cast(O)this;
   }
 
-  mixin(SProperty!("UUID", "passwordRuleId"));
+  mixin(OProperty!("UUID", "passwordRuleId"));
   O passwordRuleId(this O)(string newPasswordRuleId) { 
     if (newPasswordRuleId.isUUID)
       this.passwordRuleId(UUID(newPasswordRuleId));
     return cast(O)this; }
 
   // !Not part of Json
-  mixin(SProperty!("bool", "otp"));
-  mixin(SProperty!("string", "password"));
+  mixin(OProperty!("bool", "otp"));
+  mixin(OProperty!("string", "password"));
 
   // entities related to user 
-  mixin(SProperty!("UUID[]", "siteIds"));
+  mixin(OProperty!("UUID[]", "siteIds"));
 
   override void initialize() {
     super.initialize;

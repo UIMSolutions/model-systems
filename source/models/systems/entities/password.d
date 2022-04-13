@@ -17,19 +17,19 @@ class DSystemPasswordEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemPasswordEntity; }
 
-  mixin(SProperty!("UUID", "accountId"));
+  mixin(OProperty!("UUID", "accountId"));
   O accountId(this O)(string newAccountId) { 
     if (newAccountId.isUUID)
       this.accountId(UUID(newAccountId));
     return cast(O)this; }
 
-  mixin(SProperty!("long", "validFrom"));
+  mixin(OProperty!("long", "validFrom"));
   O validFrom(this O)(SysTime aTime) {
     this.validFrom(toTimestamp(aTime));
     return cast(O)this;
   }
 
-  mixin(SProperty!("long", "validUntil"));
+  mixin(OProperty!("long", "validUntil"));
   O validUntil(this O)(SysTime aTime) {
     this.validUntil(toTimestamp(aTime));
     return cast(O)this;
