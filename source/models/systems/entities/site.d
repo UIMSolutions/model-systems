@@ -4,7 +4,7 @@ module models.systems.entities.site;
 import models.systems;
 
 class DSystemSiteEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemSiteEntity"));
+  mixin(EntityThis!("SystemSiteEntity"));
 
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ class DSystemSiteEntity : DOOPEntity {
   mixin(OProperty!("UUID[]", "groups"));
   mixin(OProperty!("UUID[]", "apps"));
 }
-mixin(OOPEntityCalls!("SystemSiteEntity"));
+mixin(EntityCalls!("SystemSiteEntity"));
 
 version(test_model_systems) {
   unittest {

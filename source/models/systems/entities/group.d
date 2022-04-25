@@ -6,7 +6,7 @@ import models.systems;
 
 
 class DSystemGroupEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemGroupEntity"));
+  mixin(EntityThis!("SystemGroupEntity"));
 
   override void initialize() {
     super.initialize;
@@ -17,7 +17,7 @@ class DSystemGroupEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemGroupEntity; }
 }
-mixin(OOPEntityCalls!("SystemGroupEntity"));
+mixin(EntityCalls!("SystemGroupEntity"));
 
 version(test_model_systems) {
   unittest {

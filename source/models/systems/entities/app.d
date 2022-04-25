@@ -4,7 +4,7 @@ module models.systems.entities.app;
 import models.systems;
 
 class DSystemAppEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemAppEntity"));
+  mixin(EntityThis!("SystemAppEntity"));
 
   override void initialize() {
     super.initialize;
@@ -15,7 +15,7 @@ class DSystemAppEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemAppEntity; }
 }
-mixin(OOPEntityCalls!("SystemAppEntity"));
+mixin(EntityCalls!("SystemAppEntity"));
 
 version(test_model_systems) {
   unittest {

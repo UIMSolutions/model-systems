@@ -5,7 +5,7 @@ import models.systems;
 
 
 class DSystemTenantEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemTenantEntity"));
+  mixin(EntityThis!("SystemTenantEntity"));
 
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DSystemTenantEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemTenantEntity; }
 }
-mixin(OOPEntityCalls!("SystemTenantEntity"));
+mixin(EntityCalls!("SystemTenantEntity"));
 
 version(test_model_systems) {
   unittest {

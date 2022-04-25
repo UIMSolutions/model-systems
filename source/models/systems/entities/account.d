@@ -4,7 +4,7 @@ module models.systems.entities.account;
 import models.systems;
 
 class DSystemAccountEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemAccountEntity"));
+  mixin(EntityThis!("SystemAccountEntity"));
 
   mixin(OProperty!("string", "peer"));
   mixin(OProperty!("bool", "active"));
@@ -86,7 +86,7 @@ class DSystemAccountEntity : DOOPEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("SystemAccountEntity"));
+mixin(EntityCalls!("SystemAccountEntity"));
 
 version(test_model_systems) {
   unittest {

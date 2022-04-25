@@ -4,7 +4,7 @@ module models.systems.entities.user;
 import models.systems;
 
 class DSystemUserEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemUserEntity"));
+  mixin(EntityThis!("SystemUserEntity"));
 
   override DOOPEntity clone() { return SystemUserEntity; }
 
@@ -92,7 +92,7 @@ class DSystemUserEntity : DOOPEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("SystemUserEntity"));
+mixin(EntityCalls!("SystemUserEntity"));
 
 version(test_model_systems) {
   unittest {

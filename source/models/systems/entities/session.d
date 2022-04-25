@@ -4,7 +4,7 @@ module models.systems.entities.session;
 import models.systems;
 
 class DSystemSessionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemSessionEntity"));
+  mixin(EntityThis!("SystemSessionEntity"));
 
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ class DSystemSessionEntity : DOOPEntity {
     if ("entity_siteId" in reqParameters) this["siteId"] = reqParameters["entity_siteId"];
     return this; }
 }
-mixin(OOPEntityCalls!("SystemSessionEntity"));
+mixin(EntityCalls!("SystemSessionEntity"));
 
 version(test_model_systems) {
   unittest {

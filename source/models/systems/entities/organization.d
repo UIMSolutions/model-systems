@@ -4,7 +4,7 @@ module models.systems.entities.organization;
 import models.systems;
 
 class DSystemOrganizationEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemOrganizationEntity"));
+  mixin(EntityThis!("SystemOrganizationEntity"));
 
   override void initialize() {
     super.initialize;
@@ -15,7 +15,7 @@ class DSystemOrganizationEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemOrganizationEntity; }
 }
-mixin(OOPEntityCalls!("SystemOrganizationEntity"));
+mixin(EntityCalls!("SystemOrganizationEntity"));
 
 version(test_model_systems) {
   unittest {

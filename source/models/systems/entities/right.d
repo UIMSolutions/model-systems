@@ -4,7 +4,7 @@ module models.systems.entities.right;
 import models.systems;
 
 class DSystemRightEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemRightEntity"));
+  mixin(EntityThis!("SystemRightEntity"));
 
   override void initialize() {
     super.initialize;
@@ -15,7 +15,7 @@ class DSystemRightEntity : DOOPEntity {
 
   override DOOPEntity clone() { return SystemRightEntity; }
 }
-mixin(OOPEntityCalls!("SystemRightEntity"));
+mixin(EntityCalls!("SystemRightEntity"));
 
 version(test_model_systems) {
   unittest {

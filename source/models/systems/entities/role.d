@@ -6,7 +6,7 @@ import models.systems;
 
 
 class DSystemRoleEntity : DOOPEntity {
-mixin(OOPEntityThis!("SystemRoleEntity")); 
+mixin(EntityThis!("SystemRoleEntity")); 
 
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ mixin(OOPEntityThis!("SystemRoleEntity"));
   mixin(OProperty!("UUID[]", "rights"));
   mixin(OProperty!("UUID[]", "roles"));
 }
-mixin(OOPEntityCalls!("SystemRoleEntity"));
+mixin(EntityCalls!("SystemRoleEntity"));
 
 version(test_model_systems) {
   unittest {

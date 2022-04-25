@@ -5,7 +5,7 @@ import models.systems;
 
 
 class DSystemPasswordRuleEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemPasswordRuleEntity"));
+  mixin(EntityThis!("SystemPasswordRuleEntity"));
 
   override void initialize() {
     super.initialize;
@@ -46,7 +46,7 @@ class DSystemPasswordRuleEntity : DOOPEntity {
     return result;   
  }
 }
-mixin(OOPEntityCalls!("SystemPasswordRuleEntity"));
+mixin(EntityCalls!("SystemPasswordRuleEntity"));
 
 version(test_model_systems) {
   unittest {

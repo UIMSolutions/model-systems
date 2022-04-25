@@ -4,7 +4,7 @@ module models.systems.entities.login;
 import models.systems;
 
 class DSystemLoginEntity : DOOPEntity {
-  mixin(OOPEntityThis!("SystemLoginEntity"));
+  mixin(EntityThis!("SystemLoginEntity"));
 
   override void initialize() {
     super.initialize;
@@ -21,7 +21,7 @@ class DSystemLoginEntity : DOOPEntity {
     if ("entity_accountName" in reqParameters) this["accountName"] = reqParameters["entity_accountName"];
     return this; }
 }
-mixin(OOPEntityCalls!("SystemLoginEntity"));
+mixin(EntityCalls!("SystemLoginEntity"));
 
 version(test_model_systems) {
   unittest {
