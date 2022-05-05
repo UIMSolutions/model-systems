@@ -1,0 +1,5 @@
+model-systems-test-offline
+model-systems-test-default
+.dub/build/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-offline.o
+.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-default.o
+.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-2050ED25CE279A1D9D6E5401BCAADBF8/model-systems-test-default.o
