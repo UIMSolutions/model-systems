@@ -17,8 +17,8 @@ class DSystemRightEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemRightEntity"));
 
-version(test_model_systems) {
-  unittest {
+unittest {
+  version(test_model_systems) {
     assert(SystemRightEntity);
   
   auto entity = SystemRightEntity;
