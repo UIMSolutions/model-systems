@@ -17,8 +17,8 @@ class DSystemOrganizationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemOrganizationEntity"));
 
-version(test_model_systems) {
-  unittest {
+unittest {
+  version(test_model_systems) {
     assert(SystemOrganizationEntity);
   
   auto entity = SystemOrganizationEntity;
