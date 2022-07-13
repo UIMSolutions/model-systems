@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.policies.internalorganizationassignment;
+module models.systems.entities.systems.policies.internalorganizationassignment;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Policy organization assignments
 class DSystemPolicyInternalOrganizationAssignmentEntity : DOOPEntity {

@@ -1,7 +1,7 @@
-module models.administrations.entities.datamanagements.targetmap;
+module models.systems.entities.datamanagements.targetmap;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDataManagementTargetMapEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTargetMapEntity"));

@@ -1,7 +1,7 @@
-module models.administrations.entities.dmf.entityexecutionparameters;
+module models.systems.entities.dmf.entityexecutionparameters;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDMFEntityExecutionParametersEntity : DOOPEntity {
   mixin(EntityThis!("DMFEntityExecutionParametersEntity"));

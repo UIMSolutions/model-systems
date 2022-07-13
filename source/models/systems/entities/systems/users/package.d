@@ -1,11 +1,11 @@
-module models.administrations.entities.systems.users;
+module models.systems.entities.systems.users;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Main entity
-public import models.administrations.entities.systems.users.user;
+public import models.systems.entities.systems.users.user;
 
 // Subpackage
-public import models.administrations.entities.systems.users.groups;
+public import models.systems.entities.systems.users.groups;
 

@@ -1,7 +1,7 @@
-module models.administrations.entities.datamanagements.definitiongroups.detail;
+module models.systems.entities.datamanagements.definitiongroups.detail;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDataManagementDefinitionGroupDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementDefinitionGroupDetailEntity"));

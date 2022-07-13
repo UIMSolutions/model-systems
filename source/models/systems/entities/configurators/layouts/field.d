@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.layouts.field;
+module models.systems.entities.configurators.layouts.field;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorLayoutFieldEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutFieldEntity"));

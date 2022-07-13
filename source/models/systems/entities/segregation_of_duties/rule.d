@@ -1,4 +1,4 @@
-module models.administrations.entities.segregation_of_duties.rule;
+module models.systems.entities.segregation_of_duties.rule;
 
 @safe:
-import models.administrations;
+import models.systems;

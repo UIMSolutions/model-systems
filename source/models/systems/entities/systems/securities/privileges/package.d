@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.privileges;
+module models.systems.entities.systems.securities.privileges;
 
 // Main entity
-public import models.administrations.entities.systems.securities.privileges.privilege;
+public import models.systems.entities.systems.securities.privileges.privilege;
 
 // Additional entity
-public import models.administrations.entities.systems.securities.privileges.customization;
+public import models.systems.entities.systems.securities.privileges.customization;

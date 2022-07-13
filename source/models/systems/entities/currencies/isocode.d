@@ -1,7 +1,7 @@
-module models.administrations.entities.currencies.isocode;
+module models.systems.entities.currencies.isocode;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DCurrencyISOCodeEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyISOCodeEntity"));

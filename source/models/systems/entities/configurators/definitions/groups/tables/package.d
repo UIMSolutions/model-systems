@@ -1,9 +1,9 @@
-module models.administrations.entities.configurators.definition.groups.tables;
+module models.systems.entities.configurators.definition.groups.tables;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.configurators.definition.groups.tables.table;
+public import models.systems.entities.configurators.definition.groups.tables.table;
 
-public import models.administrations.entities.configurators.definition.groups.tables.relation;
+public import models.systems.entities.configurators.definition.groups.tables.relation;
 

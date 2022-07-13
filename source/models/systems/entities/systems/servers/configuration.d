@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.servers.configuration;
+module models.systems.entities.systems.servers.configuration;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemServerConfigurationEntity : DOOPEntity {

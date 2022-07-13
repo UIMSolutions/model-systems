@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.group;
+module models.systems.entities.systems.group;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Active Directory Security groups
 class DSystemGroupEntity : DOOPEntity {

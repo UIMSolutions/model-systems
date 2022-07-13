@@ -1,11 +1,11 @@
-module models.administrations.entities.systems.policies;
+module models.systems.entities.systems.policies;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.systems.policies.policy;
+public import models.systems.entities.systems.policies.policy;
 
-public import models.administrations.entities.systems.policies.internalorganizationassignment;
-public import models.administrations.entities.systems.policies.organization;
-public import models.administrations.entities.systems.policies.ruletype;
-public import models.administrations.entities.systems.policies.type;
+public import models.systems.entities.systems.policies.internalorganizationassignment;
+public import models.systems.entities.systems.policies.organization;
+public import models.systems.entities.systems.policies.ruletype;
+public import models.systems.entities.systems.policies.type;

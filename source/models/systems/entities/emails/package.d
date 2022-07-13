@@ -1,3 +1,3 @@
-module models.administrations.entities.emails;
+module models.systems.entities.emails;
 
-public import models.administrations.entities.emails.templatemessagesystem;
+public import models.systems.entities.emails.templatemessagesystem;

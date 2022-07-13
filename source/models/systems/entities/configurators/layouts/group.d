@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.layouts.group;
+module models.systems.entities.configurators.layouts.group;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorLayoutGroupEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutGroupEntity"));

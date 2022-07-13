@@ -1,7 +1,7 @@
-module models.administrations.entities.efdocemailaccountconfiguration;
+module models.systems.entities.efdocemailaccountconfiguration;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
   mixin(EntityThis!("EFDocEmailAccountConfigurationEntity"));

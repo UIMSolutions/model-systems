@@ -1,10 +1,10 @@
-module models.administrations.entities.batch.jobs;
+module models.systems.entities.batch.jobs;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Main
-public import models.administrations.entities.batch.jobs.job;
+public import models.systems.entities.batch.jobs.job;
 
 // Modules
-public import models.administrations.entities.batch.jobs.history;
+public import models.systems.entities.batch.jobs.history;

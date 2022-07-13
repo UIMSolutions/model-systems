@@ -1,7 +1,7 @@
-module models.administrations.entities.brazilian.parameter;
+module models.systems.entities.brazilian.parameter;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBrazilianParametersEntity : DOOPEntity {
   mixin(EntityThis!("BrazilianParametersEntity"));

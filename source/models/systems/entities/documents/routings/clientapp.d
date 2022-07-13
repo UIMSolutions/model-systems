@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.routings.clientapp;
+module models.systems.entities.documents.routings.clientapp;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentRoutingClientAppEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingClientAppEntity"));

@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.duties.customization;
+module models.systems.entities.systems.securities.duties.customization;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemSecurityDutyCustomizationEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityDutyCustomizationEntity"));

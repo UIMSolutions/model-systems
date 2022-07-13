@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.policies.policy;
+module models.systems.entities.systems.policies.policy;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemPolicyEntity : DOOPEntity {
   mixin(EntityThis!("SystemPolicyEntity"));

@@ -1,7 +1,7 @@
-module models.administrations.entities.bidategregorian;
+module models.systems.entities.bidategregorian;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBIDateGregorianEntity : DOOPEntity {
   mixin(EntityThis!("BIDateGregorianEntity"));

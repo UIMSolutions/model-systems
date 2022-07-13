@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.parameter;
+module models.systems.entities.systems.parameter;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemParameterEntity : DOOPEntity {
   mixin(EntityThis!("SystemParameterEntity"));

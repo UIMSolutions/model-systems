@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.duties.duty;
+module models.systems.entities.systems.securities.duties.duty;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemSecurityDutyEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityDutyEntity"));

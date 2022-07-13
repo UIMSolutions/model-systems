@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.users.groups.userlist;
+module models.systems.entities.systems.users.groups.userlist;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemUserGroupUserListEntity : DOOPEntity {
   mixin(EntityThis!("SystemUserGroupUserListEntity"));

@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition.groups.tables.relation;
+module models.systems.entities.configurators.definition.groups.tables.relation;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorDefinitionGroupTableRelationEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupTableRelationEntity"));

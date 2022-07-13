@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.globalconfiguration;
+module models.systems.entities.systems.globalconfiguration;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // System level configurations
 class DSystemGlobalConfigurationEntity : DOOPEntity {

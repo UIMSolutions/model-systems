@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.layouts.line;
+module models.systems.entities.configurators.layouts.line;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorLayoutLineEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutLineEntity"));

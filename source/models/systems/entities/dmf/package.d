@@ -1,9 +1,9 @@
-module models.administrations.entities.dmf;
+module models.systems.entities.dmf;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Subpackage
-public import models.administrations.entities.dmf.definitiongroups;
+public import models.systems.entities.dmf.definitiongroups;
 
-public import models.administrations.entities.dmf.entityexecutionparameters;
+public import models.systems.entities.dmf.entityexecutionparameters;

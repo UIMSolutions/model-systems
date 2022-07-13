@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.servers.clusterconfiguration;
+module models.systems.entities.systems.servers.clusterconfiguration;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemServerClusterConfigurationEntity : DOOPEntity {

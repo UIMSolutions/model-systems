@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition.groups.fields;
+module models.systems.entities.configurators.definition.groups.fields;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.configurators.definition.groups.fields.field;
-public import models.administrations.entities.configurators.definition.groups.fields.range_;
+public import models.systems.entities.configurators.definition.groups.fields.field;
+public import models.systems.entities.configurators.definition.groups.fields.range_;

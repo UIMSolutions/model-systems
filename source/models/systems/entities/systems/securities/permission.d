@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.permission;
+module models.systems.entities.systems.securities.permission;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemSecurityPermissionEntity : DOOPEntity {

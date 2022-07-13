@@ -1,10 +1,10 @@
-module models.administrations.entities.cases;
+module models.systems.entities.cases;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Submodules
-public import models.administrations.entities.cases.association;
-public import models.administrations.entities.cases.dependency;
-public import models.administrations.entities.cases.detail;
+public import models.systems.entities.cases.association;
+public import models.systems.entities.cases.dependency;
+public import models.systems.entities.cases.detail;
 

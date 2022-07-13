@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition;
+module models.systems.entities.configurators.definition;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Subpackage
-public import models.administrations.entities.configurators.definition.groups;
+public import models.systems.entities.configurators.definition.groups;

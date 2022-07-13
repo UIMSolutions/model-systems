@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.type;
+module models.systems.entities.documents.type;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentTypeEntity : DOOPEntity {
   mixin(EntityThis!("DocumentTypeEntity"));

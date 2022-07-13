@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.roles.subrole;
+module models.systems.entities.systems.securities.roles.subrole;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemSecuritySubRoleEntity : DOOPEntity {

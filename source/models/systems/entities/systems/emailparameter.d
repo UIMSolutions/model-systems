@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.emailparameter;
+module models.systems.entities.systems.emailparameter;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemEmailParameterEntity : DOOPEntity {

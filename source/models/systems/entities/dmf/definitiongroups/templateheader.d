@@ -1,7 +1,7 @@
-module models.administrations.entities.dmf.definitiongroups.templateheader;
+module models.systems.entities.dmf.definitiongroups.templateheader;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDMFDefinitionGroupTemplateHeaderEntity : DOOPEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateHeaderEntity"));

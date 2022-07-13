@@ -1,10 +1,10 @@
-module models.administrations.entities.datamanagements;
+module models.systems.entities.datamanagements;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.datamanagements.datamanagement;
-public import models.administrations.entities.datamanagements.definitiongroups;
-public import models.administrations.entities.datamanagements.executionjobs;
-public import models.administrations.entities.datamanagements.targetmap;
-public import models.administrations.entities.datamanagements.templates;
+public import models.systems.entities.datamanagements.datamanagement;
+public import models.systems.entities.datamanagements.definitiongroups;
+public import models.systems.entities.datamanagements.executionjobs;
+public import models.systems.entities.datamanagements.targetmap;
+public import models.systems.entities.datamanagements.templates;

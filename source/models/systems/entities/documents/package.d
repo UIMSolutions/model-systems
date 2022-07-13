@@ -1,11 +1,11 @@
-module models.administrations.entities.documents;
+module models.systems.entities.documents;
 
 // Subpackage
-public import models.administrations.entities.documents.routings;
+public import models.systems.entities.documents.routings;
 
 // Modules
-public import models.administrations.entities.documents.enabledtable;
-public import models.administrations.entities.documents.filetype;
-public import models.administrations.entities.documents.parameter;
-public import models.administrations.entities.documents.reference;
-public import models.administrations.entities.documents.type;
+public import models.systems.entities.documents.enabledtable;
+public import models.systems.entities.documents.filetype;
+public import models.systems.entities.documents.parameter;
+public import models.systems.entities.documents.reference;
+public import models.systems.entities.documents.type;

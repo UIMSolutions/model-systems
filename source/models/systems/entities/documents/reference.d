@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.reference;
+module models.systems.entities.documents.reference;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentReferenceEntity : DOOPEntity {
   mixin(EntityThis!("DocumentReferenceEntity"));

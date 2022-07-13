@@ -1,12 +1,12 @@
-module models.administrations.entities.batch;
+module models.systems.entities.batch;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Subpackages
-public import models.administrations.entities.batch.group;
+public import models.systems.entities.batch.group;
 
 // Modules
-public import models.administrations.entities.batch.jobs;
-public import models.administrations.entities.batch.server_schedule;
+public import models.systems.entities.batch.jobs;
+public import models.systems.entities.batch.server_schedule;
 

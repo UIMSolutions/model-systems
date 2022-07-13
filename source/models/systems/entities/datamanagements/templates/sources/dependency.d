@@ -1,7 +1,7 @@
-module models.administrations.entities.datamanagements.templates.sources.dependency;
+module models.systems.entities.datamanagements.templates.sources.dependency;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDataManagementTemplateSourceDependencyEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTemplateSourceDependencyEntity"));

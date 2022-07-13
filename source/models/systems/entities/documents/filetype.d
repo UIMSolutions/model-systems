@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.filetype;
+module models.systems.entities.documents.filetype;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentFileTypesEntity : DOOPEntity {
   mixin(EntityThis!("DocumentFileTypesEntity"));

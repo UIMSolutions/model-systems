@@ -1,7 +1,7 @@
-module models.administrations.entities.demodatapost;
+module models.systems.entities.demodatapost;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDemoDataPostEntity : DOOPEntity {
   mixin(EntityThis!("DemoDataPostEntity"));

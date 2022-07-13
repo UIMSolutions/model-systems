@@ -1,1 +1,1 @@
-module models.administrations.entities.emails.templatemessagesystem;
+module models.systems.entities.emails.templatemessagesystem;

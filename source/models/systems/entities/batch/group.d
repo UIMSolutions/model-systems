@@ -1,7 +1,7 @@
-module models.administrations.entities.batch.group;
+module models.systems.entities.batch.group;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBatchGroupEntity : DOOPEntity {
   mixin(EntityThis!("BatchGroupEntity"));

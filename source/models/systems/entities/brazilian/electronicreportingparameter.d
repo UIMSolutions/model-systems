@@ -1,7 +1,7 @@
-module models.administrations.entities.brazilian.electronicreportingparameter;
+module models.systems.entities.brazilian.electronicreportingparameter;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBrazilianElectronicReportingParametersEntity : DOOPEntity {
   mixin(EntityThis!("BrazilianElectronicReportingParametersEntity"));

@@ -1,7 +1,7 @@
-module models.administrations.entities.batch.server_schedule;
+module models.systems.entities.batch.server_schedule;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBatchServerScheduleEntity : DOOPEntity {
   mixin(EntityThis!("BatchServerScheduleEntity"));

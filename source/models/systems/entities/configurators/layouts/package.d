@@ -1,9 +1,9 @@
-module models.administrations.entities.configurators.layouts;
+module models.systems.entities.configurators.layouts;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Submodules
-public import models.administrations.entities.configurators.layouts.field;
-public import models.administrations.entities.configurators.layouts.group;
-public import models.administrations.entities.configurators.layouts.line;
+public import models.systems.entities.configurators.layouts.field;
+public import models.systems.entities.configurators.layouts.group;
+public import models.systems.entities.configurators.layouts.line;

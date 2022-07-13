@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.routings.printer;
+module models.systems.entities.documents.routings.printer;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentRoutingPrinterEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingPrinterEntity"));

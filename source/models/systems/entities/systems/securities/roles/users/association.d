@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.roles.users.association;
+module models.systems.entities.systems.securities.roles.users.association;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemSecurityUserRoleAssociationEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityUserRoleAssociationEntity"));

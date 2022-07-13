@@ -1,10 +1,10 @@
-module models.administrations.entities.systems.securities;
+module models.systems.entities.systems.securities;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.systems.securities.roles;
+public import models.systems.entities.systems.securities.roles;
 
-public import models.administrations.entities.systems.securities.duties;
-public import models.administrations.entities.systems.securities.permission;
+public import models.systems.entities.systems.securities.duties;
+public import models.systems.entities.systems.securities.permission;
 

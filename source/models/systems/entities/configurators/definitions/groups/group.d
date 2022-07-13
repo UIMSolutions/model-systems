@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition.groups.group;
+module models.systems.entities.configurators.definition.groups.group;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorDefinitionGroupEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupEntity"));

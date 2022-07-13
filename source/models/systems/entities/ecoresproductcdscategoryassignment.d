@@ -1,7 +1,7 @@
-module models.administrations.entities.ecoresproductcdscategoryassignment;
+module models.systems.entities.ecoresproductcdscategoryassignment;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DEcoResProductCDSCategoryAssignmentEntity : DOOPEntity {
   mixin(EntityThis!("EcoResProductCDSCategoryAssignmentEntity"));

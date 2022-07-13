@@ -1,7 +1,7 @@
-module models.administrations.entities.currencies.revaluationaccount;
+module models.systems.entities.currencies.revaluationaccount;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DCurrencyRevaluationAccountEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyRevaluationAccountEntity"));

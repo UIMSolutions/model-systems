@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.users.user;
+module models.systems.entities.systems.users.user;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemUserEntity : DOOPEntity {

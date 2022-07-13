@@ -1,7 +1,7 @@
-module models.administrations.entities.datamanagements.templates.detail;
+module models.systems.entities.datamanagements.templates.detail;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDataManagementTemplateDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTemplateDetailEntity"));

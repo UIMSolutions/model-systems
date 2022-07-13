@@ -1,10 +1,10 @@
-module models.administrations.entities.systems.users.groups;
+module models.systems.entities.systems.users.groups;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // Main entity
-public import models.administrations.entities.systems.users.groups.group;
+public import models.systems.entities.systems.users.groups.group;
 
 // Additional entity
-public import models.administrations.entities.systems.users.groups.userlist;
+public import models.systems.entities.systems.users.groups.userlist;

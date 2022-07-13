@@ -1,8 +1,8 @@
-module models.administrations.entities.currencies;
+module models.systems.entities.currencies;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.currencies.currency;
-public import models.administrations.entities.currencies.isocode;
-public import models.administrations.entities.currencies.revaluationaccount;
+public import models.systems.entities.currencies.currency;
+public import models.systems.entities.currencies.isocode;
+public import models.systems.entities.currencies.revaluationaccount;

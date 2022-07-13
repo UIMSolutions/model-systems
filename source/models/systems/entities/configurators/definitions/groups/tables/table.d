@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition.groups.tables.table;
+module models.systems.entities.configurators.definition.groups.tables.table;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DConfiguratorDefinitionGroupTableEntity : DOOPEntity {

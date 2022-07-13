@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.roles.users;
+module models.systems.entities.systems.securities.roles.users;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.systems.securities.roles.users.user;
-public import models.administrations.entities.systems.securities.roles.users.association;
+public import models.systems.entities.systems.securities.roles.users.user;
+public import models.systems.entities.systems.securities.roles.users.association;

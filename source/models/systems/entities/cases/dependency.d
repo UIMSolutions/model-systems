@@ -1,7 +1,7 @@
-module models.administrations.entities.cases.dependency;
+module models.systems.entities.cases.dependency;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DCaseDependencyEntity : DOOPEntity {
   mixin(EntityThis!("CaseDependencyEntity"));

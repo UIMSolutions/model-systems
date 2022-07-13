@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.policies.ruletype;
+module models.systems.entities.systems.policies.ruletype;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemPolicyRuleTypeEntity : DOOPEntity {

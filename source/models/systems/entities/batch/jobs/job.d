@@ -1,7 +1,7 @@
-module models.administrations.entities.batch.jobs.job;
+module models.systems.entities.batch.jobs.job;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBatchJobEntity : DOOPEntity {
   mixin(EntityThis!("BatchJobEntity"));

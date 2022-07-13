@@ -1,7 +1,7 @@
-module models.administrations.entities.dmf.definitiongroups.templateline;
+module models.systems.entities.dmf.definitiongroups.templateline;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateLineEntity"));

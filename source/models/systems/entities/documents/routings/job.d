@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.routings.job;
+module models.systems.entities.documents.routings.job;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentRoutingJobEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingJobEntity"));

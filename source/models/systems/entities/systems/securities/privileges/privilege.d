@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.privileges.privilege;
+module models.systems.entities.systems.securities.privileges.privilege;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DSystemSecurityPrivilegeEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityPrivilegeEntity"));

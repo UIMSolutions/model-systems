@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.servers;
+module models.systems.entities.systems.servers;
 
 @safe:
-import models.administrations;
+import models.systems;
 
-public import models.administrations.entities.systems.servers.configuration;
-public import models.administrations.entities.systems.servers.clusterconfiguration;
+public import models.systems.entities.systems.servers.configuration;
+public import models.systems.entities.systems.servers.clusterconfiguration;

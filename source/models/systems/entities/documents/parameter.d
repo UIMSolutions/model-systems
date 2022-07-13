@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.parameter;
+module models.systems.entities.documents.parameter;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentParameterEntity : DOOPEntity {
   mixin(EntityThis!("DocumentParameterEntity"));

@@ -1,4 +1,4 @@
-module models.administrations.entities.numberSequence.numberSequence;
+module models.systems.entities.numberSequence.numberSequence;
 
 @safe:
-import models.administrations;
+import models.systems;

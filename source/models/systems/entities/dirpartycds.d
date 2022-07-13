@@ -1,7 +1,7 @@
-module models.administrations.entities.dirpartycds;
+module models.systems.entities.dirpartycds;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDirPartyCDSEntity : DOOPEntity {
   mixin(EntityThis!("DirPartyCDSEntity"));

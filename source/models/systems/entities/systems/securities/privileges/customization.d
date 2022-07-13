@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.securities.privileges.customization;
+module models.systems.entities.systems.securities.privileges.customization;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemSecurityPrivilegeCustomizationEntity : DOOPEntity {

@@ -1,7 +1,7 @@
-module models.administrations.entities.cityholiday;
+module models.systems.entities.cityholiday;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DCityHolidayEntity : DOOPEntity {
   mixin(EntityThis!("CityHolidayEntity"));

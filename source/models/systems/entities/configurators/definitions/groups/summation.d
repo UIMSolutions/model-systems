@@ -1,7 +1,7 @@
-module models.administrations.entities.configurators.definition.groups.summation;
+module models.systems.entities.configurators.definition.groups.summation;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DConfiguratorDefinitionGroupSummationEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupSummationEntity"));

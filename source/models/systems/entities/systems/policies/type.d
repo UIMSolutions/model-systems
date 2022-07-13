@@ -1,7 +1,7 @@
-module models.administrations.entities.systems.policies.type;
+module models.systems.entities.systems.policies.type;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemPolicyTypeEntity : DOOPEntity {

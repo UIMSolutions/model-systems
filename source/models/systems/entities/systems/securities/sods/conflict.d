@@ -1,7 +1,7 @@
-module models.administrations.entities.securities.sods.conflict;
+module models.systems.entities.securities.sods.conflict;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSystemSegregationOfDutiesConflictEntity : DOOPEntity {

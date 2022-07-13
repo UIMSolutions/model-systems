@@ -1,7 +1,7 @@
-module models.administrations.entities.securities.sods.rule;
+module models.systems.entities.securities.sods.rule;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // 
 class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {

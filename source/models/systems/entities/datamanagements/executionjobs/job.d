@@ -1,7 +1,7 @@
-module models.administrations.entities.datamanagements.executionjobs.job;
+module models.systems.entities.datamanagements.executionjobs.job;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDataManagementExecutionJobEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementExecutionJobEntity"));

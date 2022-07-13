@@ -1,7 +1,7 @@
-module models.administrations.entities.batch.jobs.history;
+module models.systems.entities.batch.jobs.history;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DBatchJobHistoryEntity : DOOPEntity {
   mixin(EntityThis!("BatchJobHistoryEntity"));

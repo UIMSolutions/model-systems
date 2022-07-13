@@ -1,8 +1,8 @@
-module models.administrations.entities.configurators;
+module models.systems.entities.configurators;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 // SUbpackages
-public import models.administrations.entities.configurators.definitions;
-public import models.administrations.entities.configurators.layouts;
+public import models.systems.entities.configurators.definitions;
+public import models.systems.entities.configurators.layouts;

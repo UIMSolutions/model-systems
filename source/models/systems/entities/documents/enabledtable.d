@@ -1,7 +1,7 @@
-module models.administrations.entities.documents.enabledtable;
+module models.systems.entities.documents.enabledtable;
 
 @safe:
-import models.administrations;
+import models.systems;
 
 class DDocumentEnabledTableEntity : DOOPEntity {
   mixin(EntityThis!("DocumentEnabledTableEntity"));
