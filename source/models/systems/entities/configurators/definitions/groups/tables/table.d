@@ -1,4 +1,4 @@
-module models.systems.entities.configurators.definition.groups.tables.table;
+module models.systems.entities.configurators.definitions.groups.tables.table;
 
 @safe:
 import models.systems;

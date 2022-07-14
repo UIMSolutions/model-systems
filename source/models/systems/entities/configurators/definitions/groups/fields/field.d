@@ -1,4 +1,4 @@
-module models.systems.entities.configurators.definition.groups.fields.field;
+module models.systems.entities.configurators.definitions.groups.fields.field;
 
 @safe:
 import models.systems;

@@ -1,4 +1,4 @@
-module models.systems.entities.configurators.definition.groups.tables.relation;
+module models.systems.entities.configurators.definitions.groups.tables.relation;
 
 @safe:
 import models.systems;

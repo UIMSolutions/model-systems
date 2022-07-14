@@ -1,4 +1,4 @@
-module models.systems.entities.configurators.definition.groups.summation;
+module models.systems.entities.configurators.definitions.groups.summation;
 
 @safe:
 import models.systems;

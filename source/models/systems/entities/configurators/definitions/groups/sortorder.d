@@ -1,4 +1,4 @@
-module models.systems.entities.configurators.definition.groups.sortorder;
+module models.systems.entities.configurators.definitions.groups.sortorder;
 
 @safe:
 import models.systems;
