@@ -1,4 +1,4 @@
-module models.systems.entities.number_sequences.dataType;
+module models.systems.entities.numbersequences.dataType;
 
 @safe:
 import models.systems;

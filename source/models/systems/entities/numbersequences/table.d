@@ -1,4 +1,4 @@
-module models.systems.entities.number_sequences.table;
+module models.systems.entities.numbersequences.table;
 
 @safe:
 import models.systems;
