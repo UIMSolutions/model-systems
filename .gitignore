@@ -3,3 +3,8 @@ model-systems-test-default
 .dub/build/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-offline.o
 .dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-default.o
 .dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-2050ED25CE279A1D9D6E5401BCAADBF8/model-systems-test-default.o
+dub.selections.json
+.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-E1EACB0F5D9ECC806E19A9F192693F5E/model-systems-test-default.o
+.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-102BFD2E85157C7C6151EF2A39840A9D_dub_test_root.d
+.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-90308A7E58F28AD82F4BD7679352C05F_dub_test_root.d
+.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-ACA39450FFCD034E1E8A51144A3B0720_dub_test_root.d
