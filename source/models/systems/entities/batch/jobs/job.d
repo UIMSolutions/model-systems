@@ -10,7 +10,7 @@ class DBatchJobEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "canceledBy":UserIdAttribute, // 
         "jobDescription": StringAttribute, // 
         "companyAccounts": StringAttribute, // 

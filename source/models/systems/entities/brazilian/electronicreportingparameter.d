@@ -10,7 +10,7 @@ class DBrazilianElectronicReportingParametersEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "reportType": StringAttribute, //
         "erModelMappingTable": StringAttribute, //
         "modelMappingName": StringAttribute, //

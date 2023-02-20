@@ -10,10 +10,10 @@ class DCaseDetailBaseEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         ContactIdAttribute, // 
       ])
-      .addValues([
+      .addAttributes([
         "answerId": UUIDAttribute, // 
         "billingProjectId": UUIDAttribute, // 
         "caseCategoryHierarchyDetail": StringAttribute, // 

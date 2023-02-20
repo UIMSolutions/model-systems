@@ -10,7 +10,7 @@ class DCaseDependencyEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "case": StringAttribute, // 
         "parentCase": StringAttribute, // 
         "caseId": UUIDAttribute, // 

@@ -10,7 +10,7 @@ class DCaseAssociationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "associationCompany": StringAttribute, // 
         "associationId": UUIDAttribute, // 
         "caseId": UUIDAttribute, // 

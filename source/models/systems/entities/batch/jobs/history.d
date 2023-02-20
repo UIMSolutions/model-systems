@@ -10,7 +10,7 @@ class DBatchJobHistoryEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "alertsProcessed": StringAttribute, // 
         "jobDescription": StringAttribute, // 
         "endDateTime": DatetimeAttribute, //  

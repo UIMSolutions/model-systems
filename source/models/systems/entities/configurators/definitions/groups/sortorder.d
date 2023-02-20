@@ -10,7 +10,7 @@ class DConfiguratorDefinitionGroupSortOrderEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, // 
         "fieldName": StringAttribute, // 
         "sortingNumber": StringAttribute, // 

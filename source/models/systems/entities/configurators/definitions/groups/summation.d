@@ -10,7 +10,7 @@ class DConfiguratorDefinitionGroupSummationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "average": StringAttribute, // 
         "averageSelected": StringAttribute, // 
         "definitionGroupId": UUIDAttribute, // 

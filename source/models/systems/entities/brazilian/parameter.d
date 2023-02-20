@@ -10,7 +10,7 @@ class DBrazilianParametersEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "approximateTaxesPrintOnlyFinalUser": StringAttribute, //
         "approximateTaxesSource": StringAttribute, //
         "approximateTaxesText": StringAttribute, //
