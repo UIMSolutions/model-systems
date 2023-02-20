@@ -30,8 +30,7 @@ class DDemoDataPostEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DemoDataPostEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DemoDataPostEntity);
 
     auto entity = DemoDataPostEntity;

@@ -20,8 +20,7 @@ class DBIDateGregorianEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BIDateGregorianEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(BIDateGregorianEntity);
   
   auto entity = BIDateGregorianEntity;

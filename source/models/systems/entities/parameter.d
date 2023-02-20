@@ -27,8 +27,7 @@ class DSystemParameterEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemParameterEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemParameterEntity);
   
     auto entity = SystemParameterEntity;

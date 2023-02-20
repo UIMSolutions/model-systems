@@ -22,8 +22,7 @@ class DBatchServerScheduleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BatchServerScheduleEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(BatchServerScheduleEntity);
 
     auto entity = BatchServerScheduleEntity;

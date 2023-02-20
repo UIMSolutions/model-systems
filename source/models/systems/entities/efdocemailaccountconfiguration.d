@@ -23,8 +23,7 @@ class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("EFDocEmailAccountConfigurationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(EFDocEmailAccountConfigurationEntity);
 
     auto entity = EFDocEmailAccountConfigurationEntity;

@@ -52,8 +52,7 @@ class DDirPartyCDSEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DirPartyCDSEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DirPartyCDSEntity);
 
     auto entity = DirPartyCDSEntity;

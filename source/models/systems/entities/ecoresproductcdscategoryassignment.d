@@ -20,8 +20,7 @@ class DEcoResProductCDSCategoryAssignmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("EcoResProductCDSCategoryAssignmentEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(EcoResProductCDSCategoryAssignmentEntity);
 
     auto entity = EcoResProductCDSCategoryAssignmentEntity;

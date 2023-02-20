@@ -24,8 +24,7 @@ class DCityHolidayEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CityHolidayEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(CityHolidayEntity);
   
     auto entity = CityHolidayEntity;
