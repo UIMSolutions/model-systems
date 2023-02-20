@@ -7,7 +7,7 @@ import models.systems;
 class DSystemSegregationOfDutiesConflictEntity : DOOPEntity {
   mixin(EntityThis!("SystemSegregationOfDutiesConflictEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

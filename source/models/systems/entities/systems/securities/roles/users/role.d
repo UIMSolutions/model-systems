@@ -7,7 +7,7 @@ import models.systems;
 class DSystemSecurityUserRoleEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityUserRoleEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
