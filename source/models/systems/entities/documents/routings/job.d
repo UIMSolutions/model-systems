@@ -30,8 +30,7 @@ class DDocumentRoutingJobEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentRoutingJobEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentRoutingJobEntity);
 
     auto entity = DocumentRoutingJobEntity;

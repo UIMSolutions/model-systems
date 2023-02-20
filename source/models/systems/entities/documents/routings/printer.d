@@ -28,8 +28,7 @@ class DDocumentRoutingPrinterEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentRoutingPrinterEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentRoutingPrinterEntity);
 
     auto entity = DocumentRoutingPrinterEntity;

@@ -20,8 +20,7 @@ class DDocumentRoutingClientAppEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentRoutingClientAppEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentRoutingClientAppEntity);
 
     auto entity = DocumentRoutingClientAppEntity;

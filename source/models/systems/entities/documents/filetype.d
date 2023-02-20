@@ -22,8 +22,7 @@ class DDocumentFileTypesEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentFileTypesEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentFileTypesEntity);
 
     auto entity = DocumentFileTypesEntity;

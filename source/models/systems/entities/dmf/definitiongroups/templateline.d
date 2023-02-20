@@ -29,8 +29,7 @@ class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateLineEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DMFDefinitionGroupTemplateLineEntity);
 
     auto entity = DMFDefinitionGroupTemplateLineEntity;

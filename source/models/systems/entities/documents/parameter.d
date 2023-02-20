@@ -25,8 +25,7 @@ class DDocumentParameterEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentParameterEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentParameterEntity);
 
     auto entity = DocumentParameterEntity;

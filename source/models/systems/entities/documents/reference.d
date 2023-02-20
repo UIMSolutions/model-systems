@@ -35,8 +35,7 @@ class DDocumentReferenceEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentReferenceEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentReferenceEntity);
 
     auto entity = DocumentReferenceEntity;

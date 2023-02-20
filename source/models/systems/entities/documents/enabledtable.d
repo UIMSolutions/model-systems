@@ -22,8 +22,7 @@ class DDocumentEnabledTableEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DocumentEnabledTableEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DocumentEnabledTableEntity);
 
     auto entity = DocumentEnabledTableEntity;
