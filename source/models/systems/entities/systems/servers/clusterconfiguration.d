@@ -11,7 +11,7 @@ class DSystemServerClusterConfigurationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "backingTable_SysClusterConfigRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("administration_systems.serverclusterconfigurations");

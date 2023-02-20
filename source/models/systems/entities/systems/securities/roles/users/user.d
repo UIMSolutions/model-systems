@@ -11,7 +11,7 @@ class DADMSecurityUserRole : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "AssignmentMode": StringAttribute, // 
         "AssignmentStatus": StringAttribute, // 
         "SecurityRole": StringAttribute, // 

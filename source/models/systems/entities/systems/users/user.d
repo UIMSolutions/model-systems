@@ -11,7 +11,7 @@ class DSystemUserEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "defaultCountryRegion": StringAttribute, // 
         "documentHandlingActive": StringAttribute, // 
         "showAttachmentStatus": StringAttribute, // 

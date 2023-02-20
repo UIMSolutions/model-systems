@@ -11,7 +11,7 @@ class DSystemServerConfigurationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "aosInstanceName": StringAttribute, // 
         "azureDeploymentId": UUIDAttribute, // 
         "referenceToAClusterName": StringAttribute, // 

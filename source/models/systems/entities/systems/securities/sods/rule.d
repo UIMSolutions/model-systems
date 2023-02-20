@@ -11,7 +11,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "validFrom":  StringAttribute, // 
         "validTo":  StringAttribute, // 
         "name":  StringAttribute, // 

@@ -10,7 +10,7 @@ class DSystemUserGroupEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "groupId": UUIDAttribute, //
         "name": StringAttribute, //
         "backingTable_UserGroupInfoRelationshipId": UUIDAttribute, //      
