@@ -29,8 +29,7 @@ class DSystemServerConfigurationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemServerConfigurationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemServerConfigurationEntity);
   
   auto entity = SystemServerConfigurationEntity;

@@ -22,8 +22,7 @@ class DSystemUserGroupUserListEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemUserGroupUserListEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemUserGroupUserListEntity);
   
     auto entity = SystemUserGroupUserListEntity;
