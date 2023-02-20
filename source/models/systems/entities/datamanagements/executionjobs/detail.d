@@ -6,7 +6,7 @@ import models.systems;
 class DDataManagementExecutionJobDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementExecutionJobDetailEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

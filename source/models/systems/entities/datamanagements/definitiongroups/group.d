@@ -6,7 +6,7 @@ import models.systems;
 class DDataManagementDefinitionGroupEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementDefinitionGroupEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
