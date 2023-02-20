@@ -7,12 +7,12 @@ class DDataManagementExecutionJobEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementExecutionJobEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
-        "jobId": StringAttribute
+        "jobId": UUIDAttribute
       ])
       .registerPath("administration_datamanagements.executionjobs");
   }

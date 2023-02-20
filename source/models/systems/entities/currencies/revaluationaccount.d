@@ -7,23 +7,23 @@ class DCurrencyRevaluationAccountEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyRevaluationAccountEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "posting": StringAttribute, //
         "currencyCode": StringAttribute, //
         "legalEntity": StringAttribute, //
-        "mainAccountId": StringAttribute, //
-        "legalEntityId": StringAttribute, //
+        "mainAccountId": UUIDAttribute, //
+        "legalEntityId": UUIDAttribute, //
         "mainAccountIdDisplayValue": StringAttribute, //
         "ledgerName": StringAttribute, //
         "exchAdjTaxableType": StringAttribute, //
-        "realizedTaxMainAccountId": StringAttribute, //
+        "realizedTaxMainAccountId": UUIDAttribute, //
         "realizedTaxMainAccountIdDisplayValue": StringAttribute, //
-        "relationship_MainAccountCombinationRelationshipId": StringAttribute, //
-        "relationship_CurrencyRelationshipId": StringAttribute, //
-        "backingTable_CurrencyLedgerGainLossAccountRelationshipId": StringAttribute, //
+        "relationship_MainAccountCombinationRelationshipId": UUIDAttribute, //
+        "relationship_CurrencyRelationshipId": UUIDAttribute, //
+        "backingTable_CurrencyLedgerGainLossAccountRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_currencies.revaluationaccounts");
   }

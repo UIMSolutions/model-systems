@@ -7,14 +7,14 @@ class DCurrencyISOCodeEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyISOCodeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "isoCurrencyCode": StringAttribute, //
         "isoCurrencyCodeNum": StringAttribute, //
         "isoCurrencyName": StringAttribute, //
-        "backingTable_ISOCurrencyCodeRelationshipId": StringAttribute, //
+        "backingTable_ISOCurrencyCodeRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_currencies.isocodes");
   }

@@ -7,11 +7,11 @@ class DDataManagementDefinitionGroupDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementDefinitionGroupDetailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "definitionGroupId": StringAttribute, //
+        "definitionGroupId": UUIDAttribute, //
         "entityName": StringAttribute, //
         "excelSheetName": StringAttribute, //
         "runBusinessLogic": StringAttribute, //
@@ -40,7 +40,7 @@ class DDataManagementDefinitionGroupDetailEntity : DOOPEntity {
         "skipStaging": StringAttribute, //
         "packageFilePath": StringAttribute, //
         "defaultRefreshType": StringAttribute, //
-        "relationship_DefinitionGroupDetailsRelationshipId": StringAttribute, //
+        "relationship_DefinitionGroupDetailsRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_datamanagements.definitiongroupdetails");
   }

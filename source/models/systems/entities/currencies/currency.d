@@ -7,7 +7,7 @@ class DCurrencyEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -25,7 +25,7 @@ class DCurrencyEntity : DOOPEntity {
         "roundingRulePurchaseOrders": StringAttribute, //
         "roundingRuleSalesOrders": StringAttribute, //
         "symbol": StringAttribute, //
-        "backingTable_CurrencyRelationshipId": StringAttribute, //
+        "backingTable_CurrencyRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_currencies");
   }

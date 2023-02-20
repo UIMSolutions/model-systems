@@ -7,7 +7,7 @@ class DDataManagementDefinitionGroupEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementDefinitionGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,13 +7,13 @@ class DDataManagementExecutionJobDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementExecutionJobDetailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "definitionGroupId": StringAttribute, //
+        "definitionGroupId": UUIDAttribute, //
         "entityName": StringAttribute, //
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "stagingEndDateTime": StringAttribute, //
         "excelSheetName": StringAttribute, //
         "executeTargetStep": StringAttribute, //
@@ -41,7 +41,7 @@ class DDataManagementExecutionJobDetailEntity : DOOPEntity {
         "sequenceInLevel": StringAttribute, //
         "failExecutionUnitOnError": StringAttribute, //
         "failLevelOnError": StringAttribute, //
-        "relationship_ExecutionJobDetailsRelationshipId": StringAttribute, //
+        "relationship_ExecutionJobDetailsRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_datamanagements.executionjobs");
   }

@@ -7,22 +7,22 @@ class DConfiguratorLayoutLineEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutLineEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "batchId": StringAttribute, //
+        "batchId": UUIDAttribute, //
         "batchRecordType": StringAttribute, //
         "recordSize": StringAttribute, //
         "recordName": StringAttribute, //
         "hide": StringAttribute, //
-        "layoutGroupId": StringAttribute, //
+        "layoutGroupId": UUIDAttribute, //
         "lineNumber": StringAttribute, //
         "recordType": StringAttribute, //
         "segment": StringAttribute, //
-        "relationship_ConfiguratorLayoutGroupEntityRelationshipId": StringAttribute, //
-        "backingTable_ConfLayoutLines_BRRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_ConfiguratorLayoutGroupEntityRelationshipId": UUIDAttribute, //
+        "backingTable_ConfLayoutLines_BRRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
       .registerPath("administration_configurators.layouts.lines");
   }
