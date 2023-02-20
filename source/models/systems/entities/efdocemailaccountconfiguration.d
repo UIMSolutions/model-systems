@@ -6,7 +6,7 @@ import models.systems;
 class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
   mixin(EntityThis!("EFDocEmailAccountConfigurationEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

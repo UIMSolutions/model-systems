@@ -6,7 +6,7 @@ import models.systems;
 class DBIDateGregorianEntity : DOOPEntity {
   mixin(EntityThis!("BIDateGregorianEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
