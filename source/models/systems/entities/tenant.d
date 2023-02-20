@@ -7,7 +7,7 @@ import models.systems;
 class DSystemTenantEntity : DOOPEntity {
   mixin(EntityThis!("SystemTenantEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

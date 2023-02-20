@@ -6,7 +6,7 @@ import models.systems;
 class DSystemSiteEntity : DOOPEntity {
   mixin(EntityThis!("SystemSiteEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

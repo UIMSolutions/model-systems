@@ -8,7 +8,7 @@ import models.systems;
 class DSystemRequestEntity : DOOPEntity {
   mixin(EntityThis!("SystemRequestEntity"));  
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
