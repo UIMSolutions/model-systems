@@ -29,8 +29,7 @@ class DSystemSecurityPermissionEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSecurityPermissionEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSecurityPermissionEntity);
   
     auto entity = SystemSecurityPermissionEntity;

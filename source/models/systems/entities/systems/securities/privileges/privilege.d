@@ -21,8 +21,7 @@ class DSystemSecurityPrivilegeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSecurityPrivilegeEntity);
   
     auto entity = SystemSecurityPrivilegeEntity;

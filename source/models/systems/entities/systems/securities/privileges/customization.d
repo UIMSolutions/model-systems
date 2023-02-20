@@ -20,8 +20,7 @@ class DSystemSecurityPrivilegeCustomizationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeCustomizationEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSecurityPrivilegeCustomizationEntity);
   
     auto entity = SystemSecurityPrivilegeCustomizationEntity;

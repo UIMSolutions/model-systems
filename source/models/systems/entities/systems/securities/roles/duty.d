@@ -22,8 +22,7 @@ class DSystemSecurityRoleDutyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSecurityRoleDutyEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSecurityRoleDutyEntity);
   
     auto entity = SystemSecurityRoleDutyEntity;
