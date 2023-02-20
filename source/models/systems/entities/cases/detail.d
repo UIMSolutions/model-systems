@@ -7,7 +7,7 @@ class DCaseDetailBaseEntity : DOOPEntity {
   mixin(EntityThis!("CaseDetailBaseEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

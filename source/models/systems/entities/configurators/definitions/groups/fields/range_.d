@@ -7,7 +7,7 @@ class DConfiguratorDefinitionGroupFieldRangeEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupFieldRangeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,11 +7,11 @@ class DConfiguratorLayoutFieldEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutFieldEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "batchId": StringAttribute, //
+        "batchId": UUIDAttribute, //
         "comments": StringAttribute, //
         "arrayIndex": StringAttribute, //
         "fill": StringAttribute, //
@@ -19,7 +19,7 @@ class DConfiguratorLayoutFieldEntity : DOOPEntity {
         "fieldNumber": StringAttribute, //
         "format": StringAttribute, //
         "justification": StringAttribute, //
-        "layoutGroupId": StringAttribute, //
+        "layoutGroupId": UUIDAttribute, //
         "lineNumber": StringAttribute, //
         "methodName": StringAttribute, //
         "typeOfMethod": StringAttribute, //
@@ -31,9 +31,9 @@ class DConfiguratorLayoutFieldEntity : DOOPEntity {
         "truncateField": StringAttribute, //
         "type": StringAttribute, //
         "content": StringAttribute, //
-        "relationship_ConfiguratorLayoutGroupEntityRelationshipId": StringAttribute, //
-        "backingTable_ConfLayoutFields_BRRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_ConfiguratorLayoutGroupEntityRelationshipId": UUIDAttribute, //
+        "backingTable_ConfLayoutFields_BRRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
 
       ])
       .registerPath("administration_configurators.layouts.fields");

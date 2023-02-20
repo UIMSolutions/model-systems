@@ -7,14 +7,14 @@ class DConfiguratorLayoutGroupEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "layoutGroupId": StringAttribute, //
+        "layoutGroupId": UUIDAttribute, //
         "name": StringAttribute, //
         "layoutType": StringAttribute, //
-        "definitionGroupId": StringAttribute, //
+        "definitionGroupId": UUIDAttribute, //
         "fileStructure": StringAttribute, //
         "delimitedBy": StringAttribute, //
         "delimiterCharacter": StringAttribute, //
@@ -22,9 +22,9 @@ class DConfiguratorLayoutGroupEntity : DOOPEntity {
         "export": StringAttribute, //
         "import": StringAttribute, //
         "registerType": StringAttribute, //
-        "relationship_ConfiguratorDefinitionGroupEntityRelationshipId": StringAttribute, //
-        "backingTable_ConfLayoutGroups_BRRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //  
+        "relationship_ConfiguratorDefinitionGroupEntityRelationshipId": UUIDAttribute, //
+        "backingTable_ConfLayoutGroups_BRRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //  
     ])
       .registerPath("administration_configurators.layouts.groups");
   }

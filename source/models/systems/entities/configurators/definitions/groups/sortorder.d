@@ -7,7 +7,7 @@ class DConfiguratorDefinitionGroupSortOrderEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupSortOrderEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

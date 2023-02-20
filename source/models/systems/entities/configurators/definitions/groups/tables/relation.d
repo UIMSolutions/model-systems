@@ -7,7 +7,7 @@ class DConfiguratorDefinitionGroupTableRelationEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupTableRelationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
