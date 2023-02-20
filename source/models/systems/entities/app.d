@@ -7,7 +7,7 @@ class DSystemAppEntity : DOOPEntity {
   mixin(EntityThis!("SystemAppEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_apps");

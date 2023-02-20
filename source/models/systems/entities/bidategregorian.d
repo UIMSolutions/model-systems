@@ -7,13 +7,13 @@ class DBIDateGregorianEntity : DOOPEntity {
   mixin(EntityThis!("BIDateGregorianEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "gregorianDate": StringAttribute, //
-        "gregorianDateId": StringAttribute, //
-        "backingTable_BIDateGregorianRelationshipId": StringAttribute, //
+        "gregorianDateId": UUIDAttribute, //
+        "backingTable_BIDateGregorianRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_bidategregorian");
   }

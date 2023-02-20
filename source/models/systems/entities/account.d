@@ -38,7 +38,7 @@ class DSystemAccountEntity : DOOPEntity {
     return cast(O)this; }
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_accounts");

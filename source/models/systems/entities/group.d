@@ -9,7 +9,7 @@ class DSystemGroupEntity : DOOPEntity {
   mixin(EntityThis!("SystemGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_groups");

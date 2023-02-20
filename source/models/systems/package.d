@@ -11,7 +11,6 @@ public import vibe.d;
 // uim packages
 public import uim.core;
 public import uim.oop;
-public import uim.entities;
 
 // model-system packages
 public import models.systems.attributes;

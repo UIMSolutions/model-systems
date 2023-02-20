@@ -7,17 +7,17 @@ class DCityHolidayEntity : DOOPEntity {
   mixin(EntityThis!("CityHolidayEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "city": StringAttribute, //
-        "countryRegionId": StringAttribute, //
-        "stateId": StringAttribute, //
+        "countryRegionId": UUIDAttribute, //
+        "stateId": UUIDAttribute, //
         "cityName": StringAttribute, //
         "holidayDate": StringAttribute, //
         "description": StringAttribute, //
-        "backingTable_CityHolidayRelationshipId": StringAttribute, //
+        "backingTable_CityHolidayRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_cityholidays");
   }

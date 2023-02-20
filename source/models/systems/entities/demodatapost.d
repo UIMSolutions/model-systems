@@ -7,7 +7,7 @@ class DDemoDataPostEntity : DOOPEntity {
   mixin(EntityThis!("DemoDataPostEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -21,9 +21,9 @@ class DDemoDataPostEntity : DOOPEntity {
         "endDate": StringAttribute, //
         "processOnImport": StringAttribute, //
         "demoDataJobStatus": StringAttribute, //
-        "dataProjectId": StringAttribute, //
-        "backingTable_DemoDataPostRunDocumentRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "dataProjectId": UUIDAttribute, //
+        "backingTable_DemoDataPostRunDocumentRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_demodataposts");
   }

@@ -7,7 +7,7 @@ class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
   mixin(EntityThis!("EFDocEmailAccountConfigurationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,8 +15,8 @@ class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
         "port": StringAttribute, //
         "useSsl": StringAttribute, //
         "username": StringAttribute, //
-        "backingTable_EFDocumentEmailAccount_BRRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_EFDocumentEmailAccount_BRRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_efdocemailaccount.configurations");
   }

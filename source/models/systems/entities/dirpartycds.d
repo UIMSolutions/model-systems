@@ -7,7 +7,7 @@ class DDirPartyCDSEntity : DOOPEntity {
   mixin(EntityThis!("DirPartyCDSEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,7 +15,7 @@ class DDirPartyCDSEntity : DOOPEntity {
         "partyType": StringAttribute, //
         "nameAlias": StringAttribute, //
         "knownAs": StringAttribute, //
-        "languageId": StringAttribute, //
+        "languageId": UUIDAttribute, //
         "addressBooks": StringAttribute, //
         "organizationName": StringAttribute, //
         "organizationABCCode": StringAttribute, //
@@ -44,8 +44,8 @@ class DDirPartyCDSEntity : DOOPEntity {
         "personBirthDay": StringAttribute, //
         "personBirthMonth": StringAttribute, //
         "personBirthYear": StringAttribute, //
-        "dirPersonNameRecId": StringAttribute, //
-        "backingTable_DirPartyBaseEntityRelationshipId": StringAttribute, //
+        "dirPersonNameRecId": UUIDAttribute, //
+        "backingTable_DirPartyBaseEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_dirpartycds");
   }
