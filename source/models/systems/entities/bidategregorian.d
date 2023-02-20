@@ -10,7 +10,7 @@ class DBIDateGregorianEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "gregorianDate": StringAttribute, //
         "gregorianDateId": UUIDAttribute, //
         "backingTable_BIDateGregorianRelationshipId": UUIDAttribute, //

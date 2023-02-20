@@ -10,7 +10,7 @@ class DBatchServerScheduleEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "endTime": StringAttribute, // 
         "maximumBatchThreads": StringAttribute, // 
         "aosInstanceName": StringAttribute, // 

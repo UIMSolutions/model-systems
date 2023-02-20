@@ -10,7 +10,7 @@ class DCityHolidayEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "city": StringAttribute, //
         "countryRegionId": UUIDAttribute, //
         "stateId": UUIDAttribute, //

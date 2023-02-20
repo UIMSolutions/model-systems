@@ -10,7 +10,7 @@ class DSystemParameterEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "maximumRowsOfSSRSReports": StringAttribute, // 
         "systemLanguage": StringAttribute, // 
         "increment": StringAttribute, // 

@@ -10,7 +10,7 @@ class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "serverAddress": StringAttribute, //
         "port": StringAttribute, //
         "useSsl": StringAttribute, //

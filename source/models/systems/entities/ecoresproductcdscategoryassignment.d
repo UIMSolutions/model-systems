@@ -10,7 +10,7 @@ class DEcoResProductCDSCategoryAssignmentEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "productNumber": StringAttribute, //
         "productCategoryName": StringAttribute, //
         "productCategoryHierarchyName": StringAttribute, //

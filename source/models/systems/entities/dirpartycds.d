@@ -10,7 +10,7 @@ class DDirPartyCDSEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "partyNumber": StringAttribute, //
         "partyType": StringAttribute, //
         "nameAlias": StringAttribute, //

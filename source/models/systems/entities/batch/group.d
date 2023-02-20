@@ -10,7 +10,7 @@ class DBatchGroupEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([  
+      .addAttributes([  
         "serverId": UUIDAttribute, // 
         "description": StringAttribute, // 
         "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 

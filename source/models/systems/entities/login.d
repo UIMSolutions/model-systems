@@ -10,7 +10,7 @@ class DSystemLoginEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "accountName": StringAttribute
       ]) 
       .registerPath("system_logins");
