@@ -6,7 +6,7 @@ import models.systems;
 class DSystemSecurityDutyCustomizationEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityDutyCustomizationEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

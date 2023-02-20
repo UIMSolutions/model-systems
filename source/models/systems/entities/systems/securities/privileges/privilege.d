@@ -6,7 +6,7 @@ import models.systems;
 class DSystemSecurityPrivilegeEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityPrivilegeEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
