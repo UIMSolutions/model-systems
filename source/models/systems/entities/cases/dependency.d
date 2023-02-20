@@ -22,8 +22,7 @@ class DCaseDependencyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CaseDependencyEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(CaseDependencyEntity);
 
     auto entity = CaseDependencyEntity;

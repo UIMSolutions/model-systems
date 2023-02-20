@@ -24,8 +24,7 @@ class DConfiguratorDefinitionGroupFieldRangeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupFieldRangeEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorDefinitionGroupFieldRangeEntity);
 
     auto entity = ConfiguratorDefinitionGroupFieldRangeEntity;

@@ -64,8 +64,7 @@ class DBrazilianParametersEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BrazilianParametersEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(BrazilianParametersEntity);
 
     auto entity = BrazilianParametersEntity;

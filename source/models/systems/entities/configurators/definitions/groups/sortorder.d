@@ -25,8 +25,7 @@ class DConfiguratorDefinitionGroupSortOrderEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupSortOrderEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorDefinitionGroupSortOrderEntity);
 
     auto entity = ConfiguratorDefinitionGroupSortOrderEntity;

@@ -34,8 +34,7 @@ class DBatchJobEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BatchJobEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(BatchJobEntity);
 
     auto entity = BatchJobEntity;

@@ -29,8 +29,7 @@ class DConfiguratorDefinitionGroupSummationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupSummationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorDefinitionGroupSummationEntity);
 
     auto entity = ConfiguratorDefinitionGroupSummationEntity;

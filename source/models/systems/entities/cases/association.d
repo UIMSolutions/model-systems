@@ -26,8 +26,7 @@ class DCaseAssociationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CaseAssociationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(CaseAssociationEntity);
 
     auto entity = CaseAssociationEntity;
