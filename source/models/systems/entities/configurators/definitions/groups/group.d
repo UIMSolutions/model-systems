@@ -6,7 +6,7 @@ import models.systems;
 class DConfiguratorDefinitionGroupEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

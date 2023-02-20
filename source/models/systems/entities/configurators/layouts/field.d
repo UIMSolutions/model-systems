@@ -6,7 +6,7 @@ import models.systems;
 class DConfiguratorLayoutFieldEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorLayoutFieldEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

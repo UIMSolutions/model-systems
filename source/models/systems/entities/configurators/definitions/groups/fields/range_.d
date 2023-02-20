@@ -6,7 +6,7 @@ import models.systems;
 class DConfiguratorDefinitionGroupFieldRangeEntity : DOOPEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupFieldRangeEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
