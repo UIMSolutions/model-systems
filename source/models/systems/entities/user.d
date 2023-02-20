@@ -36,7 +36,7 @@ class DSystemUserEntity : DOOPEntity {
   mixin(OProperty!("UUID[]", "siteIds"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_users");

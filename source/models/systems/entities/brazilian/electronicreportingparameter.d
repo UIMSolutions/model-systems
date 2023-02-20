@@ -7,7 +7,7 @@ class DBrazilianElectronicReportingParametersEntity : DOOPEntity {
   mixin(EntityThis!("BrazilianElectronicReportingParametersEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -16,8 +16,8 @@ class DBrazilianElectronicReportingParametersEntity : DOOPEntity {
         "modelMappingName": StringAttribute, //
         "solutionName": StringAttribute, //
         "vendorUrl": StringAttribute, //
-        "backingTable_BrazilianElectronicReportingParametersRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_BrazilianElectronicReportingParametersRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_brazilian.electronicreportingparameters");
   }

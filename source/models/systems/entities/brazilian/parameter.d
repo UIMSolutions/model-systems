@@ -7,7 +7,7 @@ class DBrazilianParametersEntity : DOOPEntity {
   mixin(EntityThis!("BrazilianParametersEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -22,13 +22,13 @@ class DBrazilianParametersEntity : DOOPEntity {
         "taxComplementaryFiscalDocumentSalesTaxCodeForCOFINS": StringAttribute, //
         "taxComplementaryFiscalDocumentSalesTaxCodeForPIS": StringAttribute, //
         "complementaryFiscalDocumentSourceText": StringAttribute, //
-        "financialDimensionForCostCenterRecId": StringAttribute, //
+        "financialDimensionForCostCenterRecId": UUIDAttribute, //
         "enableCFPSCode": StringAttribute, //
         "ledgerIntegrationStatus": StringAttribute, //
         "fciText": StringAttribute, //
         "taxFiscalDocumentItem": StringAttribute, //
         "fiscalDocumentTextDocumentType": StringAttribute, //
-        "financialDimensionForFiscalEstablishmentRecId": StringAttribute, //
+        "financialDimensionForFiscalEstablishmentRecId": UUIDAttribute, //
         "freeTextInvoiceItem": StringAttribute, //
         "freeTextInvoiceServiceItem": StringAttribute, //
         "importDeclarationText": StringAttribute, //
@@ -40,8 +40,8 @@ class DBrazilianParametersEntity : DOOPEntity {
         "projectFiscalDocumentUnit": StringAttribute, //
         "purchasePrimaryMethodOfPaymentDescription": StringAttribute, //
         "purchasePrimaryMethodOfPayment": StringAttribute, //
-        "requestForQuotationOperationTypeRecId": StringAttribute, //
-        "purchaseRequisitionOperationTypeRecId": StringAttribute, //
+        "requestForQuotationOperationTypeRecId": UUIDAttribute, //
+        "purchaseRequisitionOperationTypeRecId": UUIDAttribute, //
         "salesPrimaryMethodOfPaymentDescription": StringAttribute, //
         "salesPrimaryMethodOfPayment": StringAttribute, //
         "suframaTextForIssueFiscalDocument": StringAttribute, //
@@ -55,9 +55,9 @@ class DBrazilianParametersEntity : DOOPEntity {
         "requestForQuotationOperationType": StringAttribute, //
         "financialDimensionForCostCenter": StringAttribute, //
         "financialDimensionForFiscalEstablishment": StringAttribute, //
-        "retailApproximateTaxValueTextId": StringAttribute, //
-        "backingTable_BrazilParametersRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "retailApproximateTaxValueTextId": UUIDAttribute, //
+        "backingTable_BrazilParametersRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_brazilian.electronicreportingparameters");
   }

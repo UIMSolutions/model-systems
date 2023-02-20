@@ -9,7 +9,7 @@ class DSystemPasswordEntity : DOOPEntity {
   mixin(EntityThis!("SystemPasswordEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_passwords");

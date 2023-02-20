@@ -7,7 +7,7 @@ class DBatchServerScheduleEntity : DOOPEntity {
   mixin(EntityThis!("BatchServerScheduleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

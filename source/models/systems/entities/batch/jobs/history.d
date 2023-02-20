@@ -7,7 +7,7 @@ class DBatchJobHistoryEntity : DOOPEntity {
   mixin(EntityThis!("BatchJobHistoryEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

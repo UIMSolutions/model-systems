@@ -7,7 +7,7 @@ class DCaseAssociationEntity : DOOPEntity {
   mixin(EntityThis!("CaseAssociationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
