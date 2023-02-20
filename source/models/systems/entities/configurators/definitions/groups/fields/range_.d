@@ -10,7 +10,7 @@ class DConfiguratorDefinitionGroupFieldRangeEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, // 
         "fieldName": StringAttribute, // 
         "range": StringAttribute, // 

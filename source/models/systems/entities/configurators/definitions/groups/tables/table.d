@@ -11,7 +11,7 @@ class DConfiguratorDefinitionGroupTableEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, // 
         "dataSourceNumber": StringAttribute, // 
         "relatedTableName": StringAttribute, // 

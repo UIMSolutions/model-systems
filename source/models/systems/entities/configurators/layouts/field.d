@@ -10,7 +10,7 @@ class DConfiguratorLayoutFieldEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "batchId": UUIDAttribute, //
         "comments": StringAttribute, //
         "arrayIndex": StringAttribute, //

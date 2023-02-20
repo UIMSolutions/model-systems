@@ -10,7 +10,7 @@ class DCurrencyRevaluationAccountEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "posting": StringAttribute, //
         "currencyCode": StringAttribute, //
         "legalEntity": StringAttribute, //

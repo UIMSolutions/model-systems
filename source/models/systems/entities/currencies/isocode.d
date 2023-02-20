@@ -10,7 +10,7 @@ class DCurrencyISOCodeEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "isoCurrencyCode": StringAttribute, //
         "isoCurrencyCodeNum": StringAttribute, //
         "isoCurrencyName": StringAttribute, //

@@ -10,7 +10,7 @@ class DConfiguratorLayoutGroupEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "layoutGroupId": UUIDAttribute, //
         "name": StringAttribute, //
         "layoutType": StringAttribute, //

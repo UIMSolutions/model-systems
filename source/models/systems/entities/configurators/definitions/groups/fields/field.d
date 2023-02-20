@@ -10,7 +10,7 @@ class DConfiguratorDefinitionGroupFieldEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, // 
         "dataSourceNumber": StringAttribute, // 
         "fieldGroup": StringAttribute, // 

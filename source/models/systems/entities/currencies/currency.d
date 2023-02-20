@@ -10,7 +10,7 @@ class DCurrencyEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "currencyCode": StringAttribute, //
         "generalRoundingRule": StringAttribute, //
         "currencyGender": StringAttribute, //

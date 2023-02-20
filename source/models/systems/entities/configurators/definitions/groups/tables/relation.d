@@ -10,7 +10,7 @@ class DConfiguratorDefinitionGroupTableRelationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, // 
         "fixedValue": StringAttribute, // 
         "relatedField": StringAttribute, // 
