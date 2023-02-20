@@ -7,14 +7,14 @@ class DDataManagementTemplateSourceEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTemplateSourceEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "templateId": StringAttribute, //
+        "templateId": UUIDAttribute, //
         "sourceEntity": StringAttribute, //
         "description": StringAttribute, //
-        "relationship_DefinitionGroupTemplateSourceRelationshipId": StringAttribute, //
+        "relationship_DefinitionGroupTemplateSourceRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_datamanagements.templates.sources");
   }

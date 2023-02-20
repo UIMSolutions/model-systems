@@ -7,15 +7,15 @@ class DDocumentEnabledTableEntity : DOOPEntity {
   mixin(EntityThis!("DocumentEnabledTableEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "allowEditAlways": StringAttribute, //
-        "tableEnabledId": StringAttribute, //
+        "tableEnabledId": UUIDAttribute, //
         "tableName": StringAttribute, //
-        "backingTable_DocuTableEnabledRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_DocuTableEnabledRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.enabledtables");
   }

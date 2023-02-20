@@ -7,7 +7,7 @@ class DDocumentParameterEntity : DOOPEntity {
   mixin(EntityThis!("DocumentParameterEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -17,8 +17,8 @@ class DDocumentParameterEntity : DOOPEntity {
         "submitToWorkflow": StringAttribute, //
         "webAppsServerURL": StringAttribute, //
         "defaultSharePointServer": StringAttribute, //
-        "backingTable_DocuParametersRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_DocuParametersRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.parameters");
   }

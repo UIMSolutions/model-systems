@@ -7,11 +7,11 @@ class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateLineEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "templateId": StringAttribute, //
+        "templateId": UUIDAttribute, //
         "entity": StringAttribute, //
         "sequence": StringAttribute, //
         "validationStatus": StringAttribute, //
@@ -22,7 +22,7 @@ class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
         "sysModule": StringAttribute, //
         "tags": StringAttribute, //
         "entityCategory": StringAttribute, //
-        "relationship_DMFDefinitionGroupTemplateHeaderRelationshipId": StringAttribute, //
+        "relationship_DMFDefinitionGroupTemplateHeaderRelationshipId": UUIDAttribute, //
     ])
       .registerPath("administration_dmf.definitiongroups.templatelines");
   }

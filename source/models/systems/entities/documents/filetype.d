@@ -7,15 +7,15 @@ class DDocumentFileTypesEntity : DOOPEntity {
   mixin(EntityThis!("DocumentFileTypesEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "fileType": StringAttribute, //
         "fileTypeDescription": StringAttribute, //
         "nativelyWebRenderable": StringAttribute, //
-        "backingTable_DocuFileTypesRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_DocuFileTypesRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.filetypes");
   }

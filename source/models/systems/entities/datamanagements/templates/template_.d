@@ -7,11 +7,11 @@ class DDataManagementTemplateEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTemplateEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "templateId": StringAttribute, //
+        "templateId": UUIDAttribute, //
         "description": StringAttribute, //
       ])
       .registerPath("administration_datamanagements.templates");

@@ -7,15 +7,15 @@ class DDMFDefinitionGroupTemplateHeaderEntity : DOOPEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateHeaderEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "templateId": StringAttribute, //
+        "templateId": UUIDAttribute, //
         "description": StringAttribute, //
         "status": StringAttribute, //
         "validatedDateTime": StringAttribute, //
-        "relationship_DMFDefinitionGroupTemplateLineEntityRelationshipId": StringAttribute, //
+        "relationship_DMFDefinitionGroupTemplateLineEntityRelationshipId": UUIDAttribute, //
     ])
       .registerPath("administration_dmf.definitiongroups.templateheaders");
   }
