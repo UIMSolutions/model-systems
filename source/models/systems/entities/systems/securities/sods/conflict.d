@@ -38,8 +38,7 @@ class DSystemSegregationOfDutiesConflictEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSegregationOfDutiesConflictEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSegregationOfDutiesConflictEntity);
   
     auto entity = SystemSegregationOfDutiesConflictEntity;

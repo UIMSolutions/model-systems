@@ -23,8 +23,7 @@ class DSystemSecurityUserRoleAssociationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemSecurityUserRoleAssociationEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSecurityUserRoleAssociationEntity);
   
     auto entity = SystemSecurityUserRoleAssociationEntity;

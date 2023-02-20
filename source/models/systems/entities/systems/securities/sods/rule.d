@@ -30,8 +30,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SecuritySegregationOfDutiesRuleEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SecuritySegregationOfDutiesRuleEntity);
   
     auto entity = SecuritySegregationOfDutiesRuleEntity;
