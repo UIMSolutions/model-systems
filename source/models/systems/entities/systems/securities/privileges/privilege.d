@@ -7,7 +7,7 @@ class DSystemSecurityPrivilegeEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityPrivilegeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

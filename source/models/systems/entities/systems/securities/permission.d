@@ -8,11 +8,11 @@ class DSystemSecurityPermissionEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityPermissionEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "securityRoleId": StringAttribute, //
+        "securityRoleId": UUIDAttribute, //
         "securityRoleName": StringAttribute, //
         "userLicenseType": StringAttribute, //
         "resourceName": StringAttribute, //

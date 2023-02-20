@@ -8,7 +8,7 @@ class DSystemSecurityRoleDutyEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityRoleDutyEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

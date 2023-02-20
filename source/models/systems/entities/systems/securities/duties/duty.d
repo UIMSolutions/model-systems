@@ -7,7 +7,7 @@ class DSystemSecurityDutyEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityDutyEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -18,7 +18,7 @@ class DSystemSecurityDutyEntity : DOOPEntity {
         "securityPrivilegeName": StringAttribute, // 
         "securityPrivilege": StringAttribute, // 
         "securityPrivilegeId": UUIDAttribute, // 
-        "backingTable_SecurityRoleDutyPrivilegeExplodedGraphRelationshipId": StringAttribute, //
+        "backingTable_SecurityRoleDutyPrivilegeExplodedGraphRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_system.securities.duties");
   }

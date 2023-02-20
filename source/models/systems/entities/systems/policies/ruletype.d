@@ -8,7 +8,7 @@ class DSystemPolicyRuleTypeEntity : DOOPEntity {
   mixin(EntityThis!("SystemPolicyRuleTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

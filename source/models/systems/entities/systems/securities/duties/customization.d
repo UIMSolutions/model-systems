@@ -7,7 +7,7 @@ class DSystemSecurityDutyCustomizationEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityDutyCustomizationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
