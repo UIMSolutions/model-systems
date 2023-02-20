@@ -11,7 +11,7 @@ class DSystemSecurityRoleEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "securityRoleId": UUIDAttribute, // 
         "securityRoleName": StringAttribute, // 
         "accessToSensitiveData": StringAttribute, // 

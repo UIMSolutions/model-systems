@@ -11,7 +11,7 @@ class DSystemSecurityRoleCustomizationsEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "xmlObject": StringAttribute, // 
         "isDisabled": BooleanAttribute, // 
       ])

@@ -10,7 +10,7 @@ class DSystemSecurityDutyEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "securityRoleId": UUIDAttribute, // 
         "securityRoleName": StringAttribute, // 
         "securityDutyId": UUIDAttribute, // 
