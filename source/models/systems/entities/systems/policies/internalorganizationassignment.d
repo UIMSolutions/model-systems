@@ -7,7 +7,7 @@ import models.systems;
 class DSystemPolicyInternalOrganizationAssignmentEntity : DOOPEntity {
   mixin(EntityThis!("SystemPolicyInternalOrganizationAssignmentEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

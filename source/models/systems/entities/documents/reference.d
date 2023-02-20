@@ -6,7 +6,7 @@ import models.systems;
 class DDocumentReferenceEntity : DOOPEntity {
   mixin(EntityThis!("DocumentReferenceEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

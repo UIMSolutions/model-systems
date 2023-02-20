@@ -6,7 +6,7 @@ import models.systems;
 class DDocumentRoutingClientAppEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingClientAppEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
