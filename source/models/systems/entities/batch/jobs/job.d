@@ -6,7 +6,7 @@ import models.systems;
 class DBatchJobEntity : DOOPEntity {
   mixin(EntityThis!("BatchJobEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

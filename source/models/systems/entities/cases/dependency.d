@@ -6,7 +6,7 @@ import models.systems;
 class DCaseDependencyEntity : DOOPEntity {
   mixin(EntityThis!("CaseDependencyEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
