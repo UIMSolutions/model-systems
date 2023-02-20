@@ -7,28 +7,28 @@ class DDocumentReferenceEntity : DOOPEntity {
   mixin(EntityThis!("DocumentReferenceEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "documentId": StringAttribute, //
-        "actualCompanyId": StringAttribute, //
-        "typeId": StringAttribute, //
-        "refCompanyId": StringAttribute, //
-        "refRecId": StringAttribute, //
-        "refTableId": StringAttribute, //
+        "documentId": UUIDAttribute, //
+        "actualCompanyId": UUIDAttribute, //
+        "typeId": UUIDAttribute, //
+        "refCompanyId": UUIDAttribute, //
+        "refRecId": UUIDAttribute, //
+        "refTableId": UUIDAttribute, //
         "name": StringAttribute, //
         "restriction": StringAttribute, //
         "notes": StringAttribute, //
-        "valueRecId": StringAttribute, //
+        "valueRecId": UUIDAttribute, //
         "docuValueType": StringAttribute, //
         "fileName": StringAttribute, //
         "fileType": StringAttribute, //
         "fileContents": StringAttribute, //
         "defaultAttachment": StringAttribute, //
-        "relationship_DocuTypeRelationRelationshipId": StringAttribute, //
-        "backingTable_DocuRefRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_DocuTypeRelationRelationshipId": UUIDAttribute, //
+        "backingTable_DocuRefRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.references");
   }

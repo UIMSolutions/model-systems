@@ -8,7 +8,7 @@ class DSystemEmailParameterEntity : DOOPEntity {
   mixin(EntityThis!("SystemEmailParameterEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

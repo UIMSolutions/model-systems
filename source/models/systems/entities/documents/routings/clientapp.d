@@ -7,13 +7,13 @@ class DDocumentRoutingClientAppEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingClientAppEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "clientApplicationId": StringAttribute, //
+        "clientApplicationId": UUIDAttribute, //
         "clientApplicationDescription": StringAttribute, //
-        "backingTable_DocumentRoutingClientAppRelationshipId": StringAttribute, //
+        "backingTable_DocumentRoutingClientAppRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.routings.clientapps");
   }

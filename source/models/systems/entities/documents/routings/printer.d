@@ -7,7 +7,7 @@ class DDocumentRoutingPrinterEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingPrinterEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -17,11 +17,11 @@ class DDocumentRoutingPrinterEntity : DOOPEntity {
         "printerDescription": StringAttribute, //
         "printerPath": StringAttribute, //
         "printerIsActive": StringAttribute, //
-        "printerId": StringAttribute, //
-        "printerCompanyId": StringAttribute, //
-        "clientApplicationId": StringAttribute, //
+        "printerId": UUIDAttribute, //
+        "printerCompanyId": UUIDAttribute, //
+        "clientApplicationId": UUIDAttribute, //
         "clientApplicationDescription": StringAttribute, //
-        "backingTable_DocumentRoutingPrinterAppAssociationRelationshipId": StringAttribute, //
+        "backingTable_DocumentRoutingPrinterAppAssociationRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.routings.printers");
   }

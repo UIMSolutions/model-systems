@@ -7,12 +7,12 @@ class DDocumentRoutingJobEntity : DOOPEntity {
   mixin(EntityThis!("DocumentRoutingJobEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "jobId": StringAttribute, //
-        "activityId": StringAttribute, //
+        "jobId": UUIDAttribute, //
+        "activityId": UUIDAttribute, //
         "printerName": StringAttribute, //
         "printerPath": StringAttribute, //
         "reportName": StringAttribute, //
@@ -21,9 +21,9 @@ class DDocumentRoutingJobEntity : DOOPEntity {
         "totalNumberOfPages": StringAttribute, //
         "startProcessTime": StringAttribute, //
         "endProcessTime": StringAttribute, //
-        "companyId": StringAttribute, //
-        "printerId": StringAttribute, //
-        "backingTable_DocumentRoutingJobRelationshipId": StringAttribute, //
+        "companyId": UUIDAttribute, //
+        "printerId": UUIDAttribute, //
+        "backingTable_DocumentRoutingJobRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.routings.jobs");
   }

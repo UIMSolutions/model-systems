@@ -8,11 +8,11 @@ class DSystemGroupEntity : DOOPEntity {
   mixin(EntityThis!("SystemGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "userId": StringAttribute, //
+        "userId": UUIDAttribute, //
         "name": StringAttribute, //
         "objectID": StringAttribute, //
         "enabled": StringAttribute, //

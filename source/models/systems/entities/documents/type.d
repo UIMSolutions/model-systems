@@ -7,7 +7,7 @@ class DDocumentTypeEntity : DOOPEntity {
   mixin(EntityThis!("DocumentTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -22,10 +22,10 @@ class DDocumentTypeEntity : DOOPEntity {
         "id": StringAttribute, //
         "host": StringAttribute, //
         "site": StringAttribute, //
-        "actionClassId": StringAttribute, //
+        "actionClassId": UUIDAttribute, //
         "folderPath": StringAttribute, //
-        "backingTable_DocuTypeRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_DocuTypeRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("administration_documents.types");
   }
