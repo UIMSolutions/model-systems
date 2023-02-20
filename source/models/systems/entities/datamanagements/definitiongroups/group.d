@@ -10,7 +10,7 @@ class DDataManagementDefinitionGroupEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "name": StringAttribute, // 
         "description": StringAttribute, // 
         "operationType": StringAttribute, // 

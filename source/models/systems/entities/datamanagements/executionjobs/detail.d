@@ -10,7 +10,7 @@ class DDataManagementExecutionJobDetailEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, //
         "entityName": StringAttribute, //
         "jobId": UUIDAttribute, //

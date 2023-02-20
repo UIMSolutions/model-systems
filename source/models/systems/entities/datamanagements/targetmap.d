@@ -10,7 +10,7 @@ class DDataManagementTargetMapEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "entity": StringAttribute, //
         "isAutoManual": StringAttribute, //
         "targetDataSourceName": StringAttribute, //

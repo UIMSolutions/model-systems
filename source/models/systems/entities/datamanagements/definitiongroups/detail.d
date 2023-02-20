@@ -10,7 +10,7 @@ class DDataManagementDefinitionGroupDetailEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "definitionGroupId": UUIDAttribute, //
         "entityName": StringAttribute, //
         "excelSheetName": StringAttribute, //

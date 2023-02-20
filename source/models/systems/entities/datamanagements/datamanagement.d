@@ -10,7 +10,7 @@ class DDataManagementEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "entityName": StringAttribute, //
         "stagingTableName": StringAttribute, //
         "targetName": StringAttribute, //

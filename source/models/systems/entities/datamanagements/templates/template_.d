@@ -10,7 +10,7 @@ class DDataManagementTemplateEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "templateId": UUIDAttribute, //
         "description": StringAttribute, //
       ])
