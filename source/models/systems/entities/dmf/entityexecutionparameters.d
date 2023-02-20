@@ -6,7 +6,7 @@ import models.systems;
 class DDMFEntityExecutionParametersEntity : DOOPEntity {
   mixin(EntityThis!("DMFEntityExecutionParametersEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

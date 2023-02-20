@@ -6,7 +6,7 @@ import models.systems;
 class DDocumentFileTypesEntity : DOOPEntity {
   mixin(EntityThis!("DocumentFileTypesEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -6,7 +6,7 @@ import models.systems;
 class DDocumentEnabledTableEntity : DOOPEntity {
   mixin(EntityThis!("DocumentEnabledTableEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

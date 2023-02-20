@@ -6,7 +6,7 @@ import models.systems;
 class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateLineEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

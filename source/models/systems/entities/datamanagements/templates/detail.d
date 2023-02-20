@@ -6,7 +6,7 @@ import models.systems;
 class DDataManagementTemplateDetailEntity : DOOPEntity {
   mixin(EntityThis!("DataManagementTemplateDetailEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
