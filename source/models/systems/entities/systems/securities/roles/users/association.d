@@ -7,7 +7,7 @@ class DSystemSecurityUserRoleAssociationEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityUserRoleAssociationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

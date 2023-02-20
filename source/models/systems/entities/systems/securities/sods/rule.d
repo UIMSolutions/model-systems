@@ -8,7 +8,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {
   mixin(EntityThis!("SecuritySegregationOfDutiesRuleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

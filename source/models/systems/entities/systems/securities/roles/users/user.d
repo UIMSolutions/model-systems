@@ -8,7 +8,7 @@ class DADMSecurityUserRole : DOOPEntity {
   mixin(EntityThis!("ADMSecurityUserRole"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

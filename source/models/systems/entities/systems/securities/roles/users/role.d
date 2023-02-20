@@ -8,7 +8,7 @@ class DSystemSecurityUserRoleEntity : DOOPEntity {
   mixin(EntityThis!("SystemSecurityUserRoleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -19,7 +19,7 @@ class DSystemSecurityUserRoleEntity : DOOPEntity {
         "assignmentMode":		StringAttribute, //
         "assignmentStatus":		StringAttribute, //
         "securityRole":		StringAttribute, //
-        "userId": StringAttribute, //
+        "userId": UUIDAttribute, //
       ])
       .registerPath("administration_system.securities.userroles");
   }
