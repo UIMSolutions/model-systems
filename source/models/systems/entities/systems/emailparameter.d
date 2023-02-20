@@ -27,8 +27,7 @@ class DSystemEmailParameterEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemEmailParameterEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(APLFeedback);
     assert(SystemEmailParameterEntity);
   

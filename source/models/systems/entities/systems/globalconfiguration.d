@@ -21,8 +21,7 @@ class DSystemGlobalConfigurationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemGlobalConfigurationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemGlobalConfigurationEntity);
   
     auto entity = SystemGlobalConfigurationEntity;

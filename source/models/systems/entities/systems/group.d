@@ -26,8 +26,7 @@ class DSystemGroupEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemGroupEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemGroupEntity);
   
     auto entity = SystemGroupEntity;

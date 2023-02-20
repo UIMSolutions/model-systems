@@ -26,8 +26,7 @@ class DSystemPolicyInternalOrganizationAssignmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemPolicyInternalOrganizationAssignmentEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(APLFeedback);
     assert(SystemPolicyInternalOrganizationAssignmentEntity);
   

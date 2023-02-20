@@ -25,8 +25,7 @@ class DSystemPolicyRuleTypeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemPolicyRuleTypeEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(APLFeedback);
     assert(SystemPolicyRuleTypeEntity);
   

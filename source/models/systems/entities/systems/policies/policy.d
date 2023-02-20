@@ -22,8 +22,7 @@ class DSystemPolicyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SystemPolicyEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(SystemPolicyEntity);
   
     auto entity = SystemPolicyEntity;
