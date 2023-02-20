@@ -32,8 +32,7 @@ class DCurrencyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CurrencyEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(CurrencyEntity);
 
     auto entity = CurrencyEntity;

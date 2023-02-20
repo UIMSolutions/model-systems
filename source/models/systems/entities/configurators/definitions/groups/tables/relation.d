@@ -27,8 +27,7 @@ class DConfiguratorDefinitionGroupTableRelationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupTableRelationEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorDefinitionGroupTableRelationEntity);
 
     auto entity = ConfiguratorDefinitionGroupTableRelationEntity;

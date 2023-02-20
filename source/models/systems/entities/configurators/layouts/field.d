@@ -41,8 +41,7 @@ class DConfiguratorLayoutFieldEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorLayoutFieldEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorLayoutFieldEntity);
 
     auto entity = ConfiguratorLayoutFieldEntity;

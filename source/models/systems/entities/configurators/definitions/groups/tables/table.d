@@ -26,8 +26,7 @@ class DConfiguratorDefinitionGroupTableEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupTableEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(ConfiguratorDefinitionGroupTableEntity);
 
     auto entity = ConfiguratorDefinitionGroupTableEntity;

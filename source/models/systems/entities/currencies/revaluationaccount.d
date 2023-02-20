@@ -30,8 +30,7 @@ class DCurrencyRevaluationAccountEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CurrencyRevaluationAccountEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(CurrencyRevaluationAccountEntity);
 
     auto entity = CurrencyRevaluationAccountEntity;
