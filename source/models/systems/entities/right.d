@@ -7,7 +7,7 @@ class DSystemRightEntity : DOOPEntity {
   mixin(EntityThis!("SystemRightEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_rights");

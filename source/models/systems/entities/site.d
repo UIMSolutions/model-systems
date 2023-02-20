@@ -7,7 +7,7 @@ class DSystemSiteEntity : DOOPEntity {
   mixin(EntityThis!("SystemSiteEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_sites");

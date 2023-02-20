@@ -7,7 +7,7 @@ class DSystemLoginEntity : DOOPEntity {
   mixin(EntityThis!("SystemLoginEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

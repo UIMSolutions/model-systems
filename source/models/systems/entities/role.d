@@ -9,7 +9,7 @@ class DSystemRoleEntity : DOOPEntity {
 mixin(EntityThis!("SystemRoleEntity")); 
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_roles");

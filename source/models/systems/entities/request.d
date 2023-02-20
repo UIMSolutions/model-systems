@@ -9,7 +9,7 @@ class DSystemRequestEntity : DOOPEntity {
   mixin(EntityThis!("SystemRequestEntity"));  
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_requests");

@@ -7,7 +7,7 @@ class DSystemOrganizationEntity : DOOPEntity {
   mixin(EntityThis!("SystemOrganizationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_organizations");

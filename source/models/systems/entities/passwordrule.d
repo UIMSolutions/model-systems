@@ -8,7 +8,7 @@ class DSystemPasswordRuleEntity : DOOPEntity {
   mixin(EntityThis!("SystemPasswordRuleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_passwordrules");

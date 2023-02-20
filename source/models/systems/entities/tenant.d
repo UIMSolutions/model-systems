@@ -8,7 +8,7 @@ class DSystemTenantEntity : DOOPEntity {
   mixin(EntityThis!("SystemTenantEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("system_tenants");

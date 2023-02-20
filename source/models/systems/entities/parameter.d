@@ -7,7 +7,7 @@ class DSystemParameterEntity : DOOPEntity {
   mixin(EntityThis!("SystemParameterEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
