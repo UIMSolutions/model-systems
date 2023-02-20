@@ -19,8 +19,7 @@ class DDataManagementExecutionJobEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DataManagementExecutionJobEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DataManagementExecutionJobEntity);
 
     auto entity = DataManagementExecutionJobEntity;

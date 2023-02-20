@@ -19,8 +19,7 @@ class DDataManagementTemplateEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DataManagementTemplateEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DataManagementTemplateEntity);
 
     auto entity = DataManagementTemplateEntity;

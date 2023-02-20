@@ -34,8 +34,7 @@ class DDataManagementTargetMapEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DataManagementTargetMapEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DataManagementTargetMapEntity);
 
     auto entity = DataManagementTargetMapEntity;

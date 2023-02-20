@@ -20,8 +20,7 @@ class DDMFEntityExecutionParametersEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DMFEntityExecutionParametersEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DMFEntityExecutionParametersEntity);
 
     auto entity = DMFEntityExecutionParametersEntity;

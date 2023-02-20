@@ -23,8 +23,7 @@ class DDataManagementDefinitionGroupEntity : DOOPEntity {
 }
 mixin(EntityCalls!("DataManagementDefinitionGroupEntity"));
 
-version(test_model_administrations) {
-  unittest {
+version(test_model_systsms) { unittest {
     assert(DataManagementDefinitionGroupEntity);
 
     auto entity = DataManagementDefinitionGroupEntity;
