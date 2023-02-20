@@ -7,7 +7,7 @@ import models.systems;
 class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {
   mixin(EntityThis!("SecuritySegregationOfDutiesRuleEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
