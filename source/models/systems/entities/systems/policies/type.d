@@ -11,7 +11,7 @@ class DSystemPolicyTypeEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "policyName": StringAttribute, // 
         "purpose": StringAttribute, // 
         "dropDialog": StringAttribute, // 

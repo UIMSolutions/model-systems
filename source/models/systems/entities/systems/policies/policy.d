@@ -10,7 +10,7 @@ class DSystemPolicyEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "isPolicyActive": BooleanAttribute, // 
         "policyName": StringAttribute, // 
         "policyTypeRecId": UUIDAttribute, // 

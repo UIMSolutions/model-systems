@@ -11,7 +11,7 @@ class DSystemGlobalConfigurationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "aosInstanceName": StringAttribute, // 
         "settingLevel": StringAttribute, // 
         "value": StringAttribute, // 

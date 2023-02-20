@@ -11,7 +11,7 @@ class DSystemPolicyOrganizationEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "hierarchyType": StringAttribute, // 
         "hierarchyName": StringAttribute, // 
         "organization": StringAttribute, // 

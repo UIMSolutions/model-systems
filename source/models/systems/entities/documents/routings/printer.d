@@ -10,7 +10,7 @@ class DDocumentRoutingPrinterEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "clientApp": StringAttribute, //
         "printer": StringAttribute, //
         "printerName": StringAttribute, //

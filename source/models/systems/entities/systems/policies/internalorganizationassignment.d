@@ -11,7 +11,7 @@ class DSystemPolicyInternalOrganizationAssignmentEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "validFrom": StringAttribute, // 
         "validTo": StringAttribute, // 
         "policyName": StringAttribute, // 

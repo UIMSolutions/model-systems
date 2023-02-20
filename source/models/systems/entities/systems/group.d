@@ -11,7 +11,7 @@ class DSystemGroupEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "userId": UUIDAttribute, //
         "name": StringAttribute, //
         "objectID": StringAttribute, //

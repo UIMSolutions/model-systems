@@ -11,7 +11,7 @@ class DSystemPolicyRuleTypeEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "includeParentRule": StringAttribute, // 
         "isPrecedenceSupported": BooleanAttribute, // 
         "ruleName": StringAttribute, // 
