@@ -8,7 +8,7 @@ class DSystemUserEntity : DOOPEntity {
   mixin(EntityThis!("SystemUserEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

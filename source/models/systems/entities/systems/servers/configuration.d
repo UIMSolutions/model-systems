@@ -8,7 +8,7 @@ class DSystemServerConfigurationEntity : DOOPEntity {
   mixin(EntityThis!("SystemServerConfigurationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,13 +7,13 @@ class DSystemUserGroupEntity : DOOPEntity {
   mixin(EntityThis!("SystemUserGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "groupId": StringAttribute, //
+        "groupId": UUIDAttribute, //
         "name": StringAttribute, //
-        "backingTable_UserGroupInfoRelationshipId": StringAttribute, //      
+        "backingTable_UserGroupInfoRelationshipId": UUIDAttribute, //      
       ])
       .registerPath("administration_systems.users.groups");
   }
