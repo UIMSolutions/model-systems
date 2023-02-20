@@ -10,7 +10,7 @@ class DDMFEntityExecutionParametersEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "entityName": StringAttribute, //
         "importThresholdRecordCount": StringAttribute, //
         "numberOfImportTasks": StringAttribute, //

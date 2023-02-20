@@ -10,7 +10,7 @@ class DDocumentFileTypesEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "fileType": StringAttribute, //
         "fileTypeDescription": StringAttribute, //
         "nativelyWebRenderable": StringAttribute, //

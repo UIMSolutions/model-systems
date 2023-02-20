@@ -10,7 +10,7 @@ class DDocumentParameterEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "activeTable": StringAttribute, //
         "key": StringAttribute, //
         "maxFileSizeInFileSystem": StringAttribute, //

@@ -10,7 +10,7 @@ class DDocumentReferenceEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "documentId": UUIDAttribute, //
         "actualCompanyId": UUIDAttribute, //
         "typeId": UUIDAttribute, //

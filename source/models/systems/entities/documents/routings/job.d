@@ -10,7 +10,7 @@ class DDocumentRoutingJobEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "jobId": UUIDAttribute, //
         "activityId": UUIDAttribute, //
         "printerName": StringAttribute, //

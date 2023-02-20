@@ -10,7 +10,7 @@ class DDocumentTypeEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "actionClassName": StringAttribute, //
         "docuStructureType": StringAttribute, //
         "filePlace": StringAttribute, //

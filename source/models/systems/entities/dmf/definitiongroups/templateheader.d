@@ -10,7 +10,7 @@ class DDMFDefinitionGroupTemplateHeaderEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "templateId": UUIDAttribute, //
         "description": StringAttribute, //
         "status": StringAttribute, //

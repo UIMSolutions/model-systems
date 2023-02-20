@@ -10,7 +10,7 @@ class DDocumentRoutingClientAppEntity : DOOPEntity {
     super.initialize(configSettings);
 
     this
-      .addValues([
+      .addAttributes([
         "clientApplicationId": UUIDAttribute, //
         "clientApplicationDescription": StringAttribute, //
         "backingTable_DocumentRoutingClientAppRelationshipId": UUIDAttribute, //
