@@ -3,7 +3,7 @@ module models.systems.entities.documents.parameter;
 @safe:
 import models.systems;
 
-class DDocumentParameterEntity : DOOPEntity {
+class DDocumentParameterEntity : DEntity {
   mixin(EntityThis!("DocumentParameterEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

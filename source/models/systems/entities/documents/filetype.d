@@ -3,7 +3,7 @@ module models.systems.entities.documents.filetype;
 @safe:
 import models.systems;
 
-class DDocumentFileTypesEntity : DOOPEntity {
+class DDocumentFileTypesEntity : DEntity {
   mixin(EntityThis!("DocumentFileTypesEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

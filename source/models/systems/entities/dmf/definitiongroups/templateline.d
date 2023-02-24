@@ -3,7 +3,7 @@ module models.systems.entities.dmf.definitiongroups.templateline;
 @safe:
 import models.systems;
 
-class DDMFDefinitionGroupTemplateLineEntity : DOOPEntity {
+class DDMFDefinitionGroupTemplateLineEntity : DEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateLineEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

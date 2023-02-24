@@ -3,7 +3,7 @@ module models.systems.entities.documents.reference;
 @safe:
 import models.systems;
 
-class DDocumentReferenceEntity : DOOPEntity {
+class DDocumentReferenceEntity : DEntity {
   mixin(EntityThis!("DocumentReferenceEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

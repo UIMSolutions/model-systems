@@ -3,7 +3,7 @@ module models.systems.entities.datamanagements.templates.sources.source;
 @safe:
 import models.systems;
 
-class DDataManagementTemplateSourceEntity : DOOPEntity {
+class DDataManagementTemplateSourceEntity : DEntity {
   mixin(EntityThis!("DataManagementTemplateSourceEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

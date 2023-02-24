@@ -3,7 +3,7 @@ module models.systems.entities.dmf.definitiongroups.templateheader;
 @safe:
 import models.systems;
 
-class DDMFDefinitionGroupTemplateHeaderEntity : DOOPEntity {
+class DDMFDefinitionGroupTemplateHeaderEntity : DEntity {
   mixin(EntityThis!("DMFDefinitionGroupTemplateHeaderEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

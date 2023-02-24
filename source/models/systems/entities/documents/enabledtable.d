@@ -3,7 +3,7 @@ module models.systems.entities.documents.enabledtable;
 @safe:
 import models.systems;
 
-class DDocumentEnabledTableEntity : DOOPEntity {
+class DDocumentEnabledTableEntity : DEntity {
   mixin(EntityThis!("DocumentEnabledTableEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

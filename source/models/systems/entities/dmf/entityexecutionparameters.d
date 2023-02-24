@@ -3,7 +3,7 @@ module models.systems.entities.dmf.entityexecutionparameters;
 @safe:
 import models.systems;
 
-class DDMFEntityExecutionParametersEntity : DOOPEntity {
+class DDMFEntityExecutionParametersEntity : DEntity {
   mixin(EntityThis!("DMFEntityExecutionParametersEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
