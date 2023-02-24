@@ -3,7 +3,7 @@ module models.systems.entities.organization;
 @safe:
 import models.systems;
 
-class DSystemOrganizationEntity : DOOPEntity {
+class DSystemOrganizationEntity : DEntity {
   mixin(EntityThis!("SystemOrganizationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -13,7 +13,7 @@ class DSystemOrganizationEntity : DOOPEntity {
       .registerPath("system_organizations");
   }
 
-  override DOOPEntity clone() { return SystemOrganizationEntity; }
+  override DEntity clone() { return SystemOrganizationEntity; }
 }
 mixin(EntityCalls!("SystemOrganizationEntity"));
 

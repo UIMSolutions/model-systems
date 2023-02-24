@@ -3,7 +3,7 @@ module models.systems.entities.systems.parameter;
 @safe:
 import models.systems;
 
-class DSystemParameterEntity : DOOPEntity {
+class DSystemParameterEntity : DEntity {
   mixin(EntityThis!("SystemParameterEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

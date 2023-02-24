@@ -3,7 +3,7 @@ module models.systems.entities.right;
 @safe:
 import models.systems;
 
-class DSystemRightEntity : DOOPEntity {
+class DSystemRightEntity : DEntity {
   mixin(EntityThis!("SystemRightEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -13,7 +13,7 @@ class DSystemRightEntity : DOOPEntity {
       .registerPath("system_rights");
   }
 
-  override DOOPEntity clone() { return SystemRightEntity; }
+  override DEntity clone() { return SystemRightEntity; }
 }
 mixin(EntityCalls!("SystemRightEntity"));
 

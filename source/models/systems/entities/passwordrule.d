@@ -4,7 +4,7 @@ module models.systems.entities.passwordrule;
 import models.systems;
 
 
-class DSystemPasswordRuleEntity : DOOPEntity {
+class DSystemPasswordRuleEntity : DEntity {
   mixin(EntityThis!("SystemPasswordRuleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -14,7 +14,7 @@ class DSystemPasswordRuleEntity : DOOPEntity {
       .registerPath("system_passwordrules");
   }
 
-  override DOOPEntity clone() { return SystemPasswordRuleEntity; }
+  override DEntity clone() { return SystemPasswordRuleEntity; }
 
   mixin(OProperty!("long", "validFrom"));
   O validFrom(this O)(SysTime aTime) {
@@ -28,7 +28,7 @@ class DSystemPasswordRuleEntity : DOOPEntity {
     return cast(O)this;
   }
 
-  override DOOPEntity fromJson(Json aJson) {
+  override DEntity fromJson(Json aJson) {
     super.fromJson(aJson);
     writeln(aJson);
         

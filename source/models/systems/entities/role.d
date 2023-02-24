@@ -5,7 +5,7 @@ import models.systems;
 
 
 
-class DSystemRoleEntity : DOOPEntity {
+class DSystemRoleEntity : DEntity {
 mixin(EntityThis!("SystemRoleEntity")); 
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -15,7 +15,7 @@ mixin(EntityThis!("SystemRoleEntity"));
       .registerPath("system_roles");
   }
 
-  override DOOPEntity clone() { return SystemRoleEntity; }
+  override DEntity clone() { return SystemRoleEntity; }
 
   mixin(OProperty!("UUID[]", "rights"));
   mixin(OProperty!("UUID[]", "roles"));

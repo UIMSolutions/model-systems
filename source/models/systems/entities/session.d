@@ -3,7 +3,7 @@ module models.systems.entities.session;
 @safe:
 import models.systems;
 
-class DSystemSessionEntity : DOOPEntity {
+class DSystemSessionEntity : DEntity {
   mixin(EntityThis!("SystemSessionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -13,9 +13,9 @@ class DSystemSessionEntity : DOOPEntity {
       .registerPath("system_sessions");
   }
 
-  override DOOPEntity clone() { return SystemSessionEntity; }
+  override DEntity clone() { return SystemSessionEntity; }
 
-  override DOOPEntity fromRequest(STRINGAA reqParameters) {
+  override DEntity fromRequest(STRINGAA reqParameters) {
     super.fromRequest(reqParameters);
     if ("entity_siteId" in reqParameters) this["siteId"] = reqParameters["entity_siteId"];
     return this; }

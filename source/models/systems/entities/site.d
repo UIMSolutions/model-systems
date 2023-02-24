@@ -3,7 +3,7 @@ module models.systems.entities.site;
 @safe:
 import models.systems;
 
-class DSystemSiteEntity : DOOPEntity {
+class DSystemSiteEntity : DEntity {
   mixin(EntityThis!("SystemSiteEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -13,7 +13,7 @@ class DSystemSiteEntity : DOOPEntity {
       .registerPath("system_sites");
   }
 
-  override DOOPEntity clone() { return SystemSiteEntity; }
+  override DEntity clone() { return SystemSiteEntity; }
 
   mixin(OProperty!("UUID[]", "users"));
   mixin(OProperty!("UUID[]", "roles"));

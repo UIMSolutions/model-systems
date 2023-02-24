@@ -4,7 +4,7 @@ module models.systems.entities.tenant;
 import models.systems;
 
 
-class DSystemTenantEntity : DOOPEntity {
+class DSystemTenantEntity : DEntity {
   mixin(EntityThis!("SystemTenantEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -14,7 +14,7 @@ class DSystemTenantEntity : DOOPEntity {
       .registerPath("system_tenants");
   }
 
-  override DOOPEntity clone() { return SystemTenantEntity; }
+  override DEntity clone() { return SystemTenantEntity; }
 }
 mixin(EntityCalls!("SystemTenantEntity"));
 

@@ -5,7 +5,7 @@ import models.systems;
 
 
 
-class DSystemRequestEntity : DOOPEntity {
+class DSystemRequestEntity : DEntity {
   mixin(EntityThis!("SystemRequestEntity"));  
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -15,7 +15,7 @@ class DSystemRequestEntity : DOOPEntity {
       .registerPath("system_requests");
   }
 
-  override DOOPEntity clone() { return SystemRequestEntity; }
+  override DEntity clone() { return SystemRequestEntity; }
 }
 mixin(EntityCalls!("SystemRequestEntity"));
 

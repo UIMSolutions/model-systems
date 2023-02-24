@@ -5,7 +5,7 @@ import models.systems;
 
 
 
-class DSystemPasswordEntity : DOOPEntity {
+class DSystemPasswordEntity : DEntity {
   mixin(EntityThis!("SystemPasswordEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -15,7 +15,7 @@ class DSystemPasswordEntity : DOOPEntity {
       .registerPath("system_passwords");
   }
 
-  override DOOPEntity clone() { return SystemPasswordEntity; }
+  override DEntity clone() { return SystemPasswordEntity; }
 
   mixin(OProperty!("UUID", "accountId"));
   O accountId(this O)(string newAccountId) { 
@@ -35,7 +35,7 @@ class DSystemPasswordEntity : DOOPEntity {
     return cast(O)this;
   }
 
-  override DOOPEntity fromJson(Json aJson) {
+  override DEntity fromJson(Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {
