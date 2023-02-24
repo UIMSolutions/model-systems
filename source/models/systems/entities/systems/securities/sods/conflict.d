@@ -4,7 +4,7 @@ module models.systems.entities.securities.sods.conflict;
 import models.systems;
 
 // 
-class DSystemSegregationOfDutiesConflictEntity : DOOPEntity {
+class DSystemSegregationOfDutiesConflictEntity : DEntity {
   mixin(EntityThis!("SystemSegregationOfDutiesConflictEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

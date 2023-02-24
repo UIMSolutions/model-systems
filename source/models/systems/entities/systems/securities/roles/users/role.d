@@ -4,7 +4,7 @@ module models.systems.entities.systems.securities.roles.users.role;
 import models.systems;
 
 // 
-class DSystemSecurityUserRoleEntity : DOOPEntity {
+class DSystemSecurityUserRoleEntity : DEntity {
   mixin(EntityThis!("SystemSecurityUserRoleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

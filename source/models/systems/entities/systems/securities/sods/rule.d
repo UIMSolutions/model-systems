@@ -4,7 +4,7 @@ module models.systems.entities.securities.sods.rule;
 import models.systems;
 
 // 
-class DSecuritySegregationOfDutiesRuleEntity : DOOPEntity {
+class DSecuritySegregationOfDutiesRuleEntity : DEntity {
   mixin(EntityThis!("SecuritySegregationOfDutiesRuleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

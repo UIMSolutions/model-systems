@@ -4,7 +4,7 @@ module models.systems.entities.systems.servers.configuration;
 import models.systems;
 
 // 
-class DSystemServerConfigurationEntity : DOOPEntity {
+class DSystemServerConfigurationEntity : DEntity {
   mixin(EntityThis!("SystemServerConfigurationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

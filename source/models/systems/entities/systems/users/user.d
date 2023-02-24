@@ -4,7 +4,7 @@ module models.systems.entities.systems.users.user;
 import models.systems;
 
 // 
-class DSystemUserEntity : DOOPEntity {
+class DSystemUserEntity : DEntity {
   mixin(EntityThis!("SystemUserEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

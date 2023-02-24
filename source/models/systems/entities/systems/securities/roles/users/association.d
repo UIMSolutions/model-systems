@@ -3,7 +3,7 @@ module models.systems.entities.systems.securities.roles.users.association;
 @safe:
 import models.systems;
 
-class DSystemSecurityUserRoleAssociationEntity : DOOPEntity {
+class DSystemSecurityUserRoleAssociationEntity : DEntity {
   mixin(EntityThis!("SystemSecurityUserRoleAssociationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

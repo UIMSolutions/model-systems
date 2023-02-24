@@ -3,7 +3,7 @@ module models.systems.entities.systems.users.groups.userlist;
 @safe:
 import models.systems;
 
-class DSystemUserGroupUserListEntity : DOOPEntity {
+class DSystemUserGroupUserListEntity : DEntity {
   mixin(EntityThis!("SystemUserGroupUserListEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.systems.entities.systems.servers.clusterconfiguration;
 import models.systems;
 
 // 
-class DSystemServerClusterConfigurationEntity : DOOPEntity {
+class DSystemServerClusterConfigurationEntity : DEntity {
   mixin(EntityThis!("SystemServerClusterConfigurationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
