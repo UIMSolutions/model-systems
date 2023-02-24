@@ -3,7 +3,7 @@ module models.systems.entities.datamanagements.definitiongroups.detail;
 @safe:
 import models.systems;
 
-class DDataManagementDefinitionGroupDetailEntity : DOOPEntity {
+class DDataManagementDefinitionGroupDetailEntity : DEntity {
   mixin(EntityThis!("DataManagementDefinitionGroupDetailEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

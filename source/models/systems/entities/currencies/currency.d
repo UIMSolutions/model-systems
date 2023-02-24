@@ -3,7 +3,7 @@ module models.systems.entities.currencies.currency;
 @safe:
 import models.systems;
 
-class DCurrencyEntity : DOOPEntity {
+class DCurrencyEntity : DEntity {
   mixin(EntityThis!("CurrencyEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

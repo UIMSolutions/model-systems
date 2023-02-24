@@ -3,7 +3,7 @@ module models.systems.entities.datamanagements.templates.detail;
 @safe:
 import models.systems;
 
-class DDataManagementTemplateDetailEntity : DOOPEntity {
+class DDataManagementTemplateDetailEntity : DEntity {
   mixin(EntityThis!("DataManagementTemplateDetailEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

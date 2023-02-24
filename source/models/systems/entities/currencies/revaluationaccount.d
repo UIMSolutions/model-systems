@@ -3,7 +3,7 @@ module models.systems.entities.currencies.revaluationaccount;
 @safe:
 import models.systems;
 
-class DCurrencyRevaluationAccountEntity : DOOPEntity {
+class DCurrencyRevaluationAccountEntity : DEntity {
   mixin(EntityThis!("CurrencyRevaluationAccountEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

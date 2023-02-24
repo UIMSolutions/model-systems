@@ -3,7 +3,7 @@ module models.systems.entities.currencies.isocode;
 @safe:
 import models.systems;
 
-class DCurrencyISOCodeEntity : DOOPEntity {
+class DCurrencyISOCodeEntity : DEntity {
   mixin(EntityThis!("CurrencyISOCodeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

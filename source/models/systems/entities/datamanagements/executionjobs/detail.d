@@ -3,7 +3,7 @@ module models.systems.entities.datamanagements.executionjobs.detail;
 @safe:
 import models.systems;
 
-class DDataManagementExecutionJobDetailEntity : DOOPEntity {
+class DDataManagementExecutionJobDetailEntity : DEntity {
   mixin(EntityThis!("DataManagementExecutionJobDetailEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

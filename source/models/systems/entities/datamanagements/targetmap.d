@@ -3,7 +3,7 @@ module models.systems.entities.datamanagements.targetmap;
 @safe:
 import models.systems;
 
-class DDataManagementTargetMapEntity : DOOPEntity {
+class DDataManagementTargetMapEntity : DEntity {
   mixin(EntityThis!("DataManagementTargetMapEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
