@@ -4,7 +4,7 @@ module models.systems.entities.systems.securities.roles.duty;
 import models.systems;
 
 // 
-class DSystemSecurityRoleDutyEntity : DOOPEntity {
+class DSystemSecurityRoleDutyEntity : DEntity {
   mixin(EntityThis!("SystemSecurityRoleDutyEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

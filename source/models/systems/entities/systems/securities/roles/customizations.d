@@ -4,7 +4,7 @@ module models.systems.entities.systems.securities.roles.customization;
 import models.systems;
 
 // 
-class DSystemSecurityRoleCustomizationsEntity : DOOPEntity {
+class DSystemSecurityRoleCustomizationsEntity : DEntity {
   mixin(EntityThis!("SystemSecurityRoleCustomizationsEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

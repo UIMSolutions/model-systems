@@ -3,7 +3,7 @@ module models.systems.entities.systems.securities.privileges.privilege;
 @safe:
 import models.systems;
 
-class DSystemSecurityPrivilegeEntity : DOOPEntity {
+class DSystemSecurityPrivilegeEntity : DEntity {
   mixin(EntityThis!("SystemSecurityPrivilegeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

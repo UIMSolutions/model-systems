@@ -4,7 +4,7 @@ module models.systems.entities.systems.policies.ruletype;
 import models.systems;
 
 // 
-class DSystemPolicyRuleTypeEntity : DOOPEntity {
+class DSystemPolicyRuleTypeEntity : DEntity {
   mixin(EntityThis!("SystemPolicyRuleTypeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

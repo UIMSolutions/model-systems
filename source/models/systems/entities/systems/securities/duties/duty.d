@@ -3,7 +3,7 @@ module models.systems.entities.systems.securities.duties.duty;
 @safe:
 import models.systems;
 
-class DSystemSecurityDutyEntity : DOOPEntity {
+class DSystemSecurityDutyEntity : DEntity {
   mixin(EntityThis!("SystemSecurityDutyEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

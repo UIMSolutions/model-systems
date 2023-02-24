@@ -4,7 +4,7 @@ module models.systems.entities.systems.securities.permission;
 import models.systems;
 
 // 
-class DSystemSecurityPermissionEntity : DOOPEntity {
+class DSystemSecurityPermissionEntity : DEntity {
   mixin(EntityThis!("SystemSecurityPermissionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
