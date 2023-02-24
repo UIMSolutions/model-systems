@@ -3,7 +3,7 @@ module models.systems.entities.configurators.layouts.field;
 @safe:
 import models.systems;
 
-class DConfiguratorLayoutFieldEntity : DOOPEntity {
+class DConfiguratorLayoutFieldEntity : DEntity {
   mixin(EntityThis!("ConfiguratorLayoutFieldEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

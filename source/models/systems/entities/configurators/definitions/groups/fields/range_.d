@@ -3,7 +3,7 @@ module models.systems.entities.configurators.definitions.groups.fields.range_;
 @safe:
 import models.systems;
 
-class DConfiguratorDefinitionGroupFieldRangeEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupFieldRangeEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupFieldRangeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

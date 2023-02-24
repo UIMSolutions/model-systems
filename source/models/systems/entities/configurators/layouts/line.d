@@ -3,7 +3,7 @@ module models.systems.entities.configurators.layouts.line;
 @safe:
 import models.systems;
 
-class DConfiguratorLayoutLineEntity : DOOPEntity {
+class DConfiguratorLayoutLineEntity : DEntity {
   mixin(EntityThis!("ConfiguratorLayoutLineEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

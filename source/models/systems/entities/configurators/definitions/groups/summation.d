@@ -3,7 +3,7 @@ module models.systems.entities.configurators.definitions.groups.summation;
 @safe:
 import models.systems;
 
-class DConfiguratorDefinitionGroupSummationEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupSummationEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupSummationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

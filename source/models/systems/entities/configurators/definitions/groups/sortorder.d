@@ -3,7 +3,7 @@ module models.systems.entities.configurators.definitions.groups.sortorder;
 @safe:
 import models.systems;
 
-class DConfiguratorDefinitionGroupSortOrderEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupSortOrderEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupSortOrderEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

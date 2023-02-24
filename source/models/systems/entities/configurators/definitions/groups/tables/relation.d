@@ -3,7 +3,7 @@ module models.systems.entities.configurators.definitions.groups.tables.relation;
 @safe:
 import models.systems;
 
-class DConfiguratorDefinitionGroupTableRelationEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupTableRelationEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupTableRelationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

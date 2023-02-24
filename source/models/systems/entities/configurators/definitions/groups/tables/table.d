@@ -4,7 +4,7 @@ module models.systems.entities.configurators.definitions.groups.tables.table;
 import models.systems;
 
 // 
-class DConfiguratorDefinitionGroupTableEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupTableEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupTableEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.systems.entities.configurators.definitions.groups.fields.field;
 @safe:
 import models.systems;
 
-class DConfiguratorDefinitionGroupFieldEntity : DOOPEntity {
+class DConfiguratorDefinitionGroupFieldEntity : DEntity {
   mixin(EntityThis!("ConfiguratorDefinitionGroupFieldEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
