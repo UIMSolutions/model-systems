@@ -3,7 +3,7 @@ module models.systems.entities.documents.routings.job;
 @safe:
 import models.systems;
 
-class DDocumentRoutingJobEntity : DOOPEntity {
+class DDocumentRoutingJobEntity : DEntity {
   mixin(EntityThis!("DocumentRoutingJobEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.systems.entities.systems.globalconfiguration;
 import models.systems;
 
 // System level configurations
-class DSystemGlobalConfigurationEntity : DOOPEntity {
+class DSystemGlobalConfigurationEntity : DEntity {
   mixin(EntityThis!("SystemGlobalConfigurationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

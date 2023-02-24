@@ -4,7 +4,7 @@ module models.systems.entities.systems.policies.internalorganizationassignment;
 import models.systems;
 
 // Policy organization assignments
-class DSystemPolicyInternalOrganizationAssignmentEntity : DOOPEntity {
+class DSystemPolicyInternalOrganizationAssignmentEntity : DEntity {
   mixin(EntityThis!("SystemPolicyInternalOrganizationAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

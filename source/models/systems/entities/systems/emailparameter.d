@@ -4,7 +4,7 @@ module models.systems.entities.systems.emailparameter;
 import models.systems;
 
 // 
-class DSystemEmailParameterEntity : DOOPEntity {
+class DSystemEmailParameterEntity : DEntity {
   mixin(EntityThis!("SystemEmailParameterEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

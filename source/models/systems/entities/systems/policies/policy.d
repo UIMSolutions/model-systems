@@ -3,7 +3,7 @@ module models.systems.entities.systems.policies.policy;
 @safe:
 import models.systems;
 
-class DSystemPolicyEntity : DOOPEntity {
+class DSystemPolicyEntity : DEntity {
   mixin(EntityThis!("SystemPolicyEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

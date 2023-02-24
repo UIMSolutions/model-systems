@@ -3,7 +3,7 @@ module models.systems.entities.documents.routings.printer;
 @safe:
 import models.systems;
 
-class DDocumentRoutingPrinterEntity : DOOPEntity {
+class DDocumentRoutingPrinterEntity : DEntity {
   mixin(EntityThis!("DocumentRoutingPrinterEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

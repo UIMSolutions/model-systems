@@ -3,7 +3,7 @@ module models.systems.entities.documents.routings.clientapp;
 @safe:
 import models.systems;
 
-class DDocumentRoutingClientAppEntity : DOOPEntity {
+class DDocumentRoutingClientAppEntity : DEntity {
   mixin(EntityThis!("DocumentRoutingClientAppEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

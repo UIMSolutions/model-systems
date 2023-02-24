@@ -4,7 +4,7 @@ module models.systems.entities.systems.group;
 import models.systems;
 
 // Active Directory Security groups
-class DSystemGroupEntity : DOOPEntity {
+class DSystemGroupEntity : DEntity {
   mixin(EntityThis!("SystemGroupEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

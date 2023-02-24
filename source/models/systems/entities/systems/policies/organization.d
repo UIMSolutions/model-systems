@@ -4,7 +4,7 @@ module models.systems.entities.systems.policies.organization;
 import models.systems;
 
 // Policy organization
-class DSystemPolicyOrganizationEntity : DOOPEntity {
+class DSystemPolicyOrganizationEntity : DEntity {
   mixin(EntityThis!("SystemPolicyOrganizationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
