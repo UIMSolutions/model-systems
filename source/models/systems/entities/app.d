@@ -3,7 +3,7 @@ module models.systems.entities.app;
 @safe:
 import models.systems;
 
-class DSystemAppEntity : DOOPEntity {
+class DSystemAppEntity : DEntity {
   mixin(EntityThis!("SystemAppEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -13,7 +13,7 @@ class DSystemAppEntity : DOOPEntity {
       .registerPath("system_apps");
   }
 
-  override DOOPEntity clone() { return SystemAppEntity; }
+  override DEntity clone() { return SystemAppEntity; }
 }
 mixin(EntityCalls!("SystemAppEntity"));
 

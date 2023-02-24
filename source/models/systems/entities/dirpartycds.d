@@ -3,7 +3,7 @@ module models.systems.entities.dirpartycds;
 @safe:
 import models.systems;
 
-class DDirPartyCDSEntity : DOOPEntity {
+class DDirPartyCDSEntity : DEntity {
   mixin(EntityThis!("DirPartyCDSEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

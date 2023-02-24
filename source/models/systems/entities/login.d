@@ -3,7 +3,7 @@ module models.systems.entities.login;
 @safe:
 import models.systems;
 
-class DSystemLoginEntity : DOOPEntity {
+class DSystemLoginEntity : DEntity {
   mixin(EntityThis!("SystemLoginEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -16,9 +16,9 @@ class DSystemLoginEntity : DOOPEntity {
       .registerPath("system_logins");
   }
 
-  override DOOPEntity clone() { return SystemLoginEntity; }
+  override DEntity clone() { return SystemLoginEntity; }
 
-  override DOOPEntity fromRequest(STRINGAA reqParameters) {
+  override DEntity fromRequest(STRINGAA reqParameters) {
     super.fromRequest(reqParameters);
     if ("entity_accountName" in reqParameters) this["accountName"] = reqParameters["entity_accountName"];
     return this; }

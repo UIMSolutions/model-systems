@@ -3,7 +3,7 @@ module models.systems.entities.ecoresproductcdscategoryassignment;
 @safe:
 import models.systems;
 
-class DEcoResProductCDSCategoryAssignmentEntity : DOOPEntity {
+class DEcoResProductCDSCategoryAssignmentEntity : DEntity {
   mixin(EntityThis!("EcoResProductCDSCategoryAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

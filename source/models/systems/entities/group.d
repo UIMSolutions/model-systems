@@ -5,7 +5,7 @@ import models.systems;
 
 
 
-class DSystemGroupEntity : DOOPEntity {
+class DSystemGroupEntity : DEntity {
   mixin(EntityThis!("SystemGroupEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
@@ -15,7 +15,7 @@ class DSystemGroupEntity : DOOPEntity {
       .registerPath("system_groups");
   }
 
-  override DOOPEntity clone() { return SystemGroupEntity; }
+  override DEntity clone() { return SystemGroupEntity; }
 }
 mixin(EntityCalls!("SystemGroupEntity"));
 

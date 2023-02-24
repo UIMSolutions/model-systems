@@ -3,7 +3,7 @@ module models.systems.entities.bidategregorian;
 @safe:
 import models.systems;
 
-class DBIDateGregorianEntity : DOOPEntity {
+class DBIDateGregorianEntity : DEntity {
   mixin(EntityThis!("BIDateGregorianEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

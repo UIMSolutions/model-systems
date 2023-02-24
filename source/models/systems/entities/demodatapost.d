@@ -3,7 +3,7 @@ module models.systems.entities.demodatapost;
 @safe:
 import models.systems;
 
-class DDemoDataPostEntity : DOOPEntity {
+class DDemoDataPostEntity : DEntity {
   mixin(EntityThis!("DemoDataPostEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

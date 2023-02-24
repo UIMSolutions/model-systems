@@ -3,7 +3,7 @@ module models.systems.entities.cityholiday;
 @safe:
 import models.systems;
 
-class DCityHolidayEntity : DOOPEntity {
+class DCityHolidayEntity : DEntity {
   mixin(EntityThis!("CityHolidayEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

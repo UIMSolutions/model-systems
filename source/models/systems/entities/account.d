@@ -3,7 +3,7 @@ module models.systems.entities.account;
 @safe:
 import models.systems;
 
-class DSystemAccountEntity : DOOPEntity {
+class DSystemAccountEntity : DEntity {
   mixin(EntityThis!("SystemAccountEntity"));
 
   mixin(OProperty!("string", "peer"));
@@ -44,9 +44,9 @@ class DSystemAccountEntity : DOOPEntity {
       .registerPath("system_accounts");
   }
 
-  override DOOPEntity clone() { return SystemAccountEntity; }
+  override DEntity clone() { return SystemAccountEntity; }
 
-  override DOOPEntity fromJson(Json aJson) {
+  override DEntity fromJson(Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {

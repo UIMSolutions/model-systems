@@ -3,7 +3,7 @@ module models.systems.entities.efdocemailaccountconfiguration;
 @safe:
 import models.systems;
 
-class DEFDocEmailAccountConfigurationEntity : DOOPEntity {
+class DEFDocEmailAccountConfigurationEntity : DEntity {
   mixin(EntityThis!("EFDocEmailAccountConfigurationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
