@@ -3,7 +3,7 @@ module models.systems.entities.cases.detail;
 @safe:
 import models.systems;
 
-class DCaseDetailBaseEntity : DOOPEntity {
+class DCaseDetailBaseEntity : DEntity {
   mixin(EntityThis!("CaseDetailBaseEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

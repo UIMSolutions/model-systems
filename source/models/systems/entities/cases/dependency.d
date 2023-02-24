@@ -3,7 +3,7 @@ module models.systems.entities.cases.dependency;
 @safe:
 import models.systems;
 
-class DCaseDependencyEntity : DOOPEntity {
+class DCaseDependencyEntity : DEntity {
   mixin(EntityThis!("CaseDependencyEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

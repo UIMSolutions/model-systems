@@ -3,7 +3,7 @@ module models.systems.entities.batch.group;
 @safe:
 import models.systems;
 
-class DBatchGroupEntity : DOOPEntity {
+class DBatchGroupEntity : DEntity {
   mixin(EntityThis!("BatchGroupEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

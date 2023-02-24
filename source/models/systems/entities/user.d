@@ -3,10 +3,10 @@ module models.systems.entities.user;
 @safe:
 import models.systems;
 
-class DSystemUserEntity : DOOPEntity {
+class DSystemUserEntity : DEntity {
   mixin(EntityThis!("SystemUserEntity"));
 
-  override DOOPEntity clone() { return SystemUserEntity; }
+  override DEntity clone() { return SystemUserEntity; }
 
   mixin(OProperty!("bool", "active"));
 
@@ -42,7 +42,7 @@ class DSystemUserEntity : DOOPEntity {
       .registerPath("system_users");
   }
 
-  override DOOPEntity fromJson(Json aJson) {
+  override DEntity fromJson(Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {

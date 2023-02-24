@@ -3,7 +3,7 @@ module models.systems.entities.cases.association;
 @safe:
 import models.systems;
 
-class DCaseAssociationEntity : DOOPEntity {
+class DCaseAssociationEntity : DEntity {
   mixin(EntityThis!("CaseAssociationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.systems.entities.brazilian.electronicreportingparameter;
 @safe:
 import models.systems;
 
-class DBrazilianElectronicReportingParametersEntity : DOOPEntity {
+class DBrazilianElectronicReportingParametersEntity : DEntity {
   mixin(EntityThis!("BrazilianElectronicReportingParametersEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

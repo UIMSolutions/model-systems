@@ -3,7 +3,7 @@ module models.systems.entities.batch.jobs.job;
 @safe:
 import models.systems;
 
-class DBatchJobEntity : DOOPEntity {
+class DBatchJobEntity : DEntity {
   mixin(EntityThis!("BatchJobEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

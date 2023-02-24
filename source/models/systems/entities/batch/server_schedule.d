@@ -3,7 +3,7 @@ module models.systems.entities.batch.server_schedule;
 @safe:
 import models.systems;
 
-class DBatchServerScheduleEntity : DOOPEntity {
+class DBatchServerScheduleEntity : DEntity {
   mixin(EntityThis!("BatchServerScheduleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

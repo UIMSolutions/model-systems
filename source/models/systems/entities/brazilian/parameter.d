@@ -3,7 +3,7 @@ module models.systems.entities.brazilian.parameter;
 @safe:
 import models.systems;
 
-class DBrazilianParametersEntity : DOOPEntity {
+class DBrazilianParametersEntity : DEntity {
   mixin(EntityThis!("BrazilianParametersEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

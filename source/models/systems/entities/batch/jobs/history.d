@@ -3,7 +3,7 @@ module models.systems.entities.batch.jobs.history;
 @safe:
 import models.systems;
 
-class DBatchJobHistoryEntity : DOOPEntity {
+class DBatchJobHistoryEntity : DEntity {
   mixin(EntityThis!("BatchJobHistoryEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
