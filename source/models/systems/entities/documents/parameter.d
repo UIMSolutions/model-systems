@@ -10,7 +10,7 @@ class DDocumentParameterEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "activeTable": StringAttribute, //
         "key": StringAttribute, //
         "maxFileSizeInFileSystem": StringAttribute, //
@@ -29,6 +29,6 @@ version(test_model_systsms) { unittest {
     assert(DocumentParameterEntity);
 
     auto entity = DocumentParameterEntity;
-    // TODO more tests
+    
   }
 }
