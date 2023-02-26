@@ -10,7 +10,7 @@ class DDocumentRoutingPrinterEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "clientApp": StringAttribute, //
         "printer": StringAttribute, //
         "printerName": StringAttribute, //
@@ -28,7 +28,7 @@ class DDocumentRoutingPrinterEntity : DEntity {
 }
 mixin(EntityCalls!("DocumentRoutingPrinterEntity"));
 
-version(test_model_systsms) { unittest {
+version(test_model_systems) { unittest {
     assert(DocumentRoutingPrinterEntity);
 
     auto entity = DocumentRoutingPrinterEntity;
