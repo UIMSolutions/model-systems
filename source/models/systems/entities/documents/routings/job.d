@@ -10,7 +10,7 @@ class DDocumentRoutingJobEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "jobId": UUIDAttribute, //
         "activityId": UUIDAttribute, //
         "printerName": StringAttribute, //
@@ -30,7 +30,7 @@ class DDocumentRoutingJobEntity : DEntity {
 }
 mixin(EntityCalls!("DocumentRoutingJobEntity"));
 
-version(test_model_systsms) { unittest {
+version(test_model_systems) { unittest {
     assert(DocumentRoutingJobEntity);
 
     auto entity = DocumentRoutingJobEntity;
