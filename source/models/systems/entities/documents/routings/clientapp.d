@@ -15,7 +15,7 @@ class DDocumentRoutingClientAppEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "clientApplicationId": UUIDAttribute, //
         "clientApplicationDescription": StringAttribute, //
         "backingTable_DocumentRoutingClientAppRelationshipId": UUIDAttribute, //
@@ -25,7 +25,7 @@ class DDocumentRoutingClientAppEntity : DEntity {
 }
 mixin(EntityCalls!("DocumentRoutingClientAppEntity"));
 
-version(test_model_systsms) { unittest {
+version(test_model_systems) { unittest {
     assert(DocumentRoutingClientAppEntity);
 
     auto entity = DocumentRoutingClientAppEntity;

@@ -15,7 +15,7 @@ class DDocumentTypeEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "actionClassName": StringAttribute, //
         "docuStructureType": StringAttribute, //
         "filePlace": StringAttribute, //

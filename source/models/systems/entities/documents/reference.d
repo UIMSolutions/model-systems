@@ -15,7 +15,7 @@ class DDocumentReferenceEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "documentId": UUIDAttribute, //
         "actualCompanyId": UUIDAttribute, //
         "typeId": UUIDAttribute, //
