@@ -15,7 +15,7 @@ class DDMFEntityExecutionParametersEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "entityName": StringAttribute, //
         "importThresholdRecordCount": StringAttribute, //
         "numberOfImportTasks": StringAttribute, //

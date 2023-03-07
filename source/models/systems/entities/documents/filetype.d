@@ -15,7 +15,7 @@ class DDocumentFileTypesEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "fileType": StringAttribute, //
         "fileTypeDescription": StringAttribute, //
         "nativelyWebRenderable": StringAttribute, //

@@ -16,7 +16,7 @@ class DSystemEmailParameterEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "maximumEmailAttachmentSize": StringAttribute, // 
         "smtpUseNTLM": StringAttribute, // 
         "smtpPortNumber": StringAttribute, // 

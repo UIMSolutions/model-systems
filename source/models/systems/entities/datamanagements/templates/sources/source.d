@@ -15,7 +15,7 @@ class DDataManagementTemplateSourceEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "templateId": UUIDAttribute, //
         "sourceEntity": StringAttribute, //
         "description": StringAttribute, //

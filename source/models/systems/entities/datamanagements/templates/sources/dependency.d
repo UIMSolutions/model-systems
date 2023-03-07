@@ -15,7 +15,7 @@ class DDataManagementTemplateSourceDependencyEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "templateId": UUIDAttribute, //
         "sourceEntity": StringAttribute, //
         "dependentOnEntity": StringAttribute, //

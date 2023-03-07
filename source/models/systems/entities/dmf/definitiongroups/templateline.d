@@ -15,7 +15,7 @@ class DDMFDefinitionGroupTemplateLineEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "templateId": UUIDAttribute, //
         "entity": StringAttribute, //
         "sequence": StringAttribute, //

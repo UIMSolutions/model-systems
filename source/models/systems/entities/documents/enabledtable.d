@@ -15,7 +15,7 @@ class DDocumentEnabledTableEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "allowEditAlways": StringAttribute, //
         "tableEnabledId": UUIDAttribute, //
         "tableName": StringAttribute, //
