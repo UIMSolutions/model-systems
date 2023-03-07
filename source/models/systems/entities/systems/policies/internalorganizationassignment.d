@@ -16,7 +16,7 @@ class DSystemPolicyInternalOrganizationAssignmentEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "validFrom": StringAttribute, // 
         "validTo": StringAttribute, // 
         "policyName": StringAttribute, // 

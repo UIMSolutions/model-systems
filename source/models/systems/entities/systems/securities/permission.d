@@ -16,7 +16,7 @@ class DSystemSecurityPermissionEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "securityRoleId": UUIDAttribute, //
         "securityRoleName": StringAttribute, //
         "userLicenseType": StringAttribute, //

@@ -15,7 +15,7 @@ class DSystemPolicyEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "isActive": BooleanAttribute, // 
         "typeRecId": UUIDAttribute, // 
         "type": StringAttribute, // Type of policy

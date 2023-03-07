@@ -16,7 +16,7 @@ class DSystemPolicyRuleTypeEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "includeParentRule": StringAttribute, // 
         "isPrecedenceSupported": BooleanAttribute, // 
         "policyTypeRel": StringAttribute, // 

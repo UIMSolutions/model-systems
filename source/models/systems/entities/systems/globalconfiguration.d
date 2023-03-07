@@ -16,7 +16,7 @@ class DSystemGlobalConfigurationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "aosInstanceName": StringAttribute, // 
         "settingLevel": StringAttribute, // 
         "value": StringAttribute, // 

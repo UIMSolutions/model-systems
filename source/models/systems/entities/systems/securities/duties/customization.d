@@ -15,7 +15,7 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "xmlObject": StringAttribute, // 
         "isDisabled	": BooleanAttribute, // 
       ])

@@ -15,7 +15,7 @@ class DSystemSecurityDutyEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "securityRoleId": UUIDAttribute, // 
         "securityRoleName": StringAttribute, // 
         "securityDutyId": UUIDAttribute, // 

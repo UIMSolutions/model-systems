@@ -16,7 +16,7 @@ class DSystemPolicyTypeEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "policyName": StringAttribute, // 
         "purpose": StringAttribute, // 
         "dropDialog": StringAttribute, // 

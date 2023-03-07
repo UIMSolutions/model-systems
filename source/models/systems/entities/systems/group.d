@@ -16,7 +16,7 @@ class DSystemGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "userId": UUIDAttribute, //
         
         "objectID": StringAttribute, //

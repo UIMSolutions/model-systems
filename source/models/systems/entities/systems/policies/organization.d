@@ -16,7 +16,7 @@ class DSystemPolicyOrganizationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "hierarchyType": StringAttribute, // 
         "hierarchyName": StringAttribute, // 
         "organization": StringAttribute, // 
