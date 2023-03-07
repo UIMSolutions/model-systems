@@ -23,8 +23,7 @@ class DSystemTenantEntity : DEntity {
 }
 mixin(EntityCalls!("SystemTenantEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemTenantEntity);
   
   auto entity = SystemTenantEntity;

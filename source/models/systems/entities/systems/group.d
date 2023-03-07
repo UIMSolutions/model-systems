@@ -18,7 +18,7 @@ class DSystemGroupEntity : DEntity {
     this
       .addAttributes([
         "userId": UUIDAttribute, //
-        "name": StringAttribute, //
+        
         "objectID": StringAttribute, //
         "enabled": StringAttribute, //
         "company": StringAttribute, //

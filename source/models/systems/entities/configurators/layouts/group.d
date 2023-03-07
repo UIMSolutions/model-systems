@@ -17,7 +17,7 @@ class DConfiguratorLayoutGroupEntity : DEntity {
     this
       .addAttributes([
         "layoutGroupId": UUIDAttribute, //
-        "name": StringAttribute, //
+        
         "layoutType": StringAttribute, //
         "definitionGroupId": UUIDAttribute, //
         "fileStructure": StringAttribute, //

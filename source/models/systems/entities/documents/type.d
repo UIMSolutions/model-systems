@@ -20,7 +20,7 @@ class DDocumentTypeEntity : DEntity {
         "docuStructureType": StringAttribute, //
         "filePlace": StringAttribute, //
         "fileRemovalConfirmation": StringAttribute, //
-        "name": StringAttribute, //
+        
         "parameters": StringAttribute, //
         "removeOption": StringAttribute, //
         "typeGroup": StringAttribute, //

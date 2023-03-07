@@ -8,8 +8,10 @@ module models.systems.entities.numbersequences;
 @safe:
 import models.systems;
 
-public import models.systems.entities.numbersequences.dataType;
-public import models.systems.entities.numbersequences.group;
-public import models.systems.entities.numbersequences.numbersequence;
-public import models.systems.entities.numbersequences.reference;
-public import models.systems.entities.numbersequences.table;
+public { // Modules
+	import models.systems.entities.numbersequences.datatype;
+	import models.systems.entities.numbersequences.group;
+	import models.systems.entities.numbersequences.numbersequence;
+	import models.systems.entities.numbersequences.reference;
+	import models.systems.entities.numbersequences.table;
+}

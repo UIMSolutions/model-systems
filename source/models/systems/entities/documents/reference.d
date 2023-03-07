@@ -22,7 +22,6 @@ class DDocumentReferenceEntity : DEntity {
         "refCompanyId": UUIDAttribute, //
         "refRecId": UUIDAttribute, //
         "refTableId": UUIDAttribute, //
-        "name": StringAttribute, //
         "restriction": StringAttribute, //
         "notes": StringAttribute, //
         "valueRecId": UUIDAttribute, //

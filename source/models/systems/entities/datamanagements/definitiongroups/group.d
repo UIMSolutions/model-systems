@@ -16,7 +16,7 @@ class DDataManagementDefinitionGroupEntity : DEntity {
 
     this
       .addAttributes([
-        "name": StringAttribute, // 
+         
         "description": StringAttribute, // 
         "operationType": StringAttribute, // 
         "projectCategory": StringAttribute, // 

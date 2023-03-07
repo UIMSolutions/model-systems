@@ -19,7 +19,7 @@ class DCurrencyEntity : DEntity {
         "currencyCode": StringAttribute, //
         "generalRoundingRule": StringAttribute, //
         "currencyGender": StringAttribute, //
-        "name": StringAttribute, //
+        
         "referenceCurrencyForTriangulation": StringAttribute, //
         "roundingRuleFixedAssetDepreciation": StringAttribute, //
         "roundingMethodFixedAssetDepreciation": StringAttribute, //
