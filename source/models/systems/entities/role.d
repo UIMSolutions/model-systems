@@ -27,8 +27,7 @@ mixin(EntityThis!("SystemRoleEntity"));
 }
 mixin(EntityCalls!("SystemRoleEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemRoleEntity);
   
   auto entity = SystemRoleEntity;

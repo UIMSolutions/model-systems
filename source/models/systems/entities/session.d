@@ -27,8 +27,7 @@ class DSystemSessionEntity : DEntity {
 }
 mixin(EntityCalls!("SystemSessionEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemSessionEntity);
   
   auto entity = SystemSessionEntity;

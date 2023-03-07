@@ -24,8 +24,7 @@ class DSystemGroupEntity : DEntity {
 }
 mixin(EntityCalls!("SystemGroupEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemGroupEntity);
   
   auto entity = SystemGroupEntity;

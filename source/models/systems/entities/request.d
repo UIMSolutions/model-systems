@@ -24,8 +24,7 @@ class DSystemRequestEntity : DEntity {
 }
 mixin(EntityCalls!("SystemRequestEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemRequestEntity);
   
   auto entity = SystemRequestEntity;

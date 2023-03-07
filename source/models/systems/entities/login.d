@@ -30,8 +30,7 @@ class DSystemLoginEntity : DEntity {
 }
 mixin(EntityCalls!("SystemLoginEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemLoginEntity);
   
   auto entity = SystemLoginEntity;

@@ -53,8 +53,7 @@ class DSystemPasswordRuleEntity : DEntity {
 }
 mixin(EntityCalls!("SystemPasswordRuleEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemPasswordRuleEntity);
   
   auto entity = SystemPasswordRuleEntity;

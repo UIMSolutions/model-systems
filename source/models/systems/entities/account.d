@@ -93,8 +93,7 @@ class DSystemAccountEntity : DEntity {
 }
 mixin(EntityCalls!("SystemAccountEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemAccountEntity);
   
   auto entity = SystemAccountEntity;

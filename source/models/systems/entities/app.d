@@ -22,8 +22,7 @@ class DSystemAppEntity : DEntity {
 }
 mixin(EntityCalls!("SystemAppEntity"));
 
-version(test_model_systems) {
-  unittest {
+version(test_model_systems) { unittest {
     assert(SystemAppEntity);
   
   auto entity = SystemAppEntity;
