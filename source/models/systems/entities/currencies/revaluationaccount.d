@@ -15,7 +15,7 @@ class DCurrencyRevaluationAccountEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "posting": StringAttribute, //
         "currencyCode": StringAttribute, //
         "legalEntity": StringAttribute, //

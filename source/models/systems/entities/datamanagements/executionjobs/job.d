@@ -15,7 +15,7 @@ class DDataManagementExecutionJobEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "description": StringAttribute, //
         "jobId": UUIDAttribute
       ])

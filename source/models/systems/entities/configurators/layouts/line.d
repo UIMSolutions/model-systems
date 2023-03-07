@@ -15,7 +15,7 @@ class DConfiguratorLayoutLineEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "batchId": UUIDAttribute, //
         "batchRecordType": StringAttribute, //
         "recordSize": StringAttribute, //

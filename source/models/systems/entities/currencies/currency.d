@@ -15,7 +15,7 @@ class DCurrencyEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "currencyCode": StringAttribute, //
         "generalRoundingRule": StringAttribute, //
         "currencyGender": StringAttribute, //

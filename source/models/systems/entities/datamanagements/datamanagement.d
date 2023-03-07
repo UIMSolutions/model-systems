@@ -15,7 +15,7 @@ class DDataManagementEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "entityName": StringAttribute, //
         "stagingTableName": StringAttribute, //
         "targetName": StringAttribute, //

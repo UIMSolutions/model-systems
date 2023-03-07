@@ -15,7 +15,7 @@ class DDataManagementDefinitionGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
          
         "description": StringAttribute, // 
         "operationType": StringAttribute, // 

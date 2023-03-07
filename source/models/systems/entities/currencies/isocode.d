@@ -15,7 +15,7 @@ class DCurrencyISOCodeEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "isoCurrencyCode": StringAttribute, //
         "isoCurrencyCodeNum": StringAttribute, //
         "isoCurrencyName": StringAttribute, //

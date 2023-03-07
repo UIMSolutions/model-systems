@@ -15,7 +15,7 @@ class DDataManagementDefinitionGroupDetailEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "definitionGroupId": UUIDAttribute, //
         "entityName": StringAttribute, //
         "excelSheetName": StringAttribute, //

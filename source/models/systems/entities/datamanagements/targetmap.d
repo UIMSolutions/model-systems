@@ -15,7 +15,7 @@ class DDataManagementTargetMapEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "entity": StringAttribute, //
         "isAutoManual": StringAttribute, //
         "targetDataSourceName": StringAttribute, //
