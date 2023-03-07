@@ -15,7 +15,7 @@ class DSystemUserGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "groupId": UUIDAttribute, //
         "backingTable_UserGroupInfoRelationshipId": UUIDAttribute, //      
       ])

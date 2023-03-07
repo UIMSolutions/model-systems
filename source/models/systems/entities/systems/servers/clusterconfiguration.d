@@ -16,7 +16,7 @@ class DSystemServerClusterConfigurationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "backingTable_SysClusterConfigRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("administration_systems.serverclusterconfigurations");

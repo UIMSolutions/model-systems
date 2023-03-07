@@ -16,7 +16,7 @@ class DSystemSegregationOfDutiesConflictEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "segregationOfDutiesRule":  StringAttribute, // 
         "segregationOfDutiesRuleValidFrom":  StringAttribute, // 
         "segregationOfDutiesRuleValidTo":  StringAttribute, // 

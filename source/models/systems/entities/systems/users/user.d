@@ -16,7 +16,7 @@ class DSystemUserEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "defaultCountryRegion": StringAttribute, // 
         "documentHandlingActive": StringAttribute, // 
         "showAttachmentStatus": StringAttribute, // 

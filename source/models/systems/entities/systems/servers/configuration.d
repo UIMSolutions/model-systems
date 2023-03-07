@@ -16,7 +16,7 @@ class DSystemServerConfigurationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "aosInstanceName": StringAttribute, // 
         "azureDeploymentId": UUIDAttribute, // 
         "referenceToAClusterName": StringAttribute, // 

@@ -16,7 +16,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "validFrom":  StringAttribute, // 
         "validTo":  StringAttribute, // 
         "name":  StringAttribute, // 
