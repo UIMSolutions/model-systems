@@ -15,7 +15,7 @@ class DConfiguratorDefinitionGroupSummationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "average": StringAttribute, // 
         "averageSelected": StringAttribute, // 
         "definitionGroupId": UUIDAttribute, // 

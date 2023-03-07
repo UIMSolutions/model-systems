@@ -15,7 +15,7 @@ class DConfiguratorLayoutGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "layoutGroupId": UUIDAttribute, //
         
         "layoutType": StringAttribute, //

@@ -15,7 +15,7 @@ class DConfiguratorDefinitionGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "definitionGroupId": UUIDAttribute, // 
         "isQueryBased": StringAttribute, // 
         "queryTitle": StringAttribute, // 

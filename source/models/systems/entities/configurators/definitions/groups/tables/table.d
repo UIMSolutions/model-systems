@@ -16,7 +16,7 @@ class DConfiguratorDefinitionGroupTableEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "definitionGroupId": UUIDAttribute, // 
         "dataSourceNumber": StringAttribute, // 
         "relatedTableName": StringAttribute, // 

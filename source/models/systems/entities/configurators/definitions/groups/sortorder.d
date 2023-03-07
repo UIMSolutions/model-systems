@@ -15,7 +15,7 @@ class DConfiguratorDefinitionGroupSortOrderEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "definitionGroupId": UUIDAttribute, // 
         "fieldName": StringAttribute, // 
         "sortingNumber": StringAttribute, // 

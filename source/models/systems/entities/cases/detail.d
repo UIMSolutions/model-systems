@@ -15,10 +15,10 @@ class DCaseDetailBaseEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         ContactIdAttribute, // 
       ])
-      .addAttributes([
+      .addValues([
         "answerId": UUIDAttribute, // 
         "billingProjectId": UUIDAttribute, // 
         "caseCategoryHierarchyDetail": StringAttribute, // 

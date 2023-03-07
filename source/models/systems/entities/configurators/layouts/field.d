@@ -15,7 +15,7 @@ class DConfiguratorLayoutFieldEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "batchId": UUIDAttribute, //
         "comments": StringAttribute, //
         "arrayIndex": StringAttribute, //

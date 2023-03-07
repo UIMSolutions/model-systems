@@ -15,7 +15,7 @@ class DConfiguratorDefinitionGroupFieldEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "definitionGroupId": UUIDAttribute, // 
         "dataSourceNumber": StringAttribute, // 
         "fieldGroup": StringAttribute, // 
