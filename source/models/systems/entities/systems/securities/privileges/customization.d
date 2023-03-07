@@ -16,7 +16,7 @@ class DSystemSecurityPrivilegeCustomizationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "xmlObject": StringAttribute, // 
         "isDisabled": BooleanAttribute, // 
       ])

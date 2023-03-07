@@ -15,7 +15,7 @@ class DSystemSecurityPrivilegeEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "securityRoleId": UUIDAttribute, // 
         "securityRoleName": StringAttribute, // 
         "securityPrivilegeName": StringAttribute, // 

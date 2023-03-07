@@ -15,7 +15,7 @@ class DSystemSecurityUserRoleAssociationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "assignmentMode": StringAttribute, // 
         "assignmentStatus": StringAttribute, // 
         "securityRole": StringAttribute, // 

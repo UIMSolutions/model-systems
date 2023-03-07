@@ -16,7 +16,7 @@ class DADMSecurityUserRole : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "AssignmentMode": StringAttribute, // 
         "AssignmentStatus": StringAttribute, // 
         "SecurityRole": StringAttribute, // 
