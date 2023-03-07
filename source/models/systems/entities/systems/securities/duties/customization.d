@@ -25,8 +25,7 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
 mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"));
 
 version(test_model_systems) { unittest {
-    assert(SystemSecurityDutyCustomizationEntity);
-  
-    auto entity = SystemSecurityDutyCustomizationEntity;
-  }
-}
+  assert(SystemSecurityDutyCustomizationEntity);
+
+  auto entity = SystemSecurityDutyCustomizationEntity;
+}}

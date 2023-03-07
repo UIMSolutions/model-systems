@@ -16,10 +16,9 @@ class DSystemPolicyEntity : DEntity {
 
     this
       .addAttributes([
-        "isPolicyActive": BooleanAttribute, // 
-        "policyName": StringAttribute, // 
-        "policyTypeRecId": UUIDAttribute, // 
-        "policyType": StringAttribute, // 
+        "isActive": BooleanAttribute, // 
+        "typeRecId": UUIDAttribute, // 
+        "type": StringAttribute, // Type of policy
         "backingTable_SysPolicyRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("administration_systems.policies");

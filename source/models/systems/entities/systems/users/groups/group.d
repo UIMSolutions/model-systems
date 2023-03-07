@@ -17,7 +17,6 @@ class DSystemUserGroupEntity : DEntity {
     this
       .addAttributes([
         "groupId": UUIDAttribute, //
-        "name": StringAttribute, //
         "backingTable_UserGroupInfoRelationshipId": UUIDAttribute, //      
       ])
       .registerPath("administration_systems.users.groups");

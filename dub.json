@@ -42,7 +42,6 @@
 				"../../LIBS/uim-oop",
 				"../../LIBS/uim-models",
 				"../../LIBS/uim-jsonbase",
-				"../../LIBS/uim-entities",
 				"../../LIBS/uim-entitybase",
 				"./"
 			],
@@ -51,7 +50,6 @@
 				"../../LIBS/uim-oop",
 				"../../LIBS/uim-models",
 				"../../LIBS/uim-jsonbase",
-				"../../LIBS/uim-entities",
 				"../../LIBS/uim-entitybase",
 				"./"
 			]	
