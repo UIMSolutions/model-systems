@@ -11,9 +11,10 @@ import models.systems;
 // Main module
 public import models.systems.entities.configurators.definitions.groups.group;
 
-// Subpackages
-public import models.systems.entities.configurators.definitions.groups.fields;
-public import models.systems.entities.configurators.definitions.groups.tables;
+public { // Subpackages
+	import models.systems.entities.configurators.definitions.groups.fields;
+	import models.systems.entities.configurators.definitions.groups.tables;
+}
 
 // SUbmodules
 public import models.systems.entities.configurators.definitions.groups.sortorder;

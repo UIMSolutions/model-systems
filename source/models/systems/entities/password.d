@@ -8,8 +8,6 @@ module models.systems.entities.password;
 @safe:
 import models.systems;
 
-
-
 class DSystemPasswordEntity : DEntity {
   mixin(EntityThis!("SystemPasswordEntity"));
 
@@ -40,7 +38,7 @@ class DSystemPasswordEntity : DEntity {
     return cast(O)this;
   }
 
-  override DEntity fromJson(Json aJson) {
+  override DEntity fromJson(vibe.data.Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {

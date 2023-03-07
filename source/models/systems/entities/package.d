@@ -8,16 +8,17 @@ module models.systems.entities;
 @safe:
 import models.systems;
 
-// Subpackages
-public import models.systems.entities.batch;
-public import models.systems.entities.brazilian;
-public import models.systems.entities.cases;
-public import models.systems.entities.configurators;
-public import models.systems.entities.currencies;
-public import models.systems.entities.datamanagements;
-public import models.systems.entities.dmf;
-public import models.systems.entities.documents;
-public import models.systems.entities.numbersequences;
+public { // Subpackages
+  import models.systems.entities.batch;
+  import models.systems.entities.brazilian;
+  import models.systems.entities.cases;
+  import models.systems.entities.configurators;
+  import models.systems.entities.currencies;
+  import models.systems.entities.datamanagements;
+  import models.systems.entities.dmf;
+  import models.systems.entities.documents;
+  import models.systems.entities.numbersequences;
+}
 
 // Submodules
 public import models.systems.entities.bidategregorian;
