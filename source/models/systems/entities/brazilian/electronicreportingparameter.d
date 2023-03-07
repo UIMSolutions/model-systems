@@ -15,7 +15,7 @@ class DBrazilianElectronicReportingParametersEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "reportType": StringAttribute, //
         "erModelMappingTable": StringAttribute, //
         "modelMappingName": StringAttribute, //

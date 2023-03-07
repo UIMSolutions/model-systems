@@ -15,7 +15,7 @@ class DBatchJobHistoryEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "alertsProcessed": StringAttribute, // 
         "jobDescription": StringAttribute, // 
         "endDateTime": DatetimeAttribute, //  

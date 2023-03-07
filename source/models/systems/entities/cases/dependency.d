@@ -15,7 +15,7 @@ class DCaseDependencyEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "case": StringAttribute, // 
         "parentCase": StringAttribute, // 
         "caseId": UUIDAttribute, // 

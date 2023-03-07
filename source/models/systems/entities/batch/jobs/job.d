@@ -15,7 +15,7 @@ class DBatchJobEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "canceledBy":UserIdAttribute, // 
         "jobDescription": StringAttribute, // 
         "companyAccounts": StringAttribute, // 

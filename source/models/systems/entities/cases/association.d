@@ -15,7 +15,7 @@ class DCaseAssociationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "associationCompany": StringAttribute, // 
         "associationId": UUIDAttribute, // 
         "caseId": UUIDAttribute, // 

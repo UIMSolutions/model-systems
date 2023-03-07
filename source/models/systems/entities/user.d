@@ -47,7 +47,7 @@ class DSystemUserEntity : DEntity {
       .registerPath("system_users");
   }
 
-  override DEntity fromJson(Json aJson) {
+  override void fromJson(Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {
@@ -65,7 +65,6 @@ class DSystemUserEntity : DEntity {
         default: break;
       }      
     }
-    return this;
   }
 
   override Json toJson(string[] showFields = null, string[] hideFields = null) {    

@@ -15,7 +15,7 @@ class DBrazilianParametersEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "approximateTaxesPrintOnlyFinalUser": StringAttribute, //
         "approximateTaxesSource": StringAttribute, //
         "approximateTaxesText": StringAttribute, //

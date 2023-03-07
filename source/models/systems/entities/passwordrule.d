@@ -33,7 +33,7 @@ class DSystemPasswordRuleEntity : DEntity {
     return cast(O)this;
   }
 
-  override DEntity fromJson(vibe.data.Json aJson) {
+  override void fromJson(vibe.data.json.Json aJson) {
     super.fromJson(aJson);
     writeln(aJson);
         

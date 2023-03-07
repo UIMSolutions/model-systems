@@ -15,7 +15,7 @@ class DBatchServerScheduleEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "endTime": StringAttribute, // 
         "maximumBatchThreads": StringAttribute, // 
         "aosInstanceName": StringAttribute, // 

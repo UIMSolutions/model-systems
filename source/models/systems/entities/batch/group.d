@@ -15,7 +15,7 @@ class DBatchGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([  
+      .addValues([  
         "serverId": UUIDAttribute, // 
         "description": StringAttribute, // 
         "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 
