@@ -15,7 +15,7 @@ class DSystemParameterEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "maximumRowsOfSSRSReports": StringAttribute, // 
         "systemLanguage": StringAttribute, // 
         "increment": StringAttribute, // 

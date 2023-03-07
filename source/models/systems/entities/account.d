@@ -51,7 +51,7 @@ class DSystemAccountEntity : DEntity {
 
   override DEntity clone() { return SystemAccountEntity; }
 
-  override DEntity fromJson(vibe.data.Json aJson) {
+  override void fromJson(vibe.data.json.Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {
@@ -67,7 +67,6 @@ class DSystemAccountEntity : DEntity {
         default: break;
       }      
     }
-    return this;
   }
 
   override Json toJson(string[] showFields = null, string[] hideFields = null) {    

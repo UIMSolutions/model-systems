@@ -15,7 +15,7 @@ class DBIDateGregorianEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "gregorianDate": StringAttribute, //
         "gregorianDateId": UUIDAttribute, //
         "backingTable_BIDateGregorianRelationshipId": UUIDAttribute, //

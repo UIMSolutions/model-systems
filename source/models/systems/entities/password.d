@@ -38,7 +38,7 @@ class DSystemPasswordEntity : DEntity {
     return cast(O)this;
   }
 
-  override DEntity fromJson(vibe.data.Json aJson) {
+  override void fromJson(vibe.data.json.Json aJson) {
     super.fromJson(aJson);
     
     foreach (keyvalue; aJson.byKeyValue) {
@@ -51,7 +51,6 @@ class DSystemPasswordEntity : DEntity {
         default: break;
       }      
     }
-    return this;
   }
 
   override Json toJson(string[] showFields = null, string[] hideFields = null) {    

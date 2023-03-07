@@ -15,7 +15,7 @@ class DDemoDataPostEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "demoDataJob": StringAttribute, //
         "lineNum": StringAttribute, //
         "document": StringAttribute, //

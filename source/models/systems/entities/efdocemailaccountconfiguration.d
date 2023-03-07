@@ -15,7 +15,7 @@ class DEFDocEmailAccountConfigurationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "serverAddress": StringAttribute, //
         "port": StringAttribute, //
         "useSsl": StringAttribute, //

@@ -15,7 +15,7 @@ class DCityHolidayEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "city": StringAttribute, //
         "countryRegionId": UUIDAttribute, //
         "stateId": UUIDAttribute, //

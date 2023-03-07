@@ -15,7 +15,7 @@ class DSystemLoginEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "accountName": StringAttribute
       ]) 
       .registerPath("system_logins");

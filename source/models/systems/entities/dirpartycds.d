@@ -15,7 +15,7 @@ class DDirPartyCDSEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "partyNumber": StringAttribute, //
         "partyType": StringAttribute, //
         "nameAlias": StringAttribute, //

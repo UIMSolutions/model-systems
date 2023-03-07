@@ -15,7 +15,7 @@ class DEcoResProductCDSCategoryAssignmentEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .addAttributes([
+      .addValues([
         "productNumber": StringAttribute, //
         "productCategoryName": StringAttribute, //
         "productCategoryHierarchyName": StringAttribute, //
