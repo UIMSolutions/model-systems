@@ -11,7 +11,7 @@ import models.systems;
 class DCityHolidayEntity : DEntity {
   mixin(EntityThis!("CityHolidayEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
