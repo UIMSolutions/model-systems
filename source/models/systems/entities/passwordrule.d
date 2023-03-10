@@ -42,7 +42,6 @@ class DSystemPasswordRuleEntity : DEntity {
       auto v = keyvalue.value;
 
     }
-    return this;
   }
 
   override Json toJson(string[] showFields = null, string[] hideFields = null) {    

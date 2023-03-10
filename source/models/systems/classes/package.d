@@ -4,6 +4,3 @@
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
 module models.systems.classes;
-
-@safe:
-import models.systems;

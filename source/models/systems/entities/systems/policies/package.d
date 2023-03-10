@@ -5,9 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.systems.policies;
 
-@safe:
-import models.systems;
-
 public import models.systems.entities.systems.policies.policy;
 
 public import models.systems.entities.systems.policies.internalorganizationassignment;

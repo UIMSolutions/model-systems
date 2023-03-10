@@ -5,8 +5,10 @@
 **********************************************************************************************************/
 module models.systems.attributes;
 
-public import models.systems.attributes.codes;
-public import models.systems.attributes.elements;
-public import models.systems.attributes.entities;
-public import models.systems.attributes.relationships;
-public import models.systems.attributes.uuids;
+public {
+	import models.systems.attributes.codes;
+	import models.systems.attributes.elements;
+	import models.systems.attributes.entities;
+	import models.systems.attributes.relationships;
+	import models.systems.attributes.uuids;
+}

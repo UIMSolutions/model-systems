@@ -5,9 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.numbersequences;
 
-@safe:
-import models.systems;
-
 public { // Modules
 	import models.systems.entities.numbersequences.datatype;
 	import models.systems.entities.numbersequences.group;

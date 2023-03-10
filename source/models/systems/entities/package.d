@@ -5,9 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities;
 
-@safe:
-import models.systems;
-
 public { // Subpackages
   import models.systems.entities.batch;
   import models.systems.entities.brazilian;

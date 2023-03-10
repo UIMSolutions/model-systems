@@ -5,9 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.batch;
 
-@safe:
-import models.systems;
-
 // Subpackages
 public import models.systems.entities.batch.group;
 
