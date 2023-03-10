@@ -11,7 +11,7 @@ import models.systems;
 class DBatchJobEntity : DEntity {
   mixin(EntityThis!("BatchJobEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this

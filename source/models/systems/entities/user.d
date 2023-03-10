@@ -40,7 +40,7 @@ class DSystemUserEntity : DEntity {
   // entities related to user 
   mixin(OProperty!("UUID[]", "siteIds"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
