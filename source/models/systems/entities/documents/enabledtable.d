@@ -11,7 +11,7 @@ import models.systems;
 class DDocumentEnabledTableEntity : DEntity {
   mixin(EntityThis!("DocumentEnabledTableEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
