@@ -11,7 +11,7 @@ import models.systems;
 class DSystemSecurityDutyEntity : DEntity {
   mixin(EntityThis!("SystemSecurityDutyEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
