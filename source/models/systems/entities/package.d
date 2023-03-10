@@ -54,8 +54,8 @@ public import models.systems.entities.user;
 } */
 
 static this() {
-  EntityRegistry
+/*   EntityRegistry
     .register(
       SystemAccountEntity, SystemAppEntity, SystemGroupEntity, SystemLoginEntity, SystemOrganizationEntity, SystemPasswordEntity, SystemPasswordRuleEntity, 
-      SystemRequestEntity, SystemRoleEntity, SystemRightEntity, SystemSessionEntity, SystemSiteEntity, SystemTenantEntity, SystemUserEntity);
+      SystemRequestEntity, SystemRoleEntity, SystemRightEntity, SystemSessionEntity, SystemSiteEntity, SystemTenantEntity, SystemUserEntity); */
 }

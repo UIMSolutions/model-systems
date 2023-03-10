@@ -21,4 +21,6 @@ public import uim.models;
 // model-system packages
 public import models.systems.attributes;
 public import models.systems.classes;
+public import models.systems.elements;
 public import models.systems.entities;
+public import models.systems.values;
