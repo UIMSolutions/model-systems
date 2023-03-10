@@ -12,7 +12,7 @@ import models.systems;
 class DSystemSecuritySubRoleEntity : DEntity {
   mixin(EntityThis!("SystemSecuritySubRoleEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this

@@ -1,10 +1,9 @@
 {
 	"authors": [
-		"UI Manufaktur UG",
-		"Ozan Nurettin Süel",
-		"Sicherheitsschmiede"
+		"Sicherheitsschmiede",
+		"Ozan Nurettin Süel"
 	],
-	"copyright": "Copyright © 2017-2021, UI Manufaktur UG / 2022 Ozan Nurettin Süel (Sicherheitsschmiede)",
+	"copyright": "Copyright © 2015-2023, Ozan Nurettin Süel",	
 	"license": "Apache-2.0",
 	"name": "model-systems",
 	"description": "Model for system entities",
