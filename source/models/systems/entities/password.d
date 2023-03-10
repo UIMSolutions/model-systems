@@ -11,7 +11,7 @@ import models.systems;
 class DSystemPasswordEntity : DEntity {
   mixin(EntityThis!("SystemPasswordEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this

@@ -11,7 +11,7 @@ import models.systems;
 class DSystemParameterEntity : DEntity {
   mixin(EntityThis!("SystemParameterEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this

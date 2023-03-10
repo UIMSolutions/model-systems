@@ -13,7 +13,7 @@ import models.systems;
 class DSystemRequestEntity : DEntity {
   mixin(EntityThis!("SystemRequestEntity"));  
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
