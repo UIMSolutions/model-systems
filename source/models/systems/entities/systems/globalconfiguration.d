@@ -12,7 +12,7 @@ import models.systems;
 class DSystemGlobalConfigurationEntity : DEntity {
   mixin(EntityThis!("SystemGlobalConfigurationEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
