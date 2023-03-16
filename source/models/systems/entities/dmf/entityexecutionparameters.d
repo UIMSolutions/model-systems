@@ -20,7 +20,7 @@ class DDMFEntityExecutionParametersEntity : DEntity {
         "importThresholdRecordCount": StringAttribute, //
         "numberOfImportTasks": StringAttribute, //
       ])
-      .registerPath("administration_dmf.entityexecutionparameters");
+      .registerPath("system_dmf.entityexecutionparameters");
   }
 }
 mixin(EntityCalls!("DMFEntityExecutionParametersEntity"));

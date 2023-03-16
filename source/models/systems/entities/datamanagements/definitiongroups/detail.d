@@ -47,7 +47,7 @@ class DDataManagementDefinitionGroupDetailEntity : DEntity {
         "defaultRefreshType": StringAttribute, //
         "relationship_DefinitionGroupDetailsRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_datamanagements.definitiongroupdetails");
+      .registerPath("system_datamanagements.definitiongroupdetails");
   }
 }
 mixin(EntityCalls!("DataManagementDefinitionGroupDetailEntity"));

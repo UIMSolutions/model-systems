@@ -48,7 +48,7 @@ class DDataManagementExecutionJobDetailEntity : DEntity {
         "failLevelOnError": StringAttribute, //
         "relationship_ExecutionJobDetailsRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_datamanagements.executionjobs");
+      .registerPath("system_datamanagements.executionjobs");
   }
 }
 mixin(EntityCalls!("DataManagementExecutionJobDetailEntity"));
