@@ -29,7 +29,7 @@ class DConfiguratorDefinitionGroupSummationEntity : DEntity {
         "backingTable_ConfSummation_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
        ])
-      .registerPath("administration_configuratordefinitiongroupsummation");
+      .registerPath("system_configuratordefinitiongroupsummation");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupSummationEntity"));

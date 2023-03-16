@@ -22,7 +22,7 @@ class DConfiguratorDefinitionGroupEntity : DEntity {
         "backingTable_ConfTable_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_configuratordefinitiongroups");
+      .registerPath("system_configuratordefinitiongroups");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupEntity"));

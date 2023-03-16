@@ -64,7 +64,7 @@ class DBrazilianParametersEntity : DEntity {
         "backingTable_BrazilParametersRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_brazilian.electronicreportingparameters");
+      .registerPath("system_brazilian.electronicreportingparameters");
   }
 }
 mixin(EntityCalls!("BrazilianParametersEntity"));

@@ -22,7 +22,7 @@ class DCaseDependencyEntity : DEntity {
         "parentCaseId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_casedependencies");
+      .registerPath("system_casedependencies");
   }
 }
 mixin(EntityCalls!("CaseDependencyEntity"));

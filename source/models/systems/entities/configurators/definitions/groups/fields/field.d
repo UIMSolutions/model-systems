@@ -26,7 +26,7 @@ class DConfiguratorDefinitionGroupFieldEntity : DEntity {
         "backingTable_ConfDefinitions_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_configuratordefinitiongroupfields");
+      .registerPath("system_configuratordefinitiongroupfields");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupFieldEntity"));
