@@ -30,7 +30,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DEntity {
         "risk":  StringAttribute, // 
         "mitigation":  StringAttribute, //      
       ])
-      .registerPath("administration_system.securities.sodrules");
+      .registerPath("system_system.securities.sodrules");
   }
 }
 mixin(EntityCalls!("SecuritySegregationOfDutiesRuleEntity"));

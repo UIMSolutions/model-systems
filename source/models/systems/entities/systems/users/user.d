@@ -62,7 +62,7 @@ class DSystemUserEntity : DEntity {
         "automaticUrlUpdate": StringAttribute, // 
         "userObjectId": UUIDAttribute, // 
       ])
-      .registerPath("administration_systems.users");
+      .registerPath("system_systems.users");
   }
 }
 mixin(EntityCalls!("SystemUserEntity"));

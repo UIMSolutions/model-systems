@@ -22,7 +22,7 @@ class DSystemUserGroupUserListEntity : DEntity {
         "relationship_SystemUserGroupEntityRelationshipId": UUIDAttribute, // 
         "backingTable_UserGroupListRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_systems.users.groups.userlists");
+      .registerPath("system_systems.users.groups.userlists");
   }
 }
 mixin(EntityCalls!("SystemUserGroupUserListEntity"));

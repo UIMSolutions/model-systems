@@ -19,7 +19,7 @@ class DSystemUserGroupEntity : DEntity {
         "groupId": UUIDAttribute, //
         "backingTable_UserGroupInfoRelationshipId": UUIDAttribute, //      
       ])
-      .registerPath("administration_systems.users.groups");
+      .registerPath("system_systems.users.groups");
   }
 }
 mixin(EntityCalls!("SystemUserGroupEntity"));

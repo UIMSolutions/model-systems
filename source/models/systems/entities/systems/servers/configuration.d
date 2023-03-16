@@ -29,7 +29,7 @@ class DSystemServerConfigurationEntity : DEntity {
         "clusterName": StringAttribute, // 
         "backingTable_SysServerConfigRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_systems.serversconfigurations");
+      .registerPath("system_systems.serversconfigurations");
   }
 }
 mixin(EntityCalls!("SystemServerConfigurationEntity"));
