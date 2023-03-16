@@ -24,7 +24,7 @@ class DSystemPolicyRuleTypeEntity : DEntity {
         "policyName": StringAttribute, // 
         "backingTable_SysPolicyRuleTypeRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_systems.policies.ruletypes");
+      .registerPath("system_systems.policies.ruletypes");
   }
 }
 mixin(EntityCalls!("SystemPolicyRuleTypeEntity"));

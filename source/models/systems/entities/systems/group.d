@@ -26,7 +26,7 @@ class DSystemGroupEntity : DEntity {
         "preferredTimeZone": StringAttribute, //
         "preferredCalendar": StringAttribute, //
       ])
-      .registerPath("administration_systems.groups");
+      .registerPath("system_systems.groups");
   }
 }
 mixin(EntityCalls!("SystemGroupEntity"));

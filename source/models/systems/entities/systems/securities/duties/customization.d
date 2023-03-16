@@ -19,7 +19,7 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
         "xmlObject": StringAttribute, // 
         "isDisabled	": BooleanAttribute, // 
       ])
-      .registerPath("administration_system.securities.dutycustomizations");
+      .registerPath("system_system.securities.dutycustomizations");
   }
 }
 mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"));

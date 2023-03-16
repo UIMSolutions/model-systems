@@ -27,7 +27,7 @@ class DSystemEmailParameterEntity : DEntity {
         "mailerInteractiveEnabled": StringAttribute, // 
         "backingTable_SysEmailParametersRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_systems.emailparameters");
+      .registerPath("system_systems.emailparameters");
   }
 }
 mixin(EntityCalls!("SystemEmailParameterEntity"));
