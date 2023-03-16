@@ -30,7 +30,7 @@ class DBatchJobHistoryEntity : DEntity {
         "dataPartition": StringAttribute, // 
         "backingTable_BatchJobHistoryRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_batchjobhistories");
+      .registerPath("system_batchjobhistories");
   }
 }
 mixin(EntityCalls!("BatchJobHistoryEntity"));

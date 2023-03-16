@@ -30,7 +30,7 @@ class DDemoDataPostEntity : DEntity {
         "backingTable_DemoDataPostRunDocumentRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_demodataposts");
+      .registerPath("system_demodataposts");
   }
 }
 mixin(EntityCalls!("DemoDataPostEntity"));

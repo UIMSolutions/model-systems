@@ -20,7 +20,7 @@ class DBIDateGregorianEntity : DEntity {
         "gregorianDateId": UUIDAttribute, //
         "backingTable_BIDateGregorianRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_bidategregorian");
+      .registerPath("system_bidategregorian");
   }
 }
 mixin(EntityCalls!("BIDateGregorianEntity"));
