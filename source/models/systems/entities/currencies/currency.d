@@ -32,7 +32,7 @@ class DCurrencyEntity : DEntity {
         "symbol": StringAttribute, //
         "backingTable_CurrencyRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_currencies");
+      .registerPath("system_currencies");
   }
 }
 mixin(EntityCalls!("CurrencyEntity"));

@@ -21,7 +21,7 @@ class DCurrencyISOCodeEntity : DEntity {
         "isoCurrencyName": StringAttribute, //
         "backingTable_ISOCurrencyCodeRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_currencies.isocodes");
+      .registerPath("system_currencies.isocodes");
   }
 }
 mixin(EntityCalls!("CurrencyISOCodeEntity"));

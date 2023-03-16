@@ -29,7 +29,7 @@ class DDataManagementEntity : DEntity {
         "recVersionValue": StringAttribute, //
         "changeTrackingType": StringAttribute, //
       ])
-      .registerPath("administration_datamanagements");
+      .registerPath("system_datamanagements");
   }
 }
 mixin(EntityCalls!("DataManagementEntity"));

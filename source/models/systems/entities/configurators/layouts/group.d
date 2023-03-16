@@ -31,7 +31,7 @@ class DConfiguratorLayoutGroupEntity : DEntity {
         "backingTable_ConfLayoutGroups_BRRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //  
     ])
-      .registerPath("administration_configurators.layouts.groups");
+      .registerPath("system_configurators.layouts.groups");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutGroupEntity"));

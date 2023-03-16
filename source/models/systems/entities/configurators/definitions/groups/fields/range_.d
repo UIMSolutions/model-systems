@@ -24,7 +24,7 @@ class DConfiguratorDefinitionGroupFieldRangeEntity : DEntity {
         "backingTable_ConfRange_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("administration_configuratorDefinitiongroupfieldranges");
+      .registerPath("system_configuratorDefinitiongroupfieldranges");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupFieldRangeEntity"));
