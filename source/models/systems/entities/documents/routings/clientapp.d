@@ -20,7 +20,7 @@ class DDocumentRoutingClientAppEntity : DEntity {
         "clientApplicationDescription": StringAttribute, //
         "backingTable_DocumentRoutingClientAppRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("administration_documents.routings.clientapps");
+      .registerPath("system_documents.routings.clientapps");
   }
 }
 mixin(EntityCalls!("DocumentRoutingClientAppEntity"));

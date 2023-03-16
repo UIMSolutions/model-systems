@@ -22,7 +22,7 @@ class DDMFDefinitionGroupTemplateHeaderEntity : DEntity {
         "validatedDateTime": StringAttribute, //
         "relationship_DMFDefinitionGroupTemplateLineEntityRelationshipId": UUIDAttribute, //
     ])
-      .registerPath("administration_dmf.definitiongroups.templateheaders");
+      .registerPath("system_dmf.definitiongroups.templateheaders");
   }
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateHeaderEntity"));
