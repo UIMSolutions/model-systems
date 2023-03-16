@@ -7,3 +7,21 @@ module models.systems.entities.numbersequences.numbersequence;
 
 @safe:
 import models.systems;
+
+class DNumberSequenceEntity : DEntity {
+  mixin(EntityThis!("NumberSequenceEntity"));
+
+  override void initialize(Json configSettings = Json(null)) {
+    super.initialize(configSettings);
+
+    this
+      .addValues([
+				"numberSequenceCode": StringAttribute, //
+				"companyId": StringAttribute, //
+				"numberSequenceScope": StringAttribute, //
+				"backingTable_NumberSequenceTableRelationshipId": StringAttribute, //
+      ])
+      .registerPath("system_numbersequences");
+  }
+}
+mixin(EntityCalls!("NumberSequenceEntity"));

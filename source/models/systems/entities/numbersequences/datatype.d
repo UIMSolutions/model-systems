@@ -7,3 +7,33 @@ module models.systems.entities.numbersequences.datatype;
 
 @safe:
 import models.systems;
+
+class DNumberSequenceDataTypeEntity : DEntity {
+  mixin(EntityThis!("NumberSequenceDataTypeEntity"));
+
+  override void initialize(Json configSettings = Json(null)) {
+    super.initialize(configSettings);
+
+    this
+      .addValues([
+				"dataType": StringAttribute, //
+				"typeID": StringAttribute, //
+				"group": StringAttribute, //
+				"reference": StringAttribute, //
+				"scopeType": StringAttribute, //
+				"sorting": StringAttribute, //
+				"toALowerNumber": StringAttribute, //
+				"toAHigherNumber": StringAttribute, //
+				"continuous": StringAttribute, //
+				"quantityOfNumbers": StringAttribute, //
+				"highest": StringAttribute, //
+				"lowest": StringAttribute, //
+				"manual": StringAttribute, //
+				"numberSequenceArea": StringAttribute, //
+				"partitionKey": StringAttribute, //
+				"backingTable_NumberSequenceDatatypeRelationshipId": StringAttribute, //
+      ])
+      .registerPath("system_numbersequences.datatypes");
+  }
+}
+mixin(EntityCalls!("NumberSequenceDataTypeEntity"));

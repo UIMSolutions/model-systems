@@ -3,30 +3,24 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.numbersequences.reference;
+module models.systems.entities.measurements.sourcesystem;
 
 @safe:
 import models.systems;
 
-class DNumberSequencesReferenceEntity : DEntity {
-  mixin(EntityThis!("NumberSequencesReferenceEntity"));
+class DMeasurementSourceSystemEntity : DEntity {
+  mixin(EntityThis!("MeasurementSourceSystemEntity"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
       .addValues([
-				"reuseNumbers": StringAttribute, //
-				"numberSequenceDatatype": StringAttribute, //
-				"numberSequenceCodeRecId": StringAttribute, //
-				"numberSequenceScope": StringAttribute, //
-				"numberSequenceCode": StringAttribute, //
-				"dataTypeName": StringAttribute, //
-				"scopeValue": StringAttribute, //
-				"scopeType": StringAttribute, //
-				"backingTable_NumberSequenceReferenceRelationshipId": StringAttribute, //
+        "name": StringAttribute, //
+        /* "Description": StringAttribute, // */
+        "backingTable_MeasurementSourceSystemRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_numbersequences.references");
+      .registerPath("system_measurements.sourcesystems");
   }
 }
-mixin(EntityCalls!("NumberSequencesReferenceEntity"));
+mixin(EntityCalls!("MeasurementSourceSystemEntity"));

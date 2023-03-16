@@ -7,3 +7,19 @@ module models.systems.entities.numbersequences.group;
 
 @safe:
 import models.systems;
+
+class DNumberSequenceGroupEntity : DEntity {
+  mixin(EntityThis!("NumberSequenceGroupEntity"));
+
+  override void initialize(Json configSettings = Json(null)) {
+    super.initialize(configSettings);
+
+    this
+      .addValues([
+				"numberSequenceGroup": StringAttribute, //
+				"backingTable_NumberSequenceGroupRelationshipId": StringAttribute, //
+      ])
+      .registerPath("system_numbersequences.groups");
+  }
+}
+mixin(EntityCalls!("NumberSequenceGroupEntity"));
