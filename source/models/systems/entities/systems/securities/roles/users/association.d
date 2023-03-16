@@ -23,7 +23,7 @@ class DSystemSecurityUserRoleAssociationEntity : DEntity {
         "securityRoleId": UUIDAttribute, // 
         "securityRoleName": StringAttribute, // 
       ])
-      .registerPath("administration_system.securities.userrole.associations");
+      .registerPath("system_system.securities.userrole.associations");
   }
 }
 mixin(EntityCalls!("SystemSecurityUserRoleAssociationEntity"));

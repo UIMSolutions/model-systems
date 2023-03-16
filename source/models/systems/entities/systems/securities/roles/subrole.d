@@ -22,7 +22,7 @@ class DSystemSecuritySubRoleEntity : DEntity {
         "securitySubRoleId": UUIDAttribute, // 
         "securitySubRoleName": StringAttribute, // 
       ])
-      .registerPath("administration_system.securities.subroles");
+      .registerPath("system_system.securities.subroles");
   }
 }
 mixin(EntityCalls!("SystemSecuritySubRoleEntity"));

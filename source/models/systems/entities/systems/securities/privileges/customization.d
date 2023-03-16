@@ -20,7 +20,7 @@ class DSystemSecurityPrivilegeCustomizationEntity : DEntity {
         "xmlObject": StringAttribute, // 
         "isDisabled": BooleanAttribute, // 
       ])
-      .registerPath("administration_system.securities.privilegecustomizations");
+      .registerPath("system_system.securities.privilegecustomizations");
   }
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeCustomizationEntity"));

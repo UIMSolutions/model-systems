@@ -22,7 +22,7 @@ class DSystemSecurityRoleDutyEntity : DEntity {
         "securityDutyId": UUIDAttribute, // 
         "securityDutyName": StringAttribute, // 
       ])
-      .registerPath("administration_systems.securities.roleduties");
+      .registerPath("system_systems.securities.roleduties");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleDutyEntity"));
