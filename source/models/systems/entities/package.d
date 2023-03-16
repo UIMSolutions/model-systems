@@ -14,6 +14,7 @@ public { // Subpackages
   import models.systems.entities.datamanagements;
   import models.systems.entities.dmf;
   import models.systems.entities.documents;
+  import models.systems.entities.documents.emails;
   import models.systems.entities.numbersequences;
 }
 

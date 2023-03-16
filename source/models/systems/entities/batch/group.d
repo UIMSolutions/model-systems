@@ -17,7 +17,7 @@ class DBatchGroupEntity : DEntity {
     this
       .addValues([  
         "serverId": UUIDAttribute, // 
-        "description": StringAttribute, // 
+        /* "description": StringAttribute, //  */
         "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_batchgroups");

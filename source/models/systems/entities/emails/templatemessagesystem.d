@@ -4,3 +4,29 @@
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
 module models.systems.entities.emails.templatemessagesystem;
+
+@safe:
+import models.systems;
+
+class DEmailTemplateMessageSystemEntity : DEntity {
+  mixin(EntityThis!("EmailTemplateMessageSystemEntity"));
+
+  override void initialize(Json configSettings = Json(null)) {
+    super.initialize(configSettings);
+
+    this
+      .addValues([
+				"emailId": StringAttribute, //
+				"language": StringAttribute, //
+				"layout": StringAttribute, //
+				"email": StringAttribute, //
+				"subject": StringAttribute, //
+				"xsltTransform": StringAttribute, //
+				"emailTemplateString": StringAttribute, //
+				"relationship_EmailTemplateRelationshipId": StringAttribute, //
+				"backingTable_SysEmailMessageSystemTableRelationshipId": StringAttribute, //
+      ])
+      .registerPath("system_emails.templatemessagesystems");
+  }
+}
+mixin(EntityCalls!("EmailTemplateMessageSystemEntity"));
