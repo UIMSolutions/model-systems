@@ -8,7 +8,6 @@ module models.systems.entities.passwordrule;
 @safe:
 import models.systems;
 
-
 class DSystemPasswordRuleEntity : DEntity {
   mixin(EntityThis!("SystemPasswordRuleEntity"));
 
@@ -35,7 +34,7 @@ class DSystemPasswordRuleEntity : DEntity {
 
   override void fromJson(vibe.data.json.Json aJson) {
     super.fromJson(aJson);
-    writeln(aJson);
+/*     writeln(aJson); */
         
     foreach (keyvalue; aJson.byKeyValue) {
       auto k = keyvalue.key;

@@ -8,8 +8,8 @@
 	"name": "model-systems",
 	"description": "Model for system entities",
 	"dependencies": {
-		"colored": "~>0.0.23",
-		"vibe-d": "~>0.9.5"
+		"colored": "~>0.0.29",
+		"vibe-d": "~>0.9.6"
 	},
 	"configurations": [
 		{
