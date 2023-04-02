@@ -3,11 +3,11 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.workflows.entities.elements.notifications;
+module models.systems.entities.workflows.elements.notifications;
 
 // Main entity
-public import models.workflows.entities.elements.notifications.notification;
+public import models.systems.entities.workflows.elements.notifications.notification;
 
 // Additional entities
-public import models.workflows.entities.elements.notifications.message;
+public import models.systems.entities.workflows.elements.notifications.message;
 
