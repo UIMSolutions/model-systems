@@ -14,3 +14,22 @@ public {
   import models.systems.entities.administrations.numbersequences;
   import models.systems.entities.administrations.segregation_of_duties;
 }
+
+static this() {
+  import uim.models;
+
+	EntityRegistry
+		.register(
+			BatchJobHistoryEntity,
+			BatchJobEntity,
+      BrazilianElectronicReportingParametersEntity,
+      BrazilianParametersEntity,
+      CaseAssociationEntity,
+      CaseDependencyEntity,
+      CaseDetailBaseEntity,
+      ConfiguratorDefinitionGroupFieldEntity,
+      ConfiguratorDefinitionGroupFieldRangeEntity,
+      ConfiguratorDefinitionGroupTableRelationEntity,
+      ConfiguratorDefinitionGroupTableEntity
+		);
+}

@@ -18,10 +18,11 @@ public import uim.core;
 public import uim.oop;
 public import uim.models;
 
-// model-system packages
-public import models.systems.attributes;
-public import models.systems.classes;
-public import models.systems.elements;
-public import models.systems.entities;
-public import models.systems.usecases;
-public import models.systems.values;
+public { // model-system packages
+	import models.systems.attributes;
+	import models.systems.classes;
+	import models.systems.elements;
+	import models.systems.entities;
+	import models.systems.usecases;
+	import models.systems.values;
+}
