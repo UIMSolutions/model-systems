@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.versions.notifications.message;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowVersionNotificationMessageEntity : DEntity {
   mixin(EntityThis!("WorkflowVersionNotificationMessageEntity"));

@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.workitems.queues.groups.relation;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowWorkItemQueueGroupRelationEntity : DEntity {
   mixin(EntityThis!("WorkflowWorkItemQueueGroupRelationEntity"));

@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.versions.notes;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowVersionNotesEntity : DEntity {
   mixin(EntityThis!("WorkflowVersionNotesEntity"));

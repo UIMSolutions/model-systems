@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.versions.version_;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowVersionEntity : DEntity {
   mixin(EntityThis!("WorkflowVersionEntity"));

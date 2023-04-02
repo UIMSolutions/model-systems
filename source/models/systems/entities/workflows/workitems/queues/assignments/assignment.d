@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.workitems.queues.assignments.assignment;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowWorkItemQueueAssignmentEntity : DEntity {
   mixin(EntityThis!("WorkflowWorkItemQueueAssignmentEntity"));

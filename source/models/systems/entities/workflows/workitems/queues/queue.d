@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.workitems.queues.queue;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWFLWorkItemQueue : DEntity {
   mixin(EntityThis!("WFLWorkItemQueue"));

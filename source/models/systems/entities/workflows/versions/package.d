@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.versions;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 public import models.systems.entities.workflows.versions.notes;
 public import models.systems.entities.workflows.versions.notifications;
