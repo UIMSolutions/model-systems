@@ -3,31 +3,33 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.batch.group;
+module models.systems.entities.systems.users.groups.userlist;
 
 @safe:
 import models.systems;
 
-class DBatchGroupEntity : DEntity {
-  mixin(EntityThis!("BatchGroupEntity"));
+class DSystemUserGroupUserListEntity : DEntity {
+  mixin(EntityThis!("SystemUserGroupUserListEntity"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .addValues([  
-        "serverId": UUIDAttribute, // 
-        /* "description": StringAttribute, //  */
-        "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 
+      .addValues([
+        "groupId": UUIDAttribute, // 
+        "userId": UUIDAttribute, // 
+        "relationship_SystemUserEntityRelationshipId": UUIDAttribute, // 
+        "relationship_SystemUserGroupEntityRelationshipId": UUIDAttribute, // 
+        "backingTable_UserGroupListRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_batchgroups");
+      .registerPath("system_systems.users.groups.userlists");
   }
 }
-mixin(EntityCalls!("BatchGroupEntity"));
+mixin(EntityCalls!("SystemUserGroupUserListEntity"));
 
 version(test_model_systsms) { unittest {
-    assert(BatchGroupEntity);
-
-    auto entity = BatchGroupEntity;
+    assert(SystemUserGroupUserListEntity);
+  
+    auto entity = SystemUserGroupUserListEntity;
   }
 }
