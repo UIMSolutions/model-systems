@@ -3,13 +3,13 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.datamanagements.templates;
+module models.systems.entities.administrations.datamanagements.templates;
 
 // Main entity
-public import models.systems.entities.datamanagements.templates.template_;
+public import models.systems.entities.administrations.datamanagements.templates.template_;
 
 // Additional entities
-public import models.systems.entities.datamanagements.templates.detail;
+public import models.systems.entities.administrations.datamanagements.templates.detail;
 
 // Additional packages
-public import models.systems.entities.datamanagements.templates.sources;
+public import models.systems.entities.administrations.datamanagements.templates.sources;
