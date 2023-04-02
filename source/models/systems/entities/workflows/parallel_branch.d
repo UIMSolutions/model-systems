@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.parallel_branch;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowParallelBranchEntity : DEntity {
   mixin(EntityThis!("WorkflowParallelBranchEntity"));

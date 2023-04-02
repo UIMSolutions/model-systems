@@ -6,7 +6,7 @@
 module models.systems.entities.workflows;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 public import models.systems.entities.workflows.elements;
 public import models.systems.entities.workflows.parameters;

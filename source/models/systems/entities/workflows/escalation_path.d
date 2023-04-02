@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.escalation_path;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowEscalationPathEntity : DEntity {
   mixin(EntityThis!("WorkflowEscalationPathEntity"));

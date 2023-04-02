@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.elements.action;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowElementActionEntity : DEntity {
   mixin(EntityThis!("WorkflowElementActionEntity"));

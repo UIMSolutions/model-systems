@@ -6,18 +6,10 @@
 module models.systems.entities;
 
 public { // Subpackages
-  import models.systems.entities.batch;
-  import models.systems.entities.brazilian;
-  import models.systems.entities.cases;
-  import models.systems.entities.configurators;
-  import models.systems.entities.currencies;
-  import models.systems.entities.datamanagements;
-  import models.systems.entities.dmf;
-  import models.systems.entities.documents;
-  import models.systems.entities.emails;
-  import models.systems.entities.measurements;
-  import models.systems.entities.numbersequences;
-  import models.systems.entities.segregation_of_duties;
+  import models.systems.entities.administrations;
+  import models.systems.entities.organizations;
+  import models.systems.entities.workflows;
+  
   import models.systems.entities.systems;
 }
 
