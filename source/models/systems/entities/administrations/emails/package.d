@@ -3,7 +3,7 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.emails;
+module models.systems.entities.administrations.emails;
 
-public import models.systems.entities.emails.templatemessagesystem;
-public import models.systems.entities.emails.templatesystem;
+public import models.systems.entities.administrations.emails.templatemessagesystem;
+public import models.systems.entities.administrations.emails.templatesystem;

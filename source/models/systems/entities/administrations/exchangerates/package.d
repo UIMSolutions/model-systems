@@ -1,6 +1,6 @@
-module models.systems.entities.exchangerates;
+module models.systems.entities.administrations.exchangerates;
 
 public {
-  import models.systems.entities.exchangerates.exchangerate;
-  import models.systems.entities.exchangerates.type;
+  import models.systems.entities.administrations.exchangerates.exchangerate;
+  import models.systems.entities.administrations.exchangerates.type;
 }
