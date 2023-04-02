@@ -20,10 +20,13 @@ class DSystemSessionEntity : DEntity {
 
   override DEntity clone() { return SystemSessionEntity; }
 
-  override DEntity fromRequest(STRINGAA reqParameters) {
+  override void fromRequest(STRINGAA reqParameters) {
     super.fromRequest(reqParameters);
-    if ("entity_siteId" in reqParameters) this["siteId"] = reqParameters["entity_siteId"];
-    return this; }
+    
+    if ("entity_siteId" in reqParameters) {
+      this["siteId"] = reqParameters["entity_siteId"];
+    }
+  }
 }
 mixin(EntityCalls!("SystemSessionEntity"));
 

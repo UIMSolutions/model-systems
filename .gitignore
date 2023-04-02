@@ -15,3 +15,4 @@ dub.selections.json
 .dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-40D500A05169A009785B09C0C8905A31/model-systems-test-default.o
 .dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-8DA3A42BB417D870C35B68E15444AB8B_dub_test_root.d
 .dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-814DFF2603CDBC5416A9654511F5EED3_dub_test_root.d
+.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-87FD95B767760BCE87B85A91887D5A34_dub_test_root.d
