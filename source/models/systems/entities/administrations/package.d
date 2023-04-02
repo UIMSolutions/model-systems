@@ -1,1 +1,1 @@
-module models.systems.entities.administrations;
+module models.systems.entities.administrations.administrations;
