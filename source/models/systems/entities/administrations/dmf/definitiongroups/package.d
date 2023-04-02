@@ -3,7 +3,7 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.dmf.definitiongroups;
+module models.systems.entities.administrations.dmf.definitiongroups;
 
-public import models.systems.entities.dmf.definitiongroups.templateheader;
-public import models.systems.entities.dmf.definitiongroups.templateline;
+public import models.systems.entities.administrations.dmf.definitiongroups.templateheader;
+public import models.systems.entities.administrations.dmf.definitiongroups.templateline;
