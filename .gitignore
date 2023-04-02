@@ -18,3 +18,4 @@ dub.selections.json
 .dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-87FD95B767760BCE87B85A91887D5A34_dub_test_root.d
 .dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-A78FB3809044561CD82A94E2E4CE971B_dub_test_root.d
 .gitignore
+.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-AE827CB65F49598622B2E0045D8E2BCB/model-systems-test-default.o
