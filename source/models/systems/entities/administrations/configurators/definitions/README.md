@@ -1,1 +1,1 @@
-# models.systems.entities.configurators.definitions
+# models.systems.entities.administrations.configurators.definitions
