@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.elements.link;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowElementLinkEntity : DEntity {
   mixin(EntityThis!("WorkflowElementLinkEntity"));

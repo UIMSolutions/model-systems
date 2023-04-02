@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.elements.notifications.notification;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowElementNotificationEntity : DEntity {
   mixin(EntityThis!("WorkflowElementNotificationEntity"));

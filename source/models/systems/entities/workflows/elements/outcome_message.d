@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.elements.outcome_message;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowElementOutcomeMessageEntity : DEntity {
   mixin(EntityThis!("WorkflowElementOutcomeMessageEntity"));

@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.steps.message;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowStepMessageEntity : DEntity {
   mixin(EntityThis!("WorkflowStepMessageEntity"));

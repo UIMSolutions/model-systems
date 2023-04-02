@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.parameters.organization;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowParametersOrganizationEntity : DEntity {
   mixin(EntityThis!("WorkflowParametersOrganizationEntity"));

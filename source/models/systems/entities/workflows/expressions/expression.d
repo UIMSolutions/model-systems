@@ -6,7 +6,7 @@
 module models.systems.entities.workflows.expressions.expression;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DWorkflowExpressionEntity : DEntity {
   mixin(EntityThis!("WorkflowExpressionEntity"));
