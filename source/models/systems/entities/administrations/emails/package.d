@@ -5,5 +5,4 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.emails;
 
-public import models.systems.entities.administrations.emails.templatemessagesystem;
-public import models.systems.entities.administrations.emails.templatesystem;
+public import models.systems.entities.administrations.emails.parameter;

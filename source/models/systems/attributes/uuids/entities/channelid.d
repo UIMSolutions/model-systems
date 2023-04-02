@@ -3,10 +3,10 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.workflows.attributes.uuids.entityids.channelid;
+module models.systems.attributes.uuids.entities.channelid;
 
 @safe:
-import models.workflows;
+import models.systems;
 
 class DChannelIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("ChannelIdAttribute"));
