@@ -3,40 +3,38 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.systems.emailparameter;
+module models.workflows.entities.line_item;
 
 @safe:
-import models.systems;
+import models.workflows;
 
-// 
-class DSystemEmailParameterEntity : DEntity {
-  mixin(EntityThis!("SystemEmailParameterEntity"));
-
+class DWorkflowLineItemEntity : DEntity {
+  mixin(EntityThis!("WorkflowLineItemEntity"));
+  
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
       .addValues([
-        "maximumEmailAttachmentSize": StringAttribute, // 
-        "smtpUseNTLM": StringAttribute, // 
-        "smtpPortNumber": StringAttribute, // 
-        "smtpRelayServerName": StringAttribute, // 
-        "smtpUserName": StringAttribute, // 
-        "smtpRequireSSL": StringAttribute, // 
-        "mailerNonInteractive": StringAttribute, // 
-        "mailerInteractiveEnabled": StringAttribute, // 
-        "backingTable_SysEmailParametersRelationshipId": UUIDAttribute, // 
+        ElementIdAttribute, //
+        ExpressionIdAttribute, //
       ])
-      .registerPath("system_systems.emailparameters");
+      .addValues([
+        "sequence": StringAttribute, //
+        "workflowNumber": StringAttribute, //
+        "relationship_WorkflowSubworkflowRelationshipId": UUIDAttribute, //
+        "relationship_ConditionRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowSubWorkflowItemRelationshipId": UUIDAttribute, //
+      ])
+      .registerPath("workflow_lineitems");
   }
 }
-mixin(EntityCalls!("SystemEmailParameterEntity"));
+mixin(EntityCalls!("WorkflowLineItemEntity"));
 
-version(test_model_systsms) { unittest {
-    
-    assert(SystemEmailParameterEntity);
-  
-  auto entity = SystemEmailParameterEntity;
+version(test_model_workflows) { unittest {
+    assert(WorkflowLineItemEntity);
+
+  auto entity = WorkflowLineItemEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
