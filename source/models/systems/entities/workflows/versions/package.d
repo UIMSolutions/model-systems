@@ -3,12 +3,12 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.workflows.entities.versions;
+module models.systems.entities.workflows.versions;
 
 @safe:
 import models.workflows;
 
-public import models.workflows.entities.versions.notes;
-public import models.workflows.entities.versions.notifications;
-public import models.workflows.entities.versions.version_;
+public import models.systems.entities.workflows.versions.notes;
+public import models.systems.entities.workflows.versions.notifications;
+public import models.systems.entities.workflows.versions.version_;
  
