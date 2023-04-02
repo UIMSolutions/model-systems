@@ -3,14 +3,13 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.configurators.definitions.groups.tables.table;
+module models.systems.entities.configurators.definitions.groups.group;
 
 @safe:
 import models.systems;
 
-// 
-class DConfiguratorDefinitionGroupTableEntity : DEntity {
-  mixin(EntityThis!("ConfiguratorDefinitionGroupTableEntity"));
+class DConfiguratorDefinitionGroupEntity : DEntity {
+  mixin(EntityThis!("ConfiguratorDefinitionGroupEntity"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -18,22 +17,20 @@ class DConfiguratorDefinitionGroupTableEntity : DEntity {
     this
       .addValues([
         "definitionGroupId": UUIDAttribute, // 
-        "dataSourceNumber": StringAttribute, // 
-        "relatedTableName": StringAttribute, // 
-        "sysRelation": StringAttribute, // 
-        "tableName": StringAttribute, // 
-        "relationship_ConfiguratorDefinitionGroupEntityRelationshipId": UUIDAttribute, // 
-        "backingTable_ConfTableSelection_BRRelationshipId": UUIDAttribute, // 
+        "isQueryBased": StringAttribute, // 
+        "queryTitle": StringAttribute, // 
+        "backingTable_ConfTable_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_configuratordefinitiongrouptables");
+      .registerPath("system_configuratordefinitiongroups");
   }
 }
-mixin(EntityCalls!("ConfiguratorDefinitionGroupTableEntity"));
+mixin(EntityCalls!("ConfiguratorDefinitionGroupEntity"));
 
 version(test_model_systsms) { unittest {
-    assert(ConfiguratorDefinitionGroupTableEntity);
+    assert(ConfiguratorDefinitionGroupEntity);
 
-    auto entity = ConfiguratorDefinitionGroupTableEntity;
+    auto entity = ConfiguratorDefinitionGroupEntity;
+    // TODO more tests
   }
 }

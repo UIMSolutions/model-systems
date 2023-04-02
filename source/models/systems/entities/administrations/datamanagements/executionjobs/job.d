@@ -3,33 +3,31 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.cases.dependency;
+module models.systems.entities.datamanagements.executionjobs.job;
 
 @safe:
 import models.systems;
 
-class DCaseDependencyEntity : DEntity {
-  mixin(EntityThis!("CaseDependencyEntity"));
+class DDataManagementExecutionJobEntity : DEntity {
+  mixin(EntityThis!("DataManagementExecutionJobEntity"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
       .addValues([
-        "case": StringAttribute, // 
-        "parentCase": StringAttribute, // 
-        "caseId": UUIDAttribute, // 
-        "parentCaseId": UUIDAttribute, // 
-        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
+        "description": StringAttribute, //
+        "jobId": UUIDAttribute
       ])
-      .registerPath("system_casedependencies");
+      .registerPath("system_datamanagements.executionjobs");
   }
 }
-mixin(EntityCalls!("CaseDependencyEntity"));
+mixin(EntityCalls!("DataManagementExecutionJobEntity"));
 
 version(test_model_systsms) { unittest {
-    assert(CaseDependencyEntity);
+    assert(DataManagementExecutionJobEntity);
 
-    auto entity = CaseDependencyEntity;
+    auto entity = DataManagementExecutionJobEntity;
+    // TODO more tests
   }
 }
