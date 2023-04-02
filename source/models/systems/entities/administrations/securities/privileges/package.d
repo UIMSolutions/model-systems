@@ -3,10 +3,10 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.systems.securities.privileges;
+module models.systems.entities.administrations.systems.securities.privileges;
 
 // Main entity
-public import models.systems.entities.systems.securities.privileges.privilege;
+public import models.systems.entities.administrations.systems.securities.privileges.privilege;
 
 // Additional entity
-public import models.systems.entities.systems.securities.privileges.customization;
+public import models.systems.entities.administrations.systems.securities.privileges.customization;

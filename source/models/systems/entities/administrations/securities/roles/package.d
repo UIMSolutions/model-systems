@@ -3,15 +3,15 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.systems.securities.roles;
+module models.systems.entities.administrations.systems.securities.roles;
 
 @safe:
 import models.systems;
 
-public import models.systems.entities.systems.securities.roles.users;
+public import models.systems.entities.administrations.systems.securities.roles.users;
 
-public import models.systems.entities.systems.securities.roles.role;
+public import models.systems.entities.administrations.systems.securities.roles.role;
 
-public import models.systems.entities.systems.securities.roles.customization;
-public import models.systems.entities.systems.securities.roles.duty;
-public import models.systems.entities.systems.securities.roles.subrole;
+public import models.systems.entities.administrations.systems.securities.roles.customization;
+public import models.systems.entities.administrations.systems.securities.roles.duty;
+public import models.systems.entities.administrations.systems.securities.roles.subrole;
