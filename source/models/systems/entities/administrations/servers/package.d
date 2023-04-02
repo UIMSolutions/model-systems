@@ -3,10 +3,10 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.systems.servers;
+module models.systems.entities.administrations.systems.servers;
 
 @safe:
 import models.systems;
 
-public import models.systems.entities.systems.servers.configuration;
-public import models.systems.entities.systems.servers.clusterconfiguration;
+public import models.systems.entities.administrations.systems.servers.configuration;
+public import models.systems.entities.administrations.systems.servers.clusterconfiguration;

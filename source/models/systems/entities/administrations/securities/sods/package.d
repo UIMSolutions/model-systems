@@ -3,8 +3,8 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.securities.sods;
+module models.systems.entities.administrations.securities.sods;
 
-public import models.systems.entities.securities.sods.conflict;
-public import models.systems.entities.securities.sods.rule;
+public import models.systems.entities.administrations.securities.sods.conflict;
+public import models.systems.entities.administrations.securities.sods.rule;
 
