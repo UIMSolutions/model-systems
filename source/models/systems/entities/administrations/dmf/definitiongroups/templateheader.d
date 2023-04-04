@@ -23,7 +23,7 @@ class DDMFDefinitionGroupTemplateHeaderEntity : DEntity {
         "relationship_DMFDefinitionGroupTemplateLineEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_dmf.definitiongroups.templateheaders")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateHeaderEntity"));

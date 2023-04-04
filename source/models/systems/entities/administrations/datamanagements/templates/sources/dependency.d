@@ -26,7 +26,7 @@ class DDataManagementTemplateSourceDependencyEntity : DEntity {
         "relationship_DefinitionGroupTemplateSourceDependencyRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_datamanagements.templates.sources")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DataManagementTemplateSourceDependencyEntity"));

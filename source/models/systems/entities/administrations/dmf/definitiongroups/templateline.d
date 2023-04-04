@@ -30,7 +30,7 @@ class DDMFDefinitionGroupTemplateLineEntity : DEntity {
         "relationship_DMFDefinitionGroupTemplateHeaderRelationshipId": UUIDAttribute, //
     ])
       .registerPath("system_dmf.definitiongroups.templatelines")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateLineEntity"));
