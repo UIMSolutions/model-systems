@@ -30,7 +30,7 @@ class DSystemServerConfigurationEntity : DEntity {
         "backingTable_SysServerConfigRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.serversconfigurations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemServerConfigurationEntity"));

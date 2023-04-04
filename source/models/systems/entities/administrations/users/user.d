@@ -63,7 +63,7 @@ class DSystemUserEntity : DEntity {
         "userObjectId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.users")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemUserEntity"));

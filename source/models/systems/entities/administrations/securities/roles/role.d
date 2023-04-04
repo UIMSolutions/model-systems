@@ -24,7 +24,7 @@ class DSystemSecurityRoleEntity : DEntity {
         "contextString": StringAttribute, // 
       ])
       .registerPath("system_systems.securityroles")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleEntity"));

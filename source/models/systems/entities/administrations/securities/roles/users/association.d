@@ -24,7 +24,7 @@ class DSystemSecurityUserRoleAssociationEntity : DEntity {
         "securityRoleName": StringAttribute, // 
       ])
       .registerPath("system_system.securities.userrole.associations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemSecurityUserRoleAssociationEntity"));

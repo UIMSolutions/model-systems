@@ -39,7 +39,7 @@ class DSystemSegregationOfDutiesConflictEntity : DEntity {
         "resolution":  StringAttribute, // 
       ])
       .registerPath("system_system.securities.sodconflicts")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemSegregationOfDutiesConflictEntity"));
