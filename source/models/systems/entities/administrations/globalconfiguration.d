@@ -21,7 +21,8 @@ class DSystemGlobalConfigurationEntity : DEntity {
         "settingLevel": StringAttribute, // 
         "value": StringAttribute, // 
       ])
-      .registerPath("system_globalconfigurations");
+      .registerPath("system_globalconfigurations")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemGlobalConfigurationEntity"));

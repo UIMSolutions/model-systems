@@ -20,7 +20,8 @@ class DBatchGroupEntity : DEntity {
         /* "description": StringAttribute, //  */
         "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_batchgroups");
+      .registerPath("system_batchgroups")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("BatchGroupEntity"));

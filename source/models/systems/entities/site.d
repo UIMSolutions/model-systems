@@ -15,7 +15,8 @@ class DSystemSiteEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_sites");
+      .registerPath("system_sites")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemSiteEntity; }

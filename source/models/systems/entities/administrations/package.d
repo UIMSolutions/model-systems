@@ -30,6 +30,15 @@ static this() {
       ConfiguratorDefinitionGroupFieldEntity,
       ConfiguratorDefinitionGroupFieldRangeEntity,
       ConfiguratorDefinitionGroupTableRelationEntity,
-      ConfiguratorDefinitionGroupTableEntity
+      ConfiguratorDefinitionGroupTableEntity,
+      ConfiguratorDefinitionGroupEntity,
+      ConfiguratorDefinitionGroupSortOrderEntity,
+      ConfiguratorDefinitionGroupSummationEntity,
+      ConfiguratorLayoutFieldEntity,
+      ConfiguratorLayoutGroupEntity,
+      ConfiguratorLayoutLineEntity,
+      CurrencyEntity,
+      CurrencyISOCodeEntity,
+      CurrencyRevaluationAccountEntity
 		);
 }
