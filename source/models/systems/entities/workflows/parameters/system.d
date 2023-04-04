@@ -25,7 +25,7 @@ class DWorkflowParametersSystemEntity : DEntity {
         "backingTable_SysWorkflowParametersRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_parameterssystems")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowParametersSystemEntity"));

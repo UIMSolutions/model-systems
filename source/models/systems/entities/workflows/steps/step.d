@@ -81,7 +81,7 @@ class DWorkflowStepEntity : DEntity {
         "backingTable_WorkflowStepTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_steps")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowStepEntity"));

@@ -24,7 +24,7 @@ class DWorkflowVersionNotesEntity : DEntity {
         "backingTable_WorkflowVersionTableNotesRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotes")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowVersionNotesEntity"));

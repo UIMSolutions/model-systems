@@ -40,7 +40,7 @@ class DWorkflowElementNotificationEntity : DEntity {
         "backingTable_WorkflowEscalationPathRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementnotifications")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowElementNotificationEntity"));
