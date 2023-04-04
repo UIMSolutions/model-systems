@@ -34,7 +34,8 @@ class DBatchJobEntity : DEntity {
         "executingBy":UserIdAttribute, // 
         "backingTable_BatchJobRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_batchjobs");
+      .registerPath("system_batchjobs")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("BatchJobEntity"));

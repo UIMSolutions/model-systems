@@ -69,7 +69,8 @@ class DCaseDetailBaseEntity : DEntity {
         "relationship_HcmWorkerEntityRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_casedetailbases");
+      .registerPath("system_casedetailbases")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("CaseDetailBaseEntity"));

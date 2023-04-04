@@ -25,7 +25,8 @@ class DConfiguratorDefinitionGroupSortOrderEntity : DEntity {
         "backingTable_ConfSortOrder_BRRelationshipId": UUIDAttribute, // 
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_configuratordefinitiongroupsortorders");
+      .registerPath("system_configuratordefinitiongroupsortorders")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupSortOrderEntity"));
