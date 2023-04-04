@@ -27,7 +27,7 @@ class DCaseAssociationEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_caseassociationS")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("CaseAssociationEntity"));
