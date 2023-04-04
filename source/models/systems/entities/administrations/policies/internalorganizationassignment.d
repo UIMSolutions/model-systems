@@ -26,7 +26,8 @@ class DSystemPolicyInternalOrganizationAssignmentEntity : DEntity {
         "operatingUnitNumber": StringAttribute, // 
         "backingTable_SysPolicyOrganizationRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_systems.policies.internalorganizationassignment");
+      .registerPath("system_systems.policies.internalorganizationassignment")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemPolicyInternalOrganizationAssignmentEntity"));

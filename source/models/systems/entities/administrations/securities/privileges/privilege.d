@@ -21,7 +21,8 @@ class DSystemSecurityPrivilegeEntity : DEntity {
         "securityPrivilegeName": StringAttribute, // 
         "securityPrivilegeId": UUIDAttribute, // 
       ])
-      .registerPath("system_system.securities.privileges");
+      .registerPath("system_system.securities.privileges")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeEntity"));

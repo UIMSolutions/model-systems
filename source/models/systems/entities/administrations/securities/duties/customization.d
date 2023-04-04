@@ -19,10 +19,11 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
         "xmlObject": StringAttribute, // 
         "isDisabled	": BooleanAttribute, // 
       ])
-      .registerPath("system_system.securities.dutycustomizations");
+      .registerPath("system_system.securities.dutycustomizations")      
+      .routingPath("");
   }
 }
-mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"));
+mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"))
 
 version(test_model_systems) { unittest {
   assert(SystemSecurityDutyCustomizationEntity);

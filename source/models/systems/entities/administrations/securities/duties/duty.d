@@ -25,7 +25,8 @@ class DSystemSecurityDutyEntity : DEntity {
         "securityPrivilegeId": UUIDAttribute, // 
         "backingTable_SecurityRoleDutyPrivilegeExplodedGraphRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_system.securities.duties");
+      .registerPath("system_system.securities.duties")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityDutyEntity"));

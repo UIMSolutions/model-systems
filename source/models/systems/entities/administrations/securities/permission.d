@@ -29,7 +29,8 @@ class DSystemSecurityPermissionEntity : DEntity {
         "invokeAccess": StringAttribute, //
         "correctAccess": StringAttribute, //	
       ])
-      .registerPath("system_systems.securities.permissions");
+      .registerPath("system_systems.securities.permissions")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityPermissionEntity"));

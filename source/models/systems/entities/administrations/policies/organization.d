@@ -29,7 +29,8 @@ class DSystemPolicyOrganizationEntity : DEntity {
         "validTo": StringAttribute, // 
         "backingTable_SysPolicyOrganizationRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_systems.policies.organizations");
+      .registerPath("system_systems.policies.organizations")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemPolicyOrganizationEntity"));
