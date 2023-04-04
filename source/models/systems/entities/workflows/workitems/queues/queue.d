@@ -22,7 +22,7 @@ class DWFLWorkItemQueue : DEntity {
         "backingTable_WorkflowWorkItemQueueRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueues")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("WFLWorkItemQueue"));
