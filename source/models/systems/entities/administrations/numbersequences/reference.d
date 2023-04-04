@@ -26,7 +26,8 @@ class DNumberSequencesReferenceEntity : DEntity {
 				"scopeType": StringAttribute, //
 				"backingTable_NumberSequenceReferenceRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_numbersequences.references");
+      .registerPath("system_numbersequences.references")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("NumberSequencesReferenceEntity"));

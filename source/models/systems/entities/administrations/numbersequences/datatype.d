@@ -33,7 +33,8 @@ class DNumberSequenceDataTypeEntity : DEntity {
 				"partitionKey": StringAttribute, //
 				"backingTable_NumberSequenceDatatypeRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_numbersequences.datatypes");
+      .registerPath("system_numbersequences.datatypes")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("NumberSequenceDataTypeEntity"));

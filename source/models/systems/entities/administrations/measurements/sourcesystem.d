@@ -20,7 +20,8 @@ class DMeasurementSourceSystemEntity : DEntity {
         /* "Description": StringAttribute, // */
         "backingTable_MeasurementSourceSystemRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_measurements.sourcesystems");
+      .registerPath("system_measurements.sourcesystems")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("MeasurementSourceSystemEntity"));
