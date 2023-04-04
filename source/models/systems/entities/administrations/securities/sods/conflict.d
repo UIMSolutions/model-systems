@@ -38,7 +38,8 @@ class DSystemSegregationOfDutiesConflictEntity : DEntity {
         "reasonForOverride":  StringAttribute, // 
         "resolution":  StringAttribute, // 
       ])
-      .registerPath("system_system.securities.sodconflicts");
+      .registerPath("system_system.securities.sodconflicts")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSegregationOfDutiesConflictEntity"));

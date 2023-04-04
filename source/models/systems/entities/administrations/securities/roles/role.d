@@ -23,7 +23,8 @@ class DSystemSecurityRoleEntity : DEntity {
         "userLicenseType": StringAttribute, // 
         "contextString": StringAttribute, // 
       ])
-      .registerPath("system_systems.securityroles");
+      .registerPath("system_systems.securityroles")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleEntity"));

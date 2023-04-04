@@ -20,7 +20,8 @@ class DSystemSecurityRoleCustomizationsEntity : DEntity {
         "xmlObject": StringAttribute, // 
         "isDisabled": BooleanAttribute, // 
       ])
-      .registerPath("system_system.securities.rolecustomizations");
+      .registerPath("system_system.securities.rolecustomizations")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleCustomizationsEntity"));

@@ -19,7 +19,8 @@ class DSystemServerClusterConfigurationEntity : DEntity {
       .addValues([
         "backingTable_SysClusterConfigRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_systems.serverclusterconfigurations");
+      .registerPath("system_systems.serverclusterconfigurations")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemServerClusterConfigurationEntity"));

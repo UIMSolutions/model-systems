@@ -25,7 +25,8 @@ class DADMSecurityUserRole : DEntity {
         "SecurityRoleName": StringAttribute, // 
         "UserLicenseType": StringAttribute, // 
       ])
-      .registerPath("system_securityuserroles");
+      .registerPath("system_securityuserroles")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("ADMSecurityUserRole"));

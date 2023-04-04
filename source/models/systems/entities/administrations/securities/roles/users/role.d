@@ -26,7 +26,8 @@ class DSystemSecurityUserRoleEntity : DEntity {
         "securityRole":		StringAttribute, //
         "userId": UUIDAttribute, //
       ])
-      .registerPath("system_system.securities.userroles");
+      .registerPath("system_system.securities.userroles")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemSecurityUserRoleEntity"));
