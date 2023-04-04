@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.systems.securities.roles.users;
 
-@safe:
-import models.systems;
+
 
 public import models.systems.entities.administrations.systems.securities.roles.users.user;
 public import models.systems.entities.administrations.systems.securities.roles.users.association;

@@ -5,5 +5,3 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.segregation_of_duties;
 
-@safe:
-import models.systems;

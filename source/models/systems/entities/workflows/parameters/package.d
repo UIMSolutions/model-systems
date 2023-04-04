@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.parameters;
 
-@safe:
-import models.systems;
+
 
 public import models.systems.entities.workflows.parameters.organization;
 public import models.systems.entities.workflows.parameters.system;

@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.systems.users.groups;
 
-@safe:
-import models.systems;
+
 
 // Main entity
 public import models.systems.entities.administrations.systems.users.groups.group;
