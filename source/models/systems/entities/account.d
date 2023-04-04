@@ -47,7 +47,7 @@ class DSystemAccountEntity : DEntity {
 
     this
       .registerPath("system_accounts")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemAccountEntity; }

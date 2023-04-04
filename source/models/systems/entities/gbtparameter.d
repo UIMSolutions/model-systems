@@ -42,7 +42,7 @@ class DGBTParameterEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
       ])
       .registerPath("system_gbtparameters")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("GBTParameterEntity"));

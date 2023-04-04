@@ -19,7 +19,7 @@ class DSystemLoginEntity : DEntity {
         "accountName": StringAttribute
       ]) 
       .registerPath("system_logins")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemLoginEntity; }

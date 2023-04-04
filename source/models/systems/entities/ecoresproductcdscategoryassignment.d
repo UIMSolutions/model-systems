@@ -21,7 +21,7 @@ class DEcoResProductCDSCategoryAssignmentEntity : DEntity {
         "productCategoryHierarchyName": StringAttribute, //
       ])
       .registerPath("system_documents.types")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("EcoResProductCDSCategoryAssignmentEntity"));

@@ -53,7 +53,7 @@ class DDirPartyCDSEntity : DEntity {
         "backingTable_DirPartyBaseEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_dirpartycds")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("DirPartyCDSEntity"));

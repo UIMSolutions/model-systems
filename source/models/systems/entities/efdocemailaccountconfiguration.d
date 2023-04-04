@@ -24,7 +24,7 @@ class DEFDocEmailAccountConfigurationEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_efdocemailaccount.configurations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("EFDocEmailAccountConfigurationEntity"));

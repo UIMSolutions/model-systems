@@ -8,8 +8,6 @@ module models.systems.entities.group;
 @safe:
 import models.systems;
 
-
-
 class DSystemGroupEntity : DEntity {
   mixin(EntityThis!("SystemGroupEntity"));
 
@@ -18,7 +16,7 @@ class DSystemGroupEntity : DEntity {
 
     this
       .registerPath("system_groups")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemGroupEntity; }
