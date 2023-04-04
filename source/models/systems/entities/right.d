@@ -16,7 +16,7 @@ class DSystemRightEntity : DEntity {
 
     this
       .registerPath("system_rights")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemRightEntity; }

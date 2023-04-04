@@ -8,8 +8,6 @@ module models.systems.entities.request;
 @safe:
 import models.systems;
 
-
-
 class DSystemRequestEntity : DEntity {
   mixin(EntityThis!("SystemRequestEntity"));  
 
@@ -18,7 +16,7 @@ class DSystemRequestEntity : DEntity {
 
     this
       .registerPath("system_requests")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemRequestEntity; }

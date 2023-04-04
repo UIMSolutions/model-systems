@@ -8,8 +8,6 @@ module models.systems.entities.role;
 @safe:
 import models.systems;
 
-
-
 class DSystemRoleEntity : DEntity {
 mixin(EntityThis!("SystemRoleEntity")); 
 
@@ -18,7 +16,7 @@ mixin(EntityThis!("SystemRoleEntity"));
 
     this
       .registerPath("system_roles")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemRoleEntity; }

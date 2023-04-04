@@ -16,7 +16,7 @@ class DSystemPasswordEntity : DEntity {
 
     this
       .registerPath("system_passwords")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemPasswordEntity; }

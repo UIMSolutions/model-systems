@@ -16,7 +16,7 @@ class DSystemSessionEntity : DEntity {
 
     this
       .registerPath("system_sessions")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemSessionEntity; }

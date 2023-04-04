@@ -28,7 +28,7 @@ class DSystemParameterEntity : DEntity {
         "backingTable_SystemParametersRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_parameters")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemParameterEntity"));
