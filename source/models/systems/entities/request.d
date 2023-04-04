@@ -17,7 +17,8 @@ class DSystemRequestEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_requests");
+      .registerPath("system_requests")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemRequestEntity; }

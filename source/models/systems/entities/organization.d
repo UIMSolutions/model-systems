@@ -15,7 +15,8 @@ class DSystemOrganizationEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_organizations");
+      .registerPath("system_organizations")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemOrganizationEntity; }

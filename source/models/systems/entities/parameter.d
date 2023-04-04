@@ -27,7 +27,8 @@ class DSystemParameterEntity : DEntity {
         "relationship_ExchangeRateRelationshipId": UUIDAttribute, // 
         "backingTable_SystemParametersRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("system_parameters");
+      .registerPath("system_parameters")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("SystemParameterEntity"));

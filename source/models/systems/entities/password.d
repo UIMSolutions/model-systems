@@ -15,7 +15,8 @@ class DSystemPasswordEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_passwords");
+      .registerPath("system_passwords")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemPasswordEntity; }

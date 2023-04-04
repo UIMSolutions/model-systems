@@ -15,7 +15,8 @@ class DSystemRightEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_rights");
+      .registerPath("system_rights")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemRightEntity; }

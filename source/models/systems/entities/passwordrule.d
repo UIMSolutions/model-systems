@@ -15,7 +15,8 @@ class DSystemPasswordRuleEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_passwordrules");
+      .registerPath("system_passwordrules")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemPasswordRuleEntity; }

@@ -15,7 +15,8 @@ class DSystemSessionEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_sessions");
+      .registerPath("system_sessions")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemSessionEntity; }

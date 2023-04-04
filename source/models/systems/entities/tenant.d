@@ -16,7 +16,8 @@ class DSystemTenantEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_tenants");
+      .registerPath("system_tenants")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemTenantEntity; }

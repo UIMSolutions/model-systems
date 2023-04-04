@@ -17,7 +17,8 @@ mixin(EntityThis!("SystemRoleEntity"));
     super.initialize(configSettings);
 
     this
-      .registerPath("system_roles");
+      .registerPath("system_roles")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemRoleEntity; }
