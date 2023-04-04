@@ -25,7 +25,7 @@ class DConfiguratorDefinitionGroupFieldRangeEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_configuratorDefinitiongroupfieldranges")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupFieldRangeEntity"));

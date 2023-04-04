@@ -41,7 +41,7 @@ class DConfiguratorLayoutFieldEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_configurators.layouts.fields")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutFieldEntity"));

@@ -23,7 +23,7 @@ class DConfiguratorDefinitionGroupEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_configuratordefinitiongroups")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupEntity"));

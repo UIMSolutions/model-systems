@@ -30,7 +30,7 @@ class DConfiguratorDefinitionGroupSummationEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
        ])
       .registerPath("system_configuratordefinitiongroupsummation")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("ConfiguratorDefinitionGroupSummationEntity"));

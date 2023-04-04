@@ -32,7 +32,7 @@ class DConfiguratorLayoutGroupEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //  
       ])
       .registerPath("system_configurators.layouts.groups")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutGroupEntity"));
