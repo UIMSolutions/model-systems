@@ -23,7 +23,7 @@ class DWorkflowParallelBranchEntity : DEntity {
         "backingTable_WorkflowParallelBranchTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_parallelbranches")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowParallelBranchEntity"));

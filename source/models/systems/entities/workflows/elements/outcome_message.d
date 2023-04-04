@@ -23,7 +23,7 @@ class DWorkflowElementOutcomeMessageEntity : DEntity {
         "backingTable_WorkflowElementOutcomeMessageRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementoutcomemessages")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowElementOutcomeMessageEntity"));

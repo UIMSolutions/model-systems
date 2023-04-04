@@ -28,7 +28,7 @@ class DWorkflowElementNotificationMessageEntity : DEntity {
         "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementnotificationmessages")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowElementNotificationMessageEntity"));
