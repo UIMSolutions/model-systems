@@ -30,7 +30,7 @@ class DDataManagementEntity : DEntity {
         "changeTrackingType": StringAttribute, //
       ])
       .registerPath("system_datamanagements")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("DataManagementEntity"));

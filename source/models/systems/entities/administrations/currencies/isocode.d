@@ -22,7 +22,7 @@ class DCurrencyISOCodeEntity : DEntity {
         "backingTable_ISOCurrencyCodeRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_currencies.isocodes")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("CurrencyISOCodeEntity"));

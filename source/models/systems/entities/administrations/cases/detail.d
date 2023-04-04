@@ -70,7 +70,7 @@ class DCaseDetailBaseEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_casedetailbases")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("CaseDetailBaseEntity"));

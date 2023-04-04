@@ -30,7 +30,7 @@ class DConfiguratorLayoutLineEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_configurators.layouts.lines")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutLineEntity"));
