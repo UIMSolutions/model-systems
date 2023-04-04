@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.dmf;
 
-
-
 public { // Subpackage
 	import models.systems.entities.administrations.dmf.definitiongroups;
 }

@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.datamanagements;
 
-
-
 public import models.systems.entities.administrations.datamanagements.datamanagement;
 public import models.systems.entities.administrations.datamanagements.definitiongroups;
 public import models.systems.entities.administrations.datamanagements.executionjobs;

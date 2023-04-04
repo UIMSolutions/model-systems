@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions.groups.tables;
 
-
-
 public import models.systems.entities.administrations.configurators.definitions.groups.tables.table;
 
 public import models.systems.entities.administrations.configurators.definitions.groups.tables.relation;

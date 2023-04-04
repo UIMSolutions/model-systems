@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions.groups.fields;
 
-
-
 public { // Entities
 	import models.systems.entities.administrations.configurators.definitions.groups.fields.field;
 	import models.systems.entities.administrations.configurators.definitions.groups.fields.range_;

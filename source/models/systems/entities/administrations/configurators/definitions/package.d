@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions;
 
-
-
 public { // Subpackages
 	import models.systems.entities.administrations.configurators.definitions.groups;
 }

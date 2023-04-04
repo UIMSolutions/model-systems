@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.systems.securities.roles;
 
-
-
 public import models.systems.entities.administrations.systems.securities.roles.users;
 
 public import models.systems.entities.administrations.systems.securities.roles.role;

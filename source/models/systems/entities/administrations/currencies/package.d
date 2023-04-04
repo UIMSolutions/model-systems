@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.currencies;
 
-
-
 public import models.systems.entities.administrations.currencies.currency;
 public import models.systems.entities.administrations.currencies.isocode;
 public import models.systems.entities.administrations.currencies.revaluationaccount;

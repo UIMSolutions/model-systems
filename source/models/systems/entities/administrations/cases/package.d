@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.cases;
 
-
-
 public { // Packages
 	import models.systems.entities.administrations.cases.association;
 	import models.systems.entities.administrations.cases.dependency;
