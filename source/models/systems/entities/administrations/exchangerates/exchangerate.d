@@ -33,7 +33,7 @@ class DExchangeRateEntity : DEntity {
 				"backingTable_ExchangeRateRelationshipId": StringAttribute, //
       ])
       .registerPath("system_exchangerates")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("ExchangeRateEntity"));
