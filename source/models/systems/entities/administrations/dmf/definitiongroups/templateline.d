@@ -29,7 +29,8 @@ class DDMFDefinitionGroupTemplateLineEntity : DEntity {
         "entityCategory": StringAttribute, //
         "relationship_DMFDefinitionGroupTemplateHeaderRelationshipId": UUIDAttribute, //
     ])
-      .registerPath("system_dmf.definitiongroups.templatelines");
+      .registerPath("system_dmf.definitiongroups.templatelines")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateLineEntity"));

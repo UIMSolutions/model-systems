@@ -30,7 +30,8 @@ class DDocumentRoutingJobEntity : DEntity {
         "printerId": UUIDAttribute, //
         "backingTable_DocumentRoutingJobRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_documents.routings.jobs");
+      .registerPath("system_documents.routings.jobs")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DocumentRoutingJobEntity"));

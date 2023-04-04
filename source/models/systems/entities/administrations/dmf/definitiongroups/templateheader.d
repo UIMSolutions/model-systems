@@ -21,8 +21,9 @@ class DDMFDefinitionGroupTemplateHeaderEntity : DEntity {
         "status": StringAttribute, //
         "validatedDateTime": StringAttribute, //
         "relationship_DMFDefinitionGroupTemplateLineEntityRelationshipId": UUIDAttribute, //
-    ])
-      .registerPath("system_dmf.definitiongroups.templateheaders");
+      ])
+      .registerPath("system_dmf.definitiongroups.templateheaders")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DMFDefinitionGroupTemplateHeaderEntity"));

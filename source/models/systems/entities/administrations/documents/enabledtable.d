@@ -22,7 +22,8 @@ class DDocumentEnabledTableEntity : DEntity {
         "backingTable_DocuTableEnabledRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_documents.enabledtables");
+      .registerPath("system_documents.enabledtables")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DocumentEnabledTableEntity"));

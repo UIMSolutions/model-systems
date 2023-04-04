@@ -25,7 +25,8 @@ class DDocumentParameterEntity : DEntity {
         "backingTable_DocuParametersRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_documents.parameters");
+      .registerPath("system_documents.parameters")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DocumentParameterEntity"));

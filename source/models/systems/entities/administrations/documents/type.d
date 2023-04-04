@@ -32,7 +32,8 @@ class DDocumentTypeEntity : DEntity {
         "backingTable_DocuTypeRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_documents.types");
+      .registerPath("system_documents.types")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DocumentTypeEntity"));
