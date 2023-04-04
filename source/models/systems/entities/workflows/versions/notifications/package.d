@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.versions.notifications;
 
-
-
 public import models.systems.entities.workflows.versions.notifications.notification;
 
 public import models.systems.entities.workflows.versions.notifications.message;

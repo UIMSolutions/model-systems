@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows;
 
-
-
 public import models.systems.entities.workflows.elements;
 public import models.systems.entities.workflows.parameters;
 public import models.systems.entities.workflows.steps;

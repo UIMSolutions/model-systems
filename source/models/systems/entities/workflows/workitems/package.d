@@ -5,8 +5,6 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.workitems;
 
-
-
 public import models.systems.entities.workflows.workitems.queues;
 
 

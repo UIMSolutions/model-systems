@@ -5,7 +5,5 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.workitems.queues.groups;
 
-
-
 public import models.systems.entities.workflows.workitems.queues.groups.group;
 public import models.systems.entities.workflows.workitems.queues.groups.relation;

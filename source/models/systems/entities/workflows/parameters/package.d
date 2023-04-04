@@ -5,7 +5,5 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.parameters;
 
-
-
 public import models.systems.entities.workflows.parameters.organization;
 public import models.systems.entities.workflows.parameters.system;

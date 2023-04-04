@@ -5,7 +5,5 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.systems.servers;
 
-
-
 public import models.systems.entities.administrations.systems.servers.configuration;
 public import models.systems.entities.administrations.systems.servers.clusterconfiguration;

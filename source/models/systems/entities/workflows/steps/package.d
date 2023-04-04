@@ -5,7 +5,5 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.steps;
 
-
-
 public import models.systems.entities.workflows.steps.step;
 public import models.systems.entities.workflows.steps.message;
