@@ -38,7 +38,8 @@ class DWorkflowElementLinkEntity : DEntity {
         "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, // 
         "backingTable_WorkflowElementLinkTableRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("workflow_elementlinks");
+      .registerPath("workflow_elementlinks")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowElementLinkEntity"));

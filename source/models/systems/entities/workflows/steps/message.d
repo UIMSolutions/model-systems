@@ -24,7 +24,8 @@ class DWorkflowStepMessageEntity : DEntity {
         "relationship_WorkflowStepRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_stepmessages");
+      .registerPath("workflow_stepmessages")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowStepMessageEntity"));

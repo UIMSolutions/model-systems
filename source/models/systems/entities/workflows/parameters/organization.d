@@ -20,7 +20,8 @@ class DWorkflowParametersOrganizationEntity : DEntity {
         "backingTable_WorkflowParametersRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_parametersorganizations");
+      .registerPath("workflow_parametersorganizations")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowParametersOrganizationEntity")); 

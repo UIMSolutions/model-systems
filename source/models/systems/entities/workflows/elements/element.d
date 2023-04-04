@@ -79,8 +79,9 @@ class DWorkflowElementEntity : DEntity {
         "relationship_AutoCompleteConditionRelationshipId": UUIDAttribute, // 
         "relationship_ConditionalDecisionConditionRelationshipId": UUIDAttribute, // 
         "backingTable_WorkflowElementTableRelationshipId": UUIDAttribute, // 
-    ])
-    .registerPath("workflow_elements");
+      ])
+      .registerPath("workflow_elements")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowElementEntity"));

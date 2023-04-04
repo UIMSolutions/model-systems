@@ -22,7 +22,8 @@ class DWorkflowElementActionEntity : DEntity {
         "relationship_WorkflowElementRelationshipId": UUIDAttribute, // 
         "backingTable_WorkflowActionTableRelationshipId": UUIDAttribute, // 
       ])
-      .registerPath("workflow_elementactions");
+      .registerPath("workflow_elementactions")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowElementActionEntity"));

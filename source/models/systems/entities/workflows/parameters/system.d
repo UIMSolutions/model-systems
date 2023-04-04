@@ -24,7 +24,8 @@ class DWorkflowParametersSystemEntity : DEntity {
         "isAllowApprovalBySubmitter": StringAttribute, //
         "backingTable_SysWorkflowParametersRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_parameterssystems");
+      .registerPath("workflow_parameterssystems")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowParametersSystemEntity"));
