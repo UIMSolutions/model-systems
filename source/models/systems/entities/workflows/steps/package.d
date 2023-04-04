@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.workflows.steps;
 
-@safe:
-import models.systems;
+
 
 public import models.systems.entities.workflows.steps.step;
 public import models.systems.entities.workflows.steps.message;

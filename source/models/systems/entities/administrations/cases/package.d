@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.cases;
 
-@safe:
-import models.systems;
+
 
 public { // Packages
 	import models.systems.entities.administrations.cases.association;
