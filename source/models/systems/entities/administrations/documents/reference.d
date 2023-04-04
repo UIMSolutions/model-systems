@@ -35,7 +35,7 @@ class DDocumentReferenceEntity : DEntity {
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_documents.references")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DocumentReferenceEntity"));

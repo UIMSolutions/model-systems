@@ -23,7 +23,7 @@ class DMeasurementCategoryEnabledModuleEntity : DEntity {
 				"backingTable_MeasurementCategoryEnabledModuleRelationshipId": StringAttribute, //
       ])
       .registerPath("system_measurements.categoryenabledmodules")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("MeasurementCategoryEnabledModuleEntity"));

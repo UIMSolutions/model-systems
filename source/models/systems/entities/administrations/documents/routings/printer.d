@@ -29,7 +29,7 @@ class DDocumentRoutingPrinterEntity : DEntity {
         "backingTable_DocumentRoutingPrinterAppAssociationRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_documents.routings.printers")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DocumentRoutingPrinterEntity"));

@@ -28,7 +28,7 @@ class DSystemEmailParameterEntity : DEntity {
         "backingTable_SysEmailParametersRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.emailparameters")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemEmailParameterEntity"));
