@@ -25,7 +25,8 @@ class DDataManagementTemplateSourceDependencyEntity : DEntity {
         "validationRequired": StringAttribute, //
         "relationship_DefinitionGroupTemplateSourceDependencyRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_datamanagements.templates.sources");
+      .registerPath("system_datamanagements.templates.sources")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DataManagementTemplateSourceDependencyEntity"));

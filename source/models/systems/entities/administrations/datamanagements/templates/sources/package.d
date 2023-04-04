@@ -5,5 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.datamanagements.templates.sources;
 
-public import models.systems.entities.administrations.datamanagements.templates.sources.source;
-public import models.systems.entities.administrations.datamanagements.templates.sources.dependency;
+public { // Entities
+	import models.systems.entities.administrations.datamanagements.templates.sources.source;
+	import models.systems.entities.administrations.datamanagements.templates.sources.dependency;
+}

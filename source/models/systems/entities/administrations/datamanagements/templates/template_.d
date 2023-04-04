@@ -19,7 +19,8 @@ class DDataManagementTemplateEntity : DEntity {
         "templateId": UUIDAttribute, //
         "description": StringAttribute, //
       ])
-      .registerPath("system_datamanagements.templates");
+      .registerPath("system_datamanagements.templates")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DataManagementTemplateEntity"));

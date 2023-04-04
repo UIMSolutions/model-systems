@@ -20,10 +20,11 @@ class DDMFEntityExecutionParametersEntity : DEntity {
         "importThresholdRecordCount": StringAttribute, //
         "numberOfImportTasks": StringAttribute, //
       ])
-      .registerPath("system_dmf.entityexecutionparameters");
+      .registerPath("system_dmf.entityexecutionparameters")      
+      .routingPath("");
   }
 }
-mixin(EntityCalls!("DMFEntityExecutionParametersEntity"));
+mixin(EntityCalls!("DMFEntityExecutionParametersEntity"))
 
 version(test_model_systsms) { unittest {
     assert(DMFEntityExecutionParametersEntity);

@@ -8,7 +8,8 @@ module models.systems.entities.administrations.dmf;
 @safe:
 import models.systems;
 
-// Subpackage
-public import models.systems.entities.administrations.dmf.definitiongroups;
+public { // Subpackage
+	import models.systems.entities.administrations.dmf.definitiongroups;
+}
 
 public import models.systems.entities.administrations.dmf.entityexecutionparameters;

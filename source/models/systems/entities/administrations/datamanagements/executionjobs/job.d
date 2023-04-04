@@ -19,7 +19,8 @@ class DDataManagementExecutionJobEntity : DEntity {
         "description": StringAttribute, //
         "jobId": UUIDAttribute
       ])
-      .registerPath("system_datamanagements.executionjobs");
+      .registerPath("system_datamanagements.executionjobs")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DataManagementExecutionJobEntity"));
