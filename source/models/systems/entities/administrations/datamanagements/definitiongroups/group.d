@@ -23,7 +23,8 @@ class DDataManagementDefinitionGroupEntity : DEntity {
         "generateDataPackage": StringAttribute, // 
         "truncateEntityData": StringAttribute, // 
       ])
-      .registerPath("system_datamanagements.definitiongroups");
+      .registerPath("system_datamanagements.definitiongroups")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DataManagementDefinitionGroupEntity"));

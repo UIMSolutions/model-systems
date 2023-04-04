@@ -28,8 +28,9 @@ class DConfiguratorLayoutLineEntity : DEntity {
         "relationship_ConfiguratorLayoutGroupEntityRelationshipId": UUIDAttribute, //
         "backingTable_ConfLayoutLines_BRRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
-    ])
-      .registerPath("system_configurators.layouts.lines");
+      ])
+      .registerPath("system_configurators.layouts.lines")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutLineEntity"));

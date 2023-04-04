@@ -39,9 +39,9 @@ class DConfiguratorLayoutFieldEntity : DEntity {
         "relationship_ConfiguratorLayoutGroupEntityRelationshipId": UUIDAttribute, //
         "backingTable_ConfLayoutFields_BRRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
-
       ])
-      .registerPath("system_configurators.layouts.fields");
+      .registerPath("system_configurators.layouts.fields")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("ConfiguratorLayoutFieldEntity"));

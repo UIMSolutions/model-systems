@@ -30,7 +30,8 @@ class DCurrencyRevaluationAccountEntity : DEntity {
         "relationship_CurrencyRelationshipId": UUIDAttribute, //
         "backingTable_CurrencyLedgerGainLossAccountRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_currencies.revaluationaccounts");
+      .registerPath("system_currencies.revaluationaccounts")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("CurrencyRevaluationAccountEntity"));
