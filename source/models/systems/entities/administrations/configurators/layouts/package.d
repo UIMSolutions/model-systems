@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.layouts;
 
-@safe:
-import models.systems;
+
 
 // Submodules
 public import models.systems.entities.administrations.configurators.layouts.field;

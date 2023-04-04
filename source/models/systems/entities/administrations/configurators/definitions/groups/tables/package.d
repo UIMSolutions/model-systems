@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions.groups.tables;
 
-@safe:
-import models.systems;
+
 
 public import models.systems.entities.administrations.configurators.definitions.groups.tables.table;
 

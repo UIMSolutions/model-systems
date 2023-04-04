@@ -8,8 +8,8 @@ module models.systems.entities.administrations.cases;
 @safe:
 import models.systems;
 
-// Submodules
-public import models.systems.entities.administrations.cases.association;
-public import models.systems.entities.administrations.cases.dependency;
-public import models.systems.entities.administrations.cases.detail;
-
+public { // Packages
+	import models.systems.entities.administrations.cases.association;
+	import models.systems.entities.administrations.cases.dependency;
+	import models.systems.entities.administrations.cases.detail;
+}

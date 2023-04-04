@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.currencies;
 
-@safe:
-import models.systems;
+
 
 public import models.systems.entities.administrations.currencies.currency;
 public import models.systems.entities.administrations.currencies.isocode;

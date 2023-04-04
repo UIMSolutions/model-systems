@@ -5,8 +5,9 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions.groups.fields;
 
-@safe:
-import models.systems;
 
-public import models.systems.entities.administrations.configurators.definitions.groups.fields.field;
-public import models.systems.entities.administrations.configurators.definitions.groups.fields.range_;
+
+public { // Entities
+	import models.systems.entities.administrations.configurators.definitions.groups.fields.field;
+	import models.systems.entities.administrations.configurators.definitions.groups.fields.range_;
+}

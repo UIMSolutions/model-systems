@@ -5,8 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.configurators.definitions.groups;
 
-@safe:
-import models.systems;
+
 
 // Main module
 public import models.systems.entities.administrations.configurators.definitions.groups.group;
