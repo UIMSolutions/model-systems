@@ -21,7 +21,7 @@ class DDMFEntityExecutionParametersEntity : DEntity {
         "numberOfImportTasks": StringAttribute, //
       ])
       .registerPath("system_dmf.entityexecutionparameters")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("DMFEntityExecutionParametersEntity"))

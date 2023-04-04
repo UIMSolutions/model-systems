@@ -20,7 +20,7 @@ class DDataManagementTemplateDetailEntity : DEntity {
         "description": StringAttribute, //
       ])
       .registerPath("system_datamanagements.templates")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("DataManagementTemplateDetailEntity"));
