@@ -18,7 +18,8 @@ class DWorkflowWorkItemQueueGroupEntity : DEntity {
       .addValues([
         "backingTable_WorkflowWorkItemQueueGroupRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_workitemqueuegroups");
+      .registerPath("workflow_workitemqueuegroups")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowWorkItemQueueGroupEntity"));

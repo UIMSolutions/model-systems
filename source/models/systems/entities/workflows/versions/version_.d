@@ -43,7 +43,8 @@ class DWorkflowVersionEntity : DEntity {
         "relationship_ActiviationConditionRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowVersionTableRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_versions");
+      .registerPath("workflow_versions")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowVersionEntity"));

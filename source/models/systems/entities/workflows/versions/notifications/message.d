@@ -24,7 +24,8 @@ class DWorkflowVersionNotificationMessageEntity : DEntity {
         "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_versionnotificationmessages");
+      .registerPath("workflow_versionnotificationmessages")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowVersionNotificationMessageEntity"));

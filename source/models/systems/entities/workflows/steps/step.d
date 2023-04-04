@@ -80,7 +80,8 @@ class DWorkflowStepEntity : DEntity {
         "relationship_HierarchyStopConditionRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowStepTableRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_steps");
+      .registerPath("workflow_steps")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowStepEntity"));

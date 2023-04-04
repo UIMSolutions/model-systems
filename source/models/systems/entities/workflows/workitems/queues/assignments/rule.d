@@ -28,7 +28,8 @@ class DWorkflowWorkItemQueueAssignmentRuleEntity : DEntity {
         "WorkItemType": StringAttribute, //
         "backingTable_WorkflowWorkItemQueueExpressionRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_workitemqueueassignmentrules");
+      .registerPath("workflow_workitemqueueassignmentrules")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowWorkItemQueueAssignmentRuleEntity"));
