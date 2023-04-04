@@ -22,7 +22,7 @@ class DSystemSecurityPrivilegeEntity : DEntity {
         "securityPrivilegeId": UUIDAttribute, // 
       ])
       .registerPath("system_system.securities.privileges")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeEntity"));

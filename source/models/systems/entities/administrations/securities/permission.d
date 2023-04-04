@@ -30,7 +30,7 @@ class DSystemSecurityPermissionEntity : DEntity {
         "correctAccess": StringAttribute, //	
       ])
       .registerPath("system_systems.securities.permissions")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemSecurityPermissionEntity"));

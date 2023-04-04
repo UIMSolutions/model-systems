@@ -23,7 +23,7 @@ class DSystemSecuritySubRoleEntity : DEntity {
         "securitySubRoleName": StringAttribute, // 
       ])
       .registerPath("system_system.securities.subroles")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemSecuritySubRoleEntity"));

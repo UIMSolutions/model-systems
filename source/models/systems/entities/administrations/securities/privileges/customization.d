@@ -21,7 +21,7 @@ class DSystemSecurityPrivilegeCustomizationEntity : DEntity {
         "isDisabled": BooleanAttribute, // 
       ])
       .registerPath("system_system.securities.privilegecustomizations")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemSecurityPrivilegeCustomizationEntity"));

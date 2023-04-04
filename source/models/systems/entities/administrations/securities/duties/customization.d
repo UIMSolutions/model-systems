@@ -20,7 +20,7 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
         "isDisabled	": BooleanAttribute, // 
       ])
       .registerPath("system_system.securities.dutycustomizations")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"))
