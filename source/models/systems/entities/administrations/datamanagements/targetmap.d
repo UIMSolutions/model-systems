@@ -35,7 +35,7 @@ class DDataManagementTargetMapEntity : DEntity {
         "fieldAOTName": StringAttribute, //
       ])
       .registerPath("system_datamanagements.targetmaps")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DataManagementTargetMapEntity"));

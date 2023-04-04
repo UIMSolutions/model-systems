@@ -24,7 +24,7 @@ class DDataManagementDefinitionGroupEntity : DEntity {
         "truncateEntityData": StringAttribute, // 
       ])
       .registerPath("system_datamanagements.definitiongroups")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DataManagementDefinitionGroupEntity"));

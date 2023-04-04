@@ -49,7 +49,7 @@ class DDataManagementExecutionJobDetailEntity : DEntity {
         "relationship_ExecutionJobDetailsRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_datamanagements.executionjobs")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DataManagementExecutionJobDetailEntity"));

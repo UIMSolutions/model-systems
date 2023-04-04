@@ -48,7 +48,7 @@ class DDataManagementDefinitionGroupDetailEntity : DEntity {
         "relationship_DefinitionGroupDetailsRelationshipId": UUIDAttribute, //
       ])
       .registerPath("system_datamanagements.definitiongroupdetails")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("DataManagementDefinitionGroupDetailEntity"));
