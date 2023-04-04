@@ -20,7 +20,7 @@ class DNumberSequenceGroupEntity : DEntity {
 				"backingTable_NumberSequenceGroupRelationshipId": StringAttribute, //
       ])
       .registerPath("system_numbersequences.groups")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("NumberSequenceGroupEntity"));

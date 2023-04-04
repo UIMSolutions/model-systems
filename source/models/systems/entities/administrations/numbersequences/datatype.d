@@ -34,7 +34,7 @@ class DNumberSequenceDataTypeEntity : DEntity {
 				"backingTable_NumberSequenceDatatypeRelationshipId": StringAttribute, //
       ])
       .registerPath("system_numbersequences.datatypes")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("NumberSequenceDataTypeEntity"));
