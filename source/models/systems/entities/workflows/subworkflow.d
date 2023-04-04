@@ -33,7 +33,8 @@ class DWorkflowSubworkflowEntity : DEntity {
         "relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("workflow_subworkflows");
+      .registerPath("workflow_subworkflows")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowSubworkflowEntity"));

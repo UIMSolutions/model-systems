@@ -26,7 +26,8 @@ class DEmailTemplateMessageSystemEntity : DEntity {
 				"relationship_EmailTemplateRelationshipId": StringAttribute, //
 				"backingTable_SysEmailMessageSystemTableRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_emails.templatemessagesystems");
+      .registerPath("system_emails.templatemessagesystems")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("EmailTemplateMessageSystemEntity"));

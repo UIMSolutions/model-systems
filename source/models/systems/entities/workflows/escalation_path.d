@@ -68,7 +68,8 @@ Relationship_HierarchyStopConditionRelationshipId		Workflow/WorkflowEscalationPa
 BackingTable_WorkflowEscalationPathTableRelationshipId	 */
     this
       //.addValues([])
-      .registerPath("workflow_escalationpaths");
+      .registerPath("workflow_escalationpaths")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("WorkflowEscalationPathEntity"));
