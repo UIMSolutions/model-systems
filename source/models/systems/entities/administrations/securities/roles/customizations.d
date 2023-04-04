@@ -21,7 +21,7 @@ class DSystemSecurityRoleCustomizationsEntity : DEntity {
         "isDisabled": BooleanAttribute, // 
       ])
       .registerPath("system_system.securities.rolecustomizations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleCustomizationsEntity"));

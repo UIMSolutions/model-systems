@@ -23,7 +23,7 @@ class DSystemSecurityRoleDutyEntity : DEntity {
         "securityDutyName": StringAttribute, // 
       ])
       .registerPath("system_systems.securities.roleduties")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemSecurityRoleDutyEntity"));

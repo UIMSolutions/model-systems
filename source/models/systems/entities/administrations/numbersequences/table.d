@@ -46,7 +46,7 @@ class DNumberSequenceTableEntity : DEntity {
 				"backingTable_NumberSequenceTableRelationshipId": StringAttribute, //
       ])
       .registerPath("system_numbersequences.tables")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("NumberSequenceTableEntity"));
