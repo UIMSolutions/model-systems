@@ -24,7 +24,7 @@ class DWorkflowWorkItemQueueGroupRelationEntity : DEntity {
         "backingTable_WorkflowWorkItemQueueGroupRelationRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueuegrouprelations")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowWorkItemQueueGroupRelationEntity"));

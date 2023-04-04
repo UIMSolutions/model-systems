@@ -23,7 +23,7 @@ class DWorkflowWorkItemQueueAssignmentEntity : DEntity {
         "backingTable_WorkflowWorkItemQueueExpressionDefRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueueassignments")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowWorkItemQueueAssignmentEntity")); 

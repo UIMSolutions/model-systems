@@ -38,7 +38,7 @@ class DWorkflowVersionNotificationEntity : DEntity {
         "backingTable_WorkflowVersionNotificationTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotifications")      
-      .routingPath("/systems");
+      .routingPath("/systems/workflows");
   }
 }
 mixin(EntityCalls!("WorkflowVersionNotificationEntity"));
