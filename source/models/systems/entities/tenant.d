@@ -8,7 +8,6 @@ module models.systems.entities.tenant;
 @safe:
 import models.systems;
 
-
 class DSystemTenantEntity : DEntity {
   mixin(EntityThis!("SystemTenantEntity"));
 
@@ -17,7 +16,7 @@ class DSystemTenantEntity : DEntity {
 
     this
       .registerPath("system_tenants")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override DEntity clone() { return SystemTenantEntity; }

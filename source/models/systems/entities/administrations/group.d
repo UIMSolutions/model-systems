@@ -27,7 +27,7 @@ class DSystemGroupEntity : DEntity {
         "preferredCalendar": StringAttribute, //
       ])
       .registerPath("system_systems.groups")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemGroupEntity"));

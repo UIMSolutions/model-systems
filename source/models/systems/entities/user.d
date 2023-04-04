@@ -45,7 +45,7 @@ class DSystemUserEntity : DEntity {
 
     this
       .registerPath("system_users")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 
   override void fromJson(Json aJson) {

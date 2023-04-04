@@ -22,7 +22,7 @@ class DSystemGlobalConfigurationEntity : DEntity {
         "value": StringAttribute, // 
       ])
       .registerPath("system_globalconfigurations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemGlobalConfigurationEntity"));
