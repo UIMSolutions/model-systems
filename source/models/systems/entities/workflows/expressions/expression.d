@@ -22,7 +22,7 @@ class DWorkflowExpressionEntity : DEntity {
         "backingTable_ExpressionTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_expressions")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("WorkflowExpressionEntity"));
