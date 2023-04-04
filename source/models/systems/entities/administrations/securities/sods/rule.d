@@ -31,7 +31,7 @@ class DSecuritySegregationOfDutiesRuleEntity : DEntity {
         "mitigation":  StringAttribute, //      
       ])
       .registerPath("system_system.securities.sodrules")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SecuritySegregationOfDutiesRuleEntity"));

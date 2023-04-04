@@ -23,7 +23,7 @@ class DSystemUserGroupUserListEntity : DEntity {
         "backingTable_UserGroupListRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.users.groups.userlists")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("SystemUserGroupUserListEntity"));
