@@ -21,7 +21,7 @@ class DBatchGroupEntity : DEntity {
         "backingTable_BatchGroupRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_batchgroups")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("BatchGroupEntity"));

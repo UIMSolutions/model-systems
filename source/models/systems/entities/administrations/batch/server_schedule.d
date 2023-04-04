@@ -23,7 +23,7 @@ class DBatchServerScheduleEntity : DEntity {
         "backingTable_BatchServerConfigRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_batchserverschedules")      
-      .routingPath("/systems");
+      .routingPath("/systems/administrations");
   }
 }
 mixin(EntityCalls!("BatchServerScheduleEntity"));
