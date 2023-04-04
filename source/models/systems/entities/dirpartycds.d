@@ -52,7 +52,8 @@ class DDirPartyCDSEntity : DEntity {
         "dirPersonNameRecId": UUIDAttribute, //
         "backingTable_DirPartyBaseEntityRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_dirpartycds");
+      .registerPath("system_dirpartycds")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("DirPartyCDSEntity"));

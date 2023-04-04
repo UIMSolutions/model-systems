@@ -46,7 +46,8 @@ class DSystemAccountEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_accounts");
+      .registerPath("system_accounts")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemAccountEntity; }

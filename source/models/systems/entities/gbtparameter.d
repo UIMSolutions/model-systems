@@ -41,7 +41,8 @@ class DGBTParameterEntity : DEntity {
         "backingTable_GBTParameters_CNRelationshipId": StringAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
       ])
-      .registerPath("system_gbtparameters");
+      .registerPath("system_gbtparameters")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("GBTParameterEntity"));

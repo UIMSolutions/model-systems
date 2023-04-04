@@ -24,7 +24,8 @@ class DCityHolidayEntity : DEntity {
         /* "description": StringAttribute, // */
         "backingTable_CityHolidayRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("system_cityholidays");
+      .registerPath("system_cityholidays")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("CityHolidayEntity"));

@@ -20,7 +20,8 @@ class DEcoResProductCDSCategoryAssignmentEntity : DEntity {
         "productCategoryName": StringAttribute, //
         "productCategoryHierarchyName": StringAttribute, //
       ])
-      .registerPath("system_documents.types");
+      .registerPath("system_documents.types")      
+      .routingPath("");
   }
 }
 mixin(EntityCalls!("EcoResProductCDSCategoryAssignmentEntity"));

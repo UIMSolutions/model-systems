@@ -17,7 +17,8 @@ class DSystemGroupEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_groups");
+      .registerPath("system_groups")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemGroupEntity; }

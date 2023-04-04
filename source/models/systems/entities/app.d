@@ -15,7 +15,8 @@ class DSystemAppEntity : DEntity {
     super.initialize(configSettings);
 
     this
-      .registerPath("system_apps");
+      .registerPath("system_apps")      
+      .routingPath("");
   }
 
   override DEntity clone() { return SystemAppEntity; }
