@@ -27,7 +27,7 @@ class DWorkflowLineItemEntity : DEntity {
         "backingTable_WorkflowSubWorkflowItemRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_lineitems")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("WorkflowLineItemEntity"));

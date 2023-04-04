@@ -69,7 +69,7 @@ BackingTable_WorkflowEscalationPathTableRelationshipId	 */
     this
       //.addValues([])
       .registerPath("workflow_escalationpaths")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("WorkflowEscalationPathEntity"));
