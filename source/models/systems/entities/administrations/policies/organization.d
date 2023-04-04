@@ -30,7 +30,7 @@ class DSystemPolicyOrganizationEntity : DEntity {
         "backingTable_SysPolicyOrganizationRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.policies.organizations")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemPolicyOrganizationEntity"));

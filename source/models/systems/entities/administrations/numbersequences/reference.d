@@ -27,7 +27,7 @@ class DNumberSequencesReferenceEntity : DEntity {
 				"backingTable_NumberSequenceReferenceRelationshipId": StringAttribute, //
       ])
       .registerPath("system_numbersequences.references")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("NumberSequencesReferenceEntity"));

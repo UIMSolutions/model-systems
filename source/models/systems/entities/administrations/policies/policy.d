@@ -22,7 +22,7 @@ class DSystemPolicyEntity : DEntity {
         "backingTable_SysPolicyRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("system_systems.policies")      
-      .routingPath("");
+      .routingPath("/systems");
   }
 }
 mixin(EntityCalls!("SystemPolicyEntity"));
