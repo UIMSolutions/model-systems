@@ -24,7 +24,6 @@ class DDocumentTypeEntity : DEntity {
         "parameters": StringAttribute, //
         "removeOption": StringAttribute, //
         "typeGroup": StringAttribute, //
-        "id": StringAttribute, //
         "host": StringAttribute, //
         "site": StringAttribute, //
         "actionClassId": UUIDAttribute, //
