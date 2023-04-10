@@ -3,13 +3,13 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.systems.entities.administrations.systems.securities.roles.users.user;
+module models.systems.entities.administrations.securities.roles.users.user;
 
 @safe:
 import models.systems;
 
 // 
-class DADMSecurityUserRole : DEntity {
+class DSystemSecurityUserRole : DEntity {
   mixin(EntityThis!("ADMSecurityUserRole"));
 
   override void initialize(Json configSettings = Json(null)) {
@@ -29,7 +29,7 @@ class DADMSecurityUserRole : DEntity {
       .routingPath("/systems/administrations");
   }
 }
-mixin(EntityCalls!("ADMSecurityUserRole"));
+mixin(EntityCalls!("SystemSecurityUserRole"));
 
 version(test_model_systems) { unittest {
     assert(ADMSecurityUserRole);
