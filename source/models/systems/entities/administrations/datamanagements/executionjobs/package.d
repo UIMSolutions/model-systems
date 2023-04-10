@@ -4,3 +4,8 @@
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
 module models.systems.entities.administrations.datamanagements.executionjobs;
+
+public {
+	import models.systems.entities.administrations.datamanagements.executionjobs.detail;
+	import models.systems.entities.administrations.datamanagements.executionjobs.job;
+}

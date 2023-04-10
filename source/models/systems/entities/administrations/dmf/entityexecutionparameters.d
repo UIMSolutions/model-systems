@@ -24,9 +24,9 @@ class DDMFEntityExecutionParametersEntity : DEntity {
       .routingPath("/systems/administrations");
   }
 }
-mixin(EntityCalls!("DMFEntityExecutionParametersEntity"))
+mixin(EntityCalls!("DMFEntityExecutionParametersEntity"));
 
-version(test_model_systsms) { unittest {
+version(test_model_systems) { unittest {
     assert(DMFEntityExecutionParametersEntity);
 
     auto entity = DMFEntityExecutionParametersEntity;

@@ -11,18 +11,19 @@ public { // Subpackages
   import models.systems.entities.workflows;
 }
 
-// Submodules
-public import models.systems.entities.bidategregorian;
-// public import models.systems.entities.emailparameters;
-// public import models.systems.entities.globalconfiguration;
-// public import models.systems.entities.parameter;
-
-public { //
+public { // Entities packages
   import models.systems.entities.account;
   import models.systems.entities.app;
+  import models.systems.entities.bidategregorian;
+  import models.systems.entities.cityholiday;
+  import models.systems.entities.demodatapost;
+  import models.systems.entities.dirpartycds;
+  import models.systems.entities.ecoresproductcdscategoryassignment;
+  import models.systems.entities.efdocemailaccountconfiguration;
   import models.systems.entities.group;
   import models.systems.entities.login;
   import models.systems.entities.organization;
+  import models.systems.entities.parameter;
   import models.systems.entities.password;
   import models.systems.entities.passwordrule;
   import models.systems.entities.request;

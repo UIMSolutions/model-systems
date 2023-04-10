@@ -5,3 +5,7 @@
 **********************************************************************************************************/
 module models.systems.entities.administrations.segregation_of_duties;
 
+public {
+	import models.systems.entities.administrations.segregation_of_duties.conflict;
+	import models.systems.entities.administrations.segregation_of_duties.rule;
+}

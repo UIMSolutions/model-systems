@@ -10,13 +10,18 @@ public {
   import models.systems.entities.administrations.dmf;
   import models.systems.entities.administrations.documents;
   import models.systems.entities.administrations.emails;
+  import models.systems.entities.administrations.exchangerates;
   import models.systems.entities.administrations.measurements;
   import models.systems.entities.administrations.numbersequences;
+  import models.systems.entities.administrations.policies;
+  import models.systems.entities.administrations.securities;
   import models.systems.entities.administrations.segregation_of_duties;
+  import models.systems.entities.administrations.servers;
+  import models.systems.entities.administrations.users;
 }
 
 static this() {
-  import uim.models;
+  import models.systems;
 
 	EntityRegistry
 		.register(
@@ -24,7 +29,7 @@ static this() {
 			BatchJobHistoryEntity,
 			BatchJobEntity,
       BatchServerScheduleEntity,
-      BIDateGregorianEntity.
+      BIDateGregorianEntity,
       BrazilianElectronicReportingParametersEntity,
       BrazilianParametersEntity,
       CaseAssociationEntity,

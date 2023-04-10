@@ -24,10 +24,12 @@ class DSystemLoginEntity : DEntity {
 
   override DEntity clone() { return SystemLoginEntity; }
 
-  override void fromRequest(STRINGAA reqParameters) {
-    super.fromRequest(reqParameters);
-    if ("entity_accountName" in reqParameters) this["accountName"] = reqParameters["entity_accountName"];
+  override void fromRequest(STRINGAA reqParameters, bool usePrefix = true) {
+    super.fromRequest(reqParameters, usePrefix);
+    if ("entity_accountName" in reqParameters) {
+      this["accountName"] = reqParameters["entity_accountName"];
     }
+  }
 }
 mixin(EntityCalls!("SystemLoginEntity"));
 

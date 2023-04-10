@@ -23,7 +23,7 @@ class DSystemSecurityDutyCustomizationEntity : DEntity {
       .routingPath("/systems/administrations");
   }
 }
-mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"))
+mixin(EntityCalls!("SystemSecurityDutyCustomizationEntity"));
 
 version(test_model_systems) { unittest {
   assert(SystemSecurityDutyCustomizationEntity);
