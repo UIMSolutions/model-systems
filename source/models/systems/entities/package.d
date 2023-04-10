@@ -21,6 +21,7 @@ public { // Entities packages
   import models.systems.entities.ecoresproductcdscategoryassignment;
   import models.systems.entities.efdocemailaccountconfiguration;
   import models.systems.entities.group;
+  import models.systems.entities.gbtparameter;
   import models.systems.entities.login;
   import models.systems.entities.organization;
   import models.systems.entities.parameter;

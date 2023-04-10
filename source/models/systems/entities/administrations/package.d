@@ -20,6 +20,11 @@ public {
   import models.systems.entities.administrations.users;
 }
 
+public {
+  import models.systems.entities.administrations.globalconfiguration;
+  import models.systems.entities.administrations.group;
+}
+
 static this() {
   import models.systems;
 
