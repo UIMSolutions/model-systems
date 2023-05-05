@@ -8,10 +8,10 @@ module models.systems.entities.user;
 @safe:
 import models.systems;
 
-class DSystemUserEntity : DEntity {
-  mixin(EntityThis!("SystemUserEntity"));
+class DSystemXUserEntity : DEntity {
+  mixin(EntityThis!("SystemXUserEntity"));
 
-  override DEntity clone() { return SystemUserEntity; }
+  override DEntity clone() { return SystemXUserEntity; }
 
   mixin(OProperty!("bool", "active"));
 
@@ -97,12 +97,12 @@ class DSystemUserEntity : DEntity {
     return result;
   }
 }
-mixin(EntityCalls!("SystemUserEntity"));
+mixin(EntityCalls!("SystemXUserEntity"));
 
 version(test_model_systems) { unittest {
-    assert(SystemUserEntity);
+    assert(SystemXUserEntity);
   
-  auto entity = SystemUserEntity;
+  auto entity = SystemXUserEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

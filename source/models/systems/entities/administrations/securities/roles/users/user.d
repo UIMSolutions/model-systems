@@ -10,7 +10,7 @@ import models.systems;
 
 // 
 class DSystemSecurityUserRole : DEntity {
-  mixin(EntityThis!("ADMSecurityUserRole"));
+  mixin(EntityThis!("SystemSecurityUserRole"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -26,7 +26,7 @@ class DSystemSecurityUserRole : DEntity {
         "UserLicenseType": StringAttribute, // 
       ])
       .registerPath("system_securityuserroles")      
-      .routingPath("/systems/administrations");
+      .routingPath("/systems/administrations/securityuserroles");
   }
 }
 mixin(EntityCalls!("SystemSecurityUserRole"));
