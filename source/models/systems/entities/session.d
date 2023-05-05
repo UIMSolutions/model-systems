@@ -21,8 +21,8 @@ class DSystemSessionEntity : DEntity {
 
   override DEntity clone() { return SystemSessionEntity; }
 
-  override void fromRequest(STRINGAA reqParameters, bool usePrefix = true) {
-    super.fromRequest(reqParameters, usePrefix);
+  override void readFromRequest(STRINGAA reqParameters, bool usePrefix = true) {
+    super.readFromRequest(reqParameters, usePrefix);
     
     if ("entity_siteId" in reqParameters) {
       this["siteId"] = reqParameters["entity_siteId"];

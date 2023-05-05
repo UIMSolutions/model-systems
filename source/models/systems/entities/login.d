@@ -24,8 +24,8 @@ class DSystemLoginEntity : DEntity {
 
   override DEntity clone() { return SystemLoginEntity; }
 
-  override void fromRequest(STRINGAA reqParameters, bool usePrefix = true) {
-    super.fromRequest(reqParameters, usePrefix);
+  override void readFromRequest(STRINGAA reqParameters, bool usePrefix = true) {
+    super.readFromRequest(reqParameters, usePrefix);
     if ("entity_accountName" in reqParameters) {
       this["accountName"] = reqParameters["entity_accountName"];
     }

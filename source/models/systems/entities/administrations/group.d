@@ -9,8 +9,8 @@ module models.systems.entities.administrations.group;
 import models.systems;
 
 // Active Directory Security groups
-class DSystemGroupEntity : DEntity {
-  mixin(EntityThis!("SystemGroupEntity"));
+class DSystemXGroupEntity : DEntity {
+  mixin(EntityThis!("SystemXGroupEntity"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -30,11 +30,11 @@ class DSystemGroupEntity : DEntity {
       .routingPath("/systems/administrations");
   }
 }
-mixin(EntityCalls!("SystemGroupEntity"));
+mixin(EntityCalls!("SystemXGroupEntity"));
 
 version(test_model_systsms) { unittest {
-    assert(SystemGroupEntity);
+    assert(SystemXGroupEntity);
   
-    auto entity = SystemGroupEntity;
+    auto entity = SystemXGroupEntity;
   }
 }

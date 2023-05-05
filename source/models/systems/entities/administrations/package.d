@@ -116,7 +116,7 @@ static this() {
       SystemSecurityRoleEntity,
       SystemSecuritySubRoleEntity,
       SystemSecurityUserRoleAssociationEntity,
-      SystemSecurityUserRoleEntity,
+      // SystemSecurityUserRoleEntity,
       SystemSegregationOfDutiesConflictEntity,
       SystemServerClusterConfigurationEntity,
       SystemServerConfigurationEntity, 
