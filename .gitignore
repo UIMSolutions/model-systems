@@ -1,32 +1,21 @@
-model-systems-test-offline
-model-systems-test-default
-.dub/build/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-offline.o
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-A3A41B6A1A926D7965339F82EA9A1699/model-systems-test-default.o
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-2050ED25CE279A1D9D6E5401BCAADBF8/model-systems-test-default.o
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# DUB
+.dub
+docs.json
 dub.selections.json
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-E1EACB0F5D9ECC806E19A9F192693F5E/model-systems-test-default.o
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-102BFD2E85157C7C6151EF2A39840A9D_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-90308A7E58F28AD82F4BD7679352C05F_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-ACA39450FFCD034E1E8A51144A3B0720_dub_test_root.d
-.dub/code/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-78387862D305FA6FFE80EF7C48C20906_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.098.0-F740729596920A06B0E75572A46CBA9F_dub_test_root.d
-.dub/code/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-6F0C8195870222315DD0BB0A17D277D2_dub_test_root.d
-.dub/code/model-systems-test-offline-unittest-linux.posix-x86_64-dmd_v2.098.0-78387862D305FA6FFE80EF7C48C20906_dub_test_root.d
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-40D500A05169A009785B09C0C8905A31/model-systems-test-default.o
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-8DA3A42BB417D870C35B68E15444AB8B_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-814DFF2603CDBC5416A9654511F5EED3_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-87FD95B767760BCE87B85A91887D5A34_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-A78FB3809044561CD82A94E2E4CE971B_dub_test_root.d
-.gitignore
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-AE827CB65F49598622B2E0045D8E2BCB/model-systems-test-default.o
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-AE827CB65F49598622B2E0045D8E2BCB/model-systems-test-default.o
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-0ABC291D39D40487F4CCB65426C6EEED_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-32BEBC9B5AB8D4680204A156E622BFEF_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-EFE4BB54C472077CB7DE0D7A8423FFF8_dub_test_root.d
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-AE827CB65F49598622B2E0045D8E2BCB/model-systems-test-default.o
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-AE827CB65F49598622B2E0045D8E2BCB/model-systems-test-default.o
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-4AD40E3AFB1EACCABC8D6F0F0A8AB7AF_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-333BFDFF7FBF854FE8ADE2ABA54DC3BB_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-09615D68DE6284ED055B33BB2CF68D60_dub_test_root.d
-.dub/code/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-B4A3FD9244BA3B8B4F2E4FEA4F0CC735_dub_test_root.d
-.dub/build/model-systems-test-default-unittest-linux.posix-x86_64-dmd_v2.100.0-04363649D787893B4F815103F6214872/model-systems-test-default.o
+
